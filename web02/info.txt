@@ -1,0 +1,5 @@
+> criteria.html
+html 기준
+
+> css/style.css
+header, footer css(스타일)

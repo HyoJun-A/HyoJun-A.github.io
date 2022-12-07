@@ -1,0 +1,21 @@
+after : 크기가 잡히지 않을 경우에 사용 / clear-fix 처리에 사용, clear-fix처리를 해야 높이를 설정 가능
+
+글자색은 a태그에 설정
+
+position이 absolute일경우 z-index를 사용해야함
+
+메뉴를 한줄로 처리 -> float : left 사용 , content는 clear : both를 사용해서 위로 올라오지 못하게 해야함
+
+page2
+img > hidden처리 하고 margin-left를 -로 사용(이미지를 가운데로)
+img를 전부 보고 싶다면 transition-duration을 잡아주고 a태그에 hover을 걸어서 보여줌
+
+token : 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
+url = https://본인아이디:토큰@본인레포시토리주소
+
+폰트는 2~3개만 사용
+
+target을 사용하여 one-page기법사용
+
+join.html > 약관 폼 > 개인처리정보 방침 > 실제 회원가입 순으로
+

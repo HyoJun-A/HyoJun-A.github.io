@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>메인페이지</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <!-- 각 종 플러그인과 설정 파일 -->
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR&display=swap"
+        rel="stylesheet">
+    <!-- 구형 브라우저 html5태그 인식 -->
+    <script src="./js/html5shiv.js"></script>
+    <!-- 구형 브라우저에서 css animation 인식 -->
+    <script src="./js/prefixfree.min.js"></script>
+    <!-- 구형 브라우저에서 미디어쿼리 인식 -->
+    <script src="./js/respond.min.js"></script>
+    <style>
+        .table {
+            min-width: 960px;
+        }
+
+        #logo {
+            display: block;
+            width: 92px;
+            height: 45px;
+            background-image: url("./data/logo.png");
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+        }
+
+        #nav {
+            border-bottom: 3px solid #ddd;
+        }
+
+        .header {
+            border-bottom: 1px solid #EEE;
+        }
+
+        .hd {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .navbar {
+            height: 80px;
+        }
+
+
+        .item img {
+            clear: both;
+            width: 200px;
+            margin-top: 10px;
+        }
+
+        .navbar-link {
+            width: 140px;
+            font-weight: 600;
+            font-size: 17px;
+            margin-left: 60px;
+
+        }
+
+        .navbar-link:FIRST-CHILD {}
+
+        .nav2 {
+            height: 50px;
+        }
+
+        .search {
+            width: 700px;
+            margin: 0 auto;
+            float: right;
+            margin-left: 200px;
+            margin-top: 22px;
+            display: block;
+        }
+
+        .simg {
+            float: right;
+            position: absolute;
+            margin-left: -40px;
+            margin-top: 5px;
+            width: 25px;
+
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
+    <link rel="stylesheet" href="../css/style2.css" />
+    <!-- <link rel="stylesheet" href="../css/story.css"> -->
+    <style>
+        .slider-text {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+
+        }
+
+        #slider .card-content {
+            max-width: 50%;
+            background-color: rgba(#255, #255, #255, 0.5);
+
+        }
+
+        #slider {
+            overflow: hidden;
+            max-width: 1344px;
+            margin-left: 271px;
+        }
+
+        @media screen and (max-width: 1023px) {
+            #slider .card-content {
+                display: none;
+            }
+        }
+
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -50px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .item-slide img {
+            max-width: 1200px;
+
+
+        }
+
+        .caption-container {
+            color: white;
+        }
+
+        .card-content {
+            margin-right: 800px;
+            margin-bottom: 290px;
+        }
+
+        .card-content p {
+            background-color: rgba(0, 0, 0, 0.7);
+            ;
+            color: white;
+            font-weight: 700;
+            width: 675px;
+            height: 130px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <header class="header">
+            <div class="hd">
+                <nav class="navbar" role="navigation" aria-label="main navigation">
+                    <div class="navbar-brand">
+                        <a class="item" href="../index.html">
+                            <!-- <img src="https://tour.paju.go.kr/resources/user/tour/images/layout/logo@2x.png" alt="Logo" > -->
+                            <img src="../img/logo.png" alt="Logo">
+                        </a>
+                    </div>
+                    <div class="search">
+                        <form name="frm2" class="frm2" id="frm2" action="" method="post">
+                            <input class="input is-rounded" name="sea" id="sea" type="text" placeholder="통합검색">
+                            <a type="submit"><input type="image" src="../img/sr.png" alt="Logo" class="simg"></a>
+                        </form>
+                    </div>
+                    <div class="navbar-end">
+                        <div class="navbar-item">
+
+                            <div class="buttons">
+                                <a class="button is-primary" href="../user/login.html">
+                                    <img src="https://tour.paju.go.kr/resources/user/_common/images/ico-login-white.png"
+                                        alt="login"> 로그인
+                                </a>
+                                <a class="button is-info" href="../user/agree.html">
+                                    <img src="https://tour.paju.go.kr/resources/user/_common/images/ico-join-white.png"
+                                        alt="join">회원가입
+                                </a>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start" id="gnb">
+                    <!-- ajax로 메뉴 로딩하여 추가하기 -->
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a href="../tour/cateA1.html" class="navbar-link">
+                            관광
+                        </a>
+                        <div class="navbar-dropdown cate" id="cate01"><a href="../tour/cateA1.html">파주이이유적(사적
+                                제525호)</a><br><a href="../tour/cateA2.html">벽봉한국장신구박물관</a><br><a
+                                href="../tour/cateA3.html">임진각 평화누리</a><br><a href="../tour/cateA4.html">율곡문화제</a><br>
+                        </div>
+                    </div>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a href="../tour/cateB1.html" class="navbar-link cate">
+                            체험
+                        </a>
+                        <div class="navbar-dropdown cate" id="cate02"><a href="../tour/cateB1.html">파주 평화통일
+                                체험학습장</a><br><a href="../tour/cateB2.html">파주로1박2일</a><br></div>
+                    </div>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a href="../tour/cateC1.html" class="navbar-link cate">
+                            행사
+                        </a>
+                        <div class="navbar-dropdown cate" id="cate03"><a href="../tour/cateC1.html">파주북소리</a><br><a
+                                href="../tour/cateC2.html">운정호수공원 불꽃축제</a><br></div>
+                    </div>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a href="../tour/cateD1.html" class="navbar-link cate">
+                            축제
+                        </a>
+                        <div class="navbar-dropdown cate" id="cate04"><a href="../tour/cateD1.html">파주개성인삼
+                                축제</a><br>
+                        </div>
+                    </div>
+                    <div href="../tour/cateE1.html" class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link cate">
+                            숙박
+                        </a>
+                        <div class="navbar-dropdown cate" id="cate05"><a href="../tour/cateE1.html">헤이리 풀빌라
+                                워라밸</a><br>
+                        </div>
+                    </div>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a href="../tour/cateF1.html" class="navbar-link cate">
+                            음식
+                        </a>
+                        <div class="navbar-dropdown cate" id="cate06"><a href="../tour/cateF1.html">나정순할매쭈꾸미</a><br>
+                        </div>
+                    </div>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a href="../tour/cateG1.html" class="navbar-link cate">
+                            쇼핑
+                        </a>
+                        <div class="navbar-dropdown cate" id="cate07"><a href="../tour/cateG1.html">롯데 프리미엄아울렛
+                                파주점</a><br></div>
+                    </div>
+                    <div class="navbar-item has-dropdown is-hoverable single">
+                        <a class="navbar-link">
+                            관광안내
+                        </a>
+                        <div class="navbar-dropdown single">
+                            <a class="navbar-item" href="../notice/noticeList.html">
+                                공지사항
+                            </a>
+                            <a class="navbar-item" href="../review/reviewList.html">
+                                이용 및 후기
+                            </a>
+                            <a class="navbar-item" href="../qna/qnaList.html">
+                                Q&amp;A
+                            </a>
+                        </div>
+                    </div>
+                    <div class="navbar-item has-dropdown is-hoverable single">
+                        <a class="navbar-link">
+                            이야기파주
+                        </a>
+
+                        <div class="navbar-dropdown single">
+                            <a class="navbar-item" href="../story/storyA.html">
+                                파주여행스토리
+                            </a>
+                            <a class="navbar-item" href="../story/storyB.html">
+                                인물이야기
+                            </a>
+                            <a class="navbar-item" href="../story/storyC.html">
+                                파주이야기
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+    </div>
+    </div>
+    </nav>
+    </div>
+    </header>
+    <div class="content">
+        <article id="content">
+
+            <div class="content-body">
+                <div class="container">
+                    <!-- 상단컨텐츠 표시 -->
+
+                    <!-- 좋아요 -->
+
+
+
+                    <!-- 게시물 상세 SNS S-->
+
+                    <!-- 게시물 상세 SNS E -->
+
+
+
+                    <!-- 탭메뉴 있는지 여부 : 있으면 true -->
+                    <!-- tab -->
+
+
+
+
+
+
+
+
+                    <form name="dataForm" id="dataForm" class="search-form" method="get" action="#">
+                        <input type="hidden" id="menuCode" name="menuCode" value="31">
+                        <input type="hidden" id="areaSe" name="areaSe" value="">
+                        <input type="hidden" id="cntntsSn" name="cntntsSn" value="">
+                        <input type="hidden" id="q_gubun" name="q_gubun" value="">
+                        <input type="hidden" id="q_gubunCode" name="q_gubunCode" value="">
+
+                        <h3 class="title1">인물이야기</h3>
+                        <div class="box box-search mt-4">
+                            <fieldset>
+                                <legend class="sr-only">검색조건 입력</legend>
+                                <div class="search-form-group">
+                                    <div class="form-row form-row-keyword">
+                                        <div class="input-item md-full">
+                                            <select id="q_searchKey" name="q_searchKey" class="form-control"
+                                                title="분류 선택" style="width: 116px;">
+                                                <option value="ALL">전체</option>
+                                                <option value="SJ">명칭</option>
+                                                <option value="ADRES">소재지</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-item md-full">
+                                            <input type="text" id="q_searchVal" name="q_searchVal" value=""
+                                                title="검색어 입력" class="form-control" style="width: 400px;">
+                                        </div>
+                                        <div class="input-item md-full">
+                                            <div class="btn-area">
+                                                <button type="button" onclick="jsSearch();"
+                                                    class="btn btn-md btn-primary">
+                                                    <span>검색</span>
+                                                </button>
+                                                <button type="reset" onclick="jsSearchReset();"
+                                                    class="btn btn-md btn-outline-primary">초기화</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+
+                        <div class="list-info">
+                            <div class="left">
+                                <div class="total">총 <strong>17</strong>건, 페이지 <strong>1</strong> / 1</div>
+                            </div>
+                            <input type="hidden" name="q_rowPerPage" id="q_rowPerPage" value="30">
+                            <input type="hidden" name="q_currPage" id="q_currPage" value="1">
+                            <input type="hidden" name="q_sortName" id="q_sortName" value="">
+                            <input type="hidden" name="q_sortOrder" id="q_sortOrder" value="">
+                        </div>
+
+                        <ul class="thumbnail-list mt-4">
+
+
+                            <li>
+                                <a href="javascript:void(0);" onclick="jsView(2116);">
+                                    <div class="thumb thumb-gallery">
+
+
+                                        <img src="../img/sB/f4d58435-977b-46a7-b06e-2258f6d86340.jpg"
+                                            class="img" alt="석인 정태진 썸네일">
+
+
+                                    </div>
+                                    <strong class="subject">
+                                        석인 정태진
+                                    </strong>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript:void(0);" onclick="jsView(968);">
+                                    <div class="thumb thumb-gallery">
+
+
+                                        <img src="../img/sB/13896086490622.jpg" class="img"
+                                            alt="[추천]풍석 서유구 썸네일">
+
+
+
+                                    </div>
+                                    <strong class="subject">
+                                        [추천]풍석 서유구
+                                    </strong>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript:void(0);" onclick="jsView(653);">
+                                    <div class="thumb thumb-gallery">
+
+
+                                        <img src="../img/sB/13560680668210.jpg" class="img"
+                                            alt="남계 박세채 썸네일">
+
+
+
+                                    </div>
+                                    <strong class="subject">
+                                        남계 박세채
+                                    </strong>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript:void(0);" onclick="jsView(639);">
+                                    <div class="thumb thumb-gallery">
+
+
+                                        <img src="../img/sB/13146824097810.jpg" class="img"
+                                            alt="역사 속 여인이야기 ② - 단 세번의 만남으로 영원한 사랑을 나눈 홍랑 썸네일">
+
+
+
+                                    </div>
+                                    <strong class="subject">
+                                        역사 속 여인이야기 ② - 단 세번의 만남으로 영원한 사랑을 나눈 홍랑
+                                    </strong>
+                                </a>
+                            </li>
+
+                            
+
+                            <li>
+                                <a href="javascript:void(0);" onclick="jsView(242);">
+                                    <div class="thumb thumb-gallery">
+
+
+                                        <img src="../img/sB/13560531083680.jpg" class="img"
+                                            alt="구봉 송익필 썸네일">
+
+
+
+                                    </div>
+                                    <strong class="subject">
+                                        구봉 송익필
+                                    </strong>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript:void(0);" onclick="jsView(241);">
+                                    <div class="thumb thumb-gallery">
+
+
+                                        <img src="../img/sB/393_image1.jpg" class="img"
+                                            alt="성혼선생묘(경기도기념물 제59호) 썸네일">
+
+
+
+                                    </div>
+                                    <strong class="subject">
+                                        성혼선생묘(경기도기념물 제59호)
+                                    </strong>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript:void(0);" onclick="jsView(240);">
+                                    <div class="thumb thumb-gallery">
+
+
+                                        <img src="../img/sB/13560534821800.jpg" class="img"
+                                            alt="용재 성현 썸네일">
+
+
+
+                                    </div>
+                                    <strong class="subject">
+                                        용재 성현
+                                    </strong>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript:void(0);" onclick="jsView(239);">
+                                    <div class="thumb thumb-gallery">
+
+
+                                        <img src="../img/sB/13560634181331.bmp" class="img"
+                                            alt="지봉 황보인 썸네일">
+
+
+
+                                    </div>
+                                    <strong class="subject">
+                                        지봉 황보인
+                                    </strong>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript:void(0);" onclick="jsView(238);">
+                                    <div class="thumb thumb-gallery">
+
+
+                                        <img src="../img/sB/390_image1.jpg" class="img"
+                                            alt="쌍백당 이세화 썸네일">
+
+
+
+                                    </div>
+                                    <strong class="subject">
+                                        쌍백당 이세화
+                                    </strong>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript:void(0);" onclick="jsView(237);">
+                                    <div class="thumb thumb-gallery">
+
+
+                                        <img src="../img/sB/389_image1.jpg" class="img"
+                                            alt="휴암 백인걸 썸네일">
+
+
+
+                                    </div>
+                                    <strong class="subject">
+                                        휴암 백인걸
+                                    </strong>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript:void(0);" onclick="jsView(236);">
+                                    <div class="thumb thumb-gallery">
+
+
+                                        <img src="../img/sB/13560644178052.bmp" class="img"
+                                            alt="보진재 · 천은당 노사신 썸네일">
+
+
+
+                                    </div>
+                                    <strong class="subject">
+                                        보진재 · 천은당 노사신
+                                    </strong>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript:void(0);" onclick="jsView(235);">
+                                    <div class="thumb thumb-gallery">
+
+
+                                        <img src="../img/sB/13560629646642.bmp" class="img"
+                                            alt="우산 심상각 썸네일">
+
+
+
+                                    </div>
+                                    <strong class="subject">
+                                        우산 심상각
+                                    </strong>
+                                </a>
+                            </li>
+
+                            
+
+                            
+
+                        </ul>
+
+                        <!-- paginate -->
+
+
+
+
+
+
+                        <div class="pagination mt-lg-6 mt-md-4">
+
+
+
+                            <strong>1</strong>
+
+
+                        </div>
+                        <!-- //paginate -->
+                    </form>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <img src="../img/flogo.png" alt="flogo" class="flogo">
+            <p>
+                파주시 홈페이지에 게시된 전자우편주소는 무단으로 수집할 수 없으며, 위반시 정보통신망법에 의해 처벌됩니다.
+            </p>
+            <p>
+                (우 10932) 경기도 파주시 시청로 50 | 대표전화 : 031) 940-4114<br>
+                COPYRIGHT(C) 2021, PAJU CITY ALL RIGHTS RESERVED
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,197 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Insert title here</title>
+	
+	
+
+
+
+
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+<link rel="stylesheet" href="resources/css/normalize.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation-prototype.min.css">
+<link href='https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css' rel='stylesheet' type='text/css'>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.js"></script>
+<script type="text/javascript" src="/resources/ckeditor/ckeditor.js"></script>
+<style>
+.title-bar-left img{ height: 40px;}
+.off-canvas-absolute { background-color: #0a0a0a;}
+.acolor {color:#FEFEFE; text-decoration:none}
+#acolor {color:#FEFEFE;}
+#ft { background-color: #0a0a0a;}
+.content { width: 1330px; margin-top: 50px; background-color: #FEFEFE;}
+.content1 { width: 1330px; margin-top: 50px; background-color: #FEFEFE;}
+#smenu { width: 100%;}
+#footer { position : absolute;
+bottom : 0; width: 100%; height: 53px;}
+#smenu { width: 100%;  height: 100%;  background-color: #0a0a0a;}
+	html,body {
+        width: 100%;
+        height: 95%;
+      }
+    .mung { color:#FEFEFE; text-align: center; font-family: fantasy; font-weight: 200;} 
+.login-center {
+	height: 40px;
+	width: 1000px;
+	display: block;
+	float: left;
+}
+.login-center:after { content=""; display: block; clear: both;}
+.login input{
+	width: 200px;
+	height: 25px;
+	float: left;
+	margin-right: 20px;
+	margin-top: 8px;
+}
+</style>
+</head>
+<body>
+
+
+
+
+
+<header id="header">
+    <div class="title-bar">
+        <div class="title-bar-left">
+            <button class="menu-icon" type="button" data-open="offCanvasLeftSplit1" data-close></button>
+            <a href="/"><img alt="logo" src="/resources/img/rlogo.png"></a>
+            <span class="title-bar-title">
+                HJpoto
+            </span>
+        </div>
+        
+        <div class="top-bar-right">
+            <ul class="menu">
+                
+		          
+		          <li class="clear button success" id="acolor">admin</li>
+		          <li><a href="/member/logout.do" class="clear button success" id="acolor">Logout</a></li>
+		          <li><a href="/member/read.do" class="clear button success" id="acolor">Info</a></li>
+		          
+		        
+		          <li><a href="#" class="clear button success" id="acolor">AdminPage</a></li>
+		         
+            </ul>
+        </div>
+    </div>
+    </header>
+    <div class="grid-x" style="list-style-type: none;" id="smenu">
+        <div class="cell small-2">
+            <div class="off-canvas-wrapper">
+                <div class="off-canvas-absolute position-left" id="offCanvasLeftSplit1" data-off-canvas>
+                    <button class="close-button" aria-label="Close menu" type="button" data-close>
+                        <span aria-hidden="true">
+                        </span>
+                    </button>
+                    <ul class="vertical menu accordion-menu" data-accordion-menu>
+		  <li>
+		    <a class="acolor" href="#">기업소개</a>
+		    <ul class="menu vertical nested">
+		      <li><a class="acolor" href="/management.do">경영진</a></li>
+		      <li><a class="acolor" href="/hjcompany.do">회사</a></li>
+		    </ul>
+		  </li>
+		  <li>
+		    <a class="acolor href="#">작품</a>
+		    <ul class="menu vertical nested">
+		      <li><a class="acolor" href="#">자연</a></li>
+		      <li><a class="acolor" href="#">도시</a></li>
+		    </ul>
+		  </li>
+		  <li>
+		    <a class="acolor href="#">전시관</a>
+		    <ul class="menu vertical nested">
+		      <li><a class="acolor" href="#">H전시관</a></li>
+		      <li><a class="acolor" href="#">J전시관</a></li>
+		    </ul>
+		  </li>
+		  <li>
+		    <a class="acolor href="#">고객서비스</a>
+		    <ul class="menu vertical nested">
+		      <li><a class="acolor" href="/board/list.do">공지사항</a></li>
+		      <li><a class="acolor" href="/free/list.do">자유게시판</a></li>
+		      <li><a class="acolor" href="/qna/list.do">Q & A</a></li>
+		    </ul>
+		  </li>
+		</ul>
+                </div>
+                <div class="off-canvas-content" style="min-height: 300px;" data-off-canvas-content>
+                </div>
+            </div>
+        </div>
+   
+<div class="content" id="content">
+	    <div class="row column text-center">
+	      <h2 class="h1">질문 등록</h2>
+	      <hr>
+	      <div class="container">
+	      	   <form action="./insert.do" method="post">
+					<table class="table">
+					   <tbody>
+					    <tr>
+					      <th><label for="title">제목</label></th>
+					      <td>
+					      <input type="text" class="input" name="author" id="author" value="admin" readonly="readonly">
+					      <input type="text" class="input" maxlength="120" name="title" id="title" placeholder="제목 입력" required />
+					      </td>
+					    </tr>
+					    <tr>
+					      <th><label for="content">내용</label></th>
+					      <td><textarea rows="8" cols="100" name="content" id="content" class="textarea" required></textarea></td>
+					    </tr>
+					  </tbody>
+					</table>
+					<div class="buttons">
+					  <button type="submit" class="button is-success">등록</button>
+					  <button type="reset" class="button is-warning">취소</button>
+					  <a href="./list.do" class="button is-success">목록</a>
+					</div>
+				</form>
+	      </div>
+	    </div>
+	</div>
+
+
+
+
+
+</div>
+    <script>
+        $(document).foundation();
+    </script>
+
+<footer id="footer">
+    	<div class="grid-x grid-margin-y expanded" id="ft">
+	        <div class="medium-6 cell">
+	          <ul class="menu">
+	            <li><a class="acolor" href="#">기업소개 </a></li>
+	            <li><a class="acolor" href="#">이용약관</a></li>
+	            <li><a class="acolor" href="#">개인정보처리방침</a></li>
+	          </ul>
+	        </div>
+	        <div class="medium-6 cell">
+	          <ul class="menu align-right">
+	            <li class="acolor">Copyright © 2022 HJpoto &nbsp; &nbsp;</li>
+	          </ul>
+	        </div>
+      </div>
+    </footer>
+ <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+ <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+</body>
+</html>

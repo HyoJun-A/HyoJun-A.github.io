@@ -1,0 +1,335 @@
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>이용 및 후기 상세보기</title>
+    
+
+
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <!-- 각 종 플러그인과 설정 파일 -->
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+  <!-- 구형 브라우저 html5태그 인식 -->
+  <script src="/pro03/js/html5shiv.js"></script>
+  <!-- 구형 브라우저에서 css animation 인식 -->
+  <script src="/pro03/js/prefixfree.min.js"></script>
+  <!-- 구형 브라우저에서 미디어쿼리 인식 -->
+  <script src="/pro03/js/respond.min.js"></script>
+<style>
+.table { min-width:960px; }
+#logo { display:block; width:92px; height:45px; background-image:url("/pro03/data/logo.png");
+background-size:100% auto; background-repeat:no-repeat; }
+#nav { border-bottom:3px solid #ddd; }
+.header {
+    border-bottom: 1px solid #EEE;
+}
+
+.hd {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.navbar {
+    height: 80px;
+}
+
+
+.item img {
+    clear: both;
+    width: 200px;
+    margin-top: 10px;
+}
+
+.navbar-link {
+    width: 140px;
+    font-weight: 600;
+    font-size: 17px;
+    margin-left: 60px;
+    
+}
+.navbar-link:FIRST-CHILD{
+	
+}
+.nav2{
+    height: 50px;
+}
+.search {
+	width: 700px;
+	margin: 0 auto;
+	float: right;
+	argin-left: 200px;
+	margin-top: 22px;
+	display: block;
+}
+
+.simg {
+	float: right;
+	position: absolute;
+	margin-left: -40px;
+	margin-top: 5px;
+	width: 25px;
+	
+}
+</style>
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+
+  </head>
+  <body>
+  
+
+  
+<header class="header">
+        <div class="hd">
+            <nav class="navbar" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                    <a class="item" href="/pro03/">
+                        <!-- <img src="https://tour.paju.go.kr/resources/user/tour/images/layout/logo@2x.png" alt="Logo" > -->
+                        <img src="/pro03/img/logo.png" alt="Logo" >
+                    </a>
+                </div>
+                <div class="search">
+                    <form name="frm2" class="frm2" id="frm2" action="/pro03/GetSearchTour.do" method="post">
+                        <input class="input is-rounded" name="sea" id="sea" type="text" placeholder="통합검색">
+                        <a type="submit"><input type="image" src="/pro03/img/sr.png" alt="Logo" class="simg"></a>
+                	</form>
+                </div>
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        
+                        
+                            <div class="buttons">
+                                
+                                  <a href="/pro03/AdminCtrl.do" class="button">
+                                    <strong>홈페이지 관리</strong>
+                                  </a>
+                                
+                                  <a href="/pro03/UserInfoCtrl.do" class="button is-primary">
+                                    <strong>회원정보</strong>
+                                  </a>
+                                  <a href="/pro03/UserLogoutCtrl.do" class="button is-info">
+                                        	로그아웃
+                                  </a>
+                            </div>
+                        
+                    </div>
+                </div>
+            </nav>
+			</div>
+		
+			<div id="navbarBasicExample" class="navbar-menu">
+				<div class="navbar-start" id="gnb">
+					<!-- ajax로 메뉴 로딩하여 추가하기 -->
+					<div class="navbar-item has-dropdown is-hoverable">
+						<a href="/pro03/GetTourCateListCtrl.do?cate=A" class="navbar-link">
+							관광
+						</a>
+						<div class="navbar-dropdown cate" id="cate01">
+		
+						</div>
+					</div>
+					<div class="navbar-item has-dropdown is-hoverable">
+						<a href="/pro03/GetTourCateListCtrl.do?cate=B" class="navbar-link cate">
+							체험
+						</a>
+						<div class="navbar-dropdown cate" id="cate02">
+		
+						</div>
+					</div>
+					<div class="navbar-item has-dropdown is-hoverable">
+						<a href="/pro03/GetTourCateListCtrl.do?cate=C" class="navbar-link cate">
+							행사
+						</a>
+						<div class="navbar-dropdown cate" id="cate03">
+		
+						</div>
+					</div>
+					<div class="navbar-item has-dropdown is-hoverable">
+						<a href="/pro03/GetTourCateListCtrl.do?cate=D" class="navbar-link cate">
+							축제
+						</a>
+						<div class="navbar-dropdown cate" id="cate04">
+		
+						</div>
+					</div>
+					<div href="/pro03/GetTourCateListCtrl.do?cate=E" class="navbar-item has-dropdown is-hoverable">
+						<a class="navbar-link cate">
+							숙박
+						</a>
+						<div class="navbar-dropdown cate" id="cate05">
+		
+						</div>
+					</div>
+					<div class="navbar-item has-dropdown is-hoverable">
+						<a href="/pro03/GetTourCateListCtrl.do?cate=F" class="navbar-link cate">
+							음식
+						</a>
+						<div class="navbar-dropdown cate" id="cate06">
+		
+						</div>
+					</div>
+					<div class="navbar-item has-dropdown is-hoverable">
+						<a href="/pro03/GetTourCateListCtrl.do?cate=G" class="navbar-link cate">
+							쇼핑
+						</a>
+						<div class="navbar-dropdown cate" id="cate07">
+		
+						</div>
+					</div>
+					<div class="navbar-item has-dropdown is-hoverable single">
+						<a class="navbar-link">
+							관광안내
+						</a>
+						<div class="navbar-dropdown single">
+							<a class="navbar-item" href="/pro03/GetNoticeListCtrl.do">
+								공지사항
+							</a>
+							<a class="navbar-item" href="/pro03/GetReviewListCtrl.do">
+								이용 및 후기
+							</a>
+							<a class="navbar-item" href="/pro03/GetNoticeListCtrl.do">
+								Q&A
+							</a>
+						</div>
+					</div>
+					<div class="navbar-item has-dropdown is-hoverable single">
+						<a class="navbar-link">
+							이야기파주
+						</a>
+		
+						<div class="navbar-dropdown single">
+							<a class="navbar-item">
+								파주여행스토리
+							</a>
+							<a class="navbar-item">
+								인물이야기
+							</a>
+							<a class="navbar-item">
+								파주이야기
+							</a>
+						</div>
+					</div>
+				</div>
+		
+			</div>
+			</div>
+			</div>
+		</nav>
+        </div>
+    </header>
+    
+    <script>
+	$(document).ready(function(){
+		$.ajax({
+			url:"/pro03/MemuLoadCtrl.do",
+			type:"POST",
+			enctype:"UTF-8",
+			datatype:"json",
+			processData:false,
+			contentType:false, 
+			cache:false,
+			success:function(data){
+				$(".navbar-dropdown.cate").empty();
+				var trans = $.parseJSON(data);
+				$.each(trans, function(key, value){
+					if(key=="data"){
+						for(var i=0;i<value.length;i++){
+							if(value[i].cate=="A"){
+								$("#cate01").append("<a href='/pro03/GetTourDetailCtrl.do?no="+value[i].no+"'>"+value[i].place+"</a><br>");
+							} else if(value[i].cate=="B"){
+								$("#cate02").append("<a href='/pro03/GetTourDetailCtrl.do?no="+value[i].no+"'>"+value[i].place+"</a><br>");
+							} else if(value[i].cate=="C"){
+								$("#cate03").append("<a href='/pro03/GetTourDetailCtrl.do?no="+value[i].no+"'>"+value[i].place+"</a><br>");
+							} else if(value[i].cate=="D"){
+								$("#cate04").append("<a href='/pro03/GetTourDetailCtrl.do?no="+value[i].no+"'>"+value[i].place+"</a><br>");
+							} else if(value[i].cate=="E"){
+								$("#cate05").append("<a href='/pro03/GetTourDetailCtrl.do?no="+value[i].no+"'>"+value[i].place+"</a><br>");
+							} else if(value[i].cate=="F"){
+								$("#cate06").append("<a href='/pro03/GetTourDetailCtrl.do?no="+value[i].no+"'>"+value[i].place+"</a><br>");
+							} else if(value[i].cate=="G"){
+								$("#cate07").append("<a href='/pro03/GetTourDetailCtrl.do?no="+value[i].no+"'>"+value[i].place+"</a><br>");
+							}
+						}
+					}
+				});
+				
+			}
+		});
+	});
+	</script>
+  <section class="section">
+    <div class="container">
+      <h1 class="title">이용 및 후기 상세보기</h1>
+		<table class="table">
+		   <tbody>
+		   
+      			<tr>
+      			<th></th>
+				
+				<td>
+					<img src="upload/ee.jpg" class="lazy" onerror="this.style.display='none'" alt="배너" />
+					<!-- onerror="this.style.display='none'"  -->
+	      		</td>
+					
+		    	</tr>
+		    	
+		    <tr>
+		      <th style="width:100px">번호</th>
+		      <td>2</td>
+		    </tr>
+		    <tr>
+		      <th>제목</th>
+		      <td>후기testddd</td>
+		    </tr>
+		    <tr>
+		      <th>내용</th>
+		      <td><p>후기testdd</p></td>
+		    </tr>
+		    <tr> 
+		      <th>작성일</th>
+		      <td>
+		      	
+		      	2022-11-18
+		    </tr>
+		  </tbody>
+		</table>
+		<div class="buttons">
+		  <a href="/pro03/GetReviewListCtrl.do" class="button is-info">목록</a>
+		  
+		  <a href="/pro03/GetModifyReviewCtrl.do?no=2" class="button is-info">수정</a>
+		  <a href="/pro03/DelReviewCtrl.do?no=2" class="button is-info">제거</a>
+		  
+		</div>
+    </div>
+  </section>
+  
+
+
+
+
+
+<footer class="footer">
+    <div class="content has-text-centered">
+      <img src="/pro03/img/flogo.png" alt="flogo" class="flogo">
+      <p>
+        파주시 홈페이지에 게시된 전자우편주소는 무단으로 수집할 수 없으며, 위반시 정보통신망법에 의해 처벌됩니다.
+      </p>
+      <p>
+        (우 10932) 경기도 파주시 시청로 50 | 대표전화 : 031) 940-4114<br>
+        COPYRIGHT(C) 2021, PAJU CITY ALL RIGHTS RESERVED
+      </p>
+    </div>
+  </footer>
+  </body>
+</html>
