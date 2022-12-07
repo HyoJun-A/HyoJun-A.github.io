@@ -1,26 +1,19 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>장소 목록</title>
-
-
-
-
-
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <!-- 각 종 플러그인과 설정 파일 -->
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR&display=swap"
         rel="stylesheet">
     <!-- 구형 브라우저 html5태그 인식 -->
-    <script src="/pro03/js/html5shiv.js"></script>
+    <script src="../js/html5shiv.js"></script>
     <!-- 구형 브라우저에서 css animation 인식 -->
-    <script src="/pro03/js/prefixfree.min.js"></script>
+    <script src="../js/prefixfree.min.js"></script>
     <!-- 구형 브라우저에서 미디어쿼리 인식 -->
-    <script src="/pro03/js/respond.min.js"></script>
+    <script src="../js/respond.min.js"></script>
     <style>
         .table {
             min-width: 960px;
@@ -30,7 +23,7 @@
             display: block;
             width: 92px;
             height: 45px;
-            background-image: url("/pro03/data/logo.png");
+            background-image: url("../data/logo.png");
             background-size: 100% auto;
             background-repeat: no-repeat;
         }
@@ -67,8 +60,6 @@
 
         }
 
-        .navbar-link:FIRST-CHILD {}
-
         .nav2 {
             height: 50px;
         }
@@ -77,7 +68,7 @@
             width: 700px;
             margin: 0 auto;
             float: right;
-            argin-left: 200px;
+            margin-left: 200px;
             margin-top: 22px;
             display: block;
         }
@@ -92,120 +83,108 @@
         }
     </style>
     <script src="https://code.jquery.com/jquery-latest.js"></script>
-
 </head>
-
 <body>
-
-
-
     <header class="header">
         <div class="hd">
             <nav class="navbar" role="navigation" aria-label="main navigation">
                 <div class="navbar-brand">
-                    <a class="item" href="/pro03/">
-                        <!-- <img src="https://tour.paju.go.kr/resources/user/tour/images/layout/logo@2x.png" alt="Logo" > -->
-                        <img src="/pro03/img/logo.png" alt="Logo">
+                    <a class="item" href="../index.html">
+                        <img src="../img/logo.png" alt="Logo">
                     </a>
                 </div>
                 <div class="search">
-                    <form name="frm2" class="frm2" id="frm2" action="/pro03/GetSearchTour.do" method="post">
+                    <form name="frm2" class="frm2" id="frm2" action="" method="post">
                         <input class="input is-rounded" name="sea" id="sea" type="text" placeholder="통합검색">
-                        <a type="submit"><input type="image" src="/pro03/img/sr.png" alt="Logo" class="simg"></a>
+                        <a type="submit"><input type="image" src="../img/sr.png" alt="Logo" class="simg"></a>
                     </form>
                 </div>
                 <div class="navbar-end">
                     <div class="navbar-item">
-
                         <div class="buttons">
-                            <a class="button is-primary" href="/pro03/user/login.jsp">
-                                <img src="https://tour.paju.go.kr/resources/user/_common/images/ico-login-white.png"
-                                    alt="login"> 로그인
+                            <a class="button is-primary" href="../user/login.html">
+                                <img src="https://tour.paju.go.kr/resources/user/_common/images/ico-login-white.png" alt="login"> 로그인
                             </a>
-                            <a class="button is-info" href="/pro03/user/agree.jsp">
-                                <img src="https://tour.paju.go.kr/resources/user/_common/images/ico-join-white.png"
-                                    alt="join">회원가입
+                            <a class="button is-info" href="../user/agree.html">
+                                <img src="https://tour.paju.go.kr/resources/user/_common/images/ico-join-white.png" alt="join">회원가입
                             </a>
                         </div>
-
-
                     </div>
                 </div>
             </nav>
         </div>
-
         <div id="navbarBasicExample" class="navbar-menu">
             <div class="navbar-start" id="gnb">
-                <!-- ajax로 메뉴 로딩하여 추가하기 -->
                 <div class="navbar-item has-dropdown is-hoverable">
-                    <a href="/pro03/GetTourCateListCtrl.do?cate=A" class="navbar-link">
+                    <a href="../tour/cateA.html" class="navbar-link">
                         관광
                     </a>
                     <div class="navbar-dropdown cate" id="cate01">
-
-                    </div>
+                        <a href="../tour/cateA1.html">파주이이유적(사적제525호)</a><br>
+                        <a href="../tour/cateA2.html">벽봉한국장신구박물관</a><br>
+                        <a href="../tour/cateA3.html">임진각 평화누리</a><br>
+                        <a href="../tour/cateA4.html">율곡문화제</a><br></div>
                 </div>
                 <div class="navbar-item has-dropdown is-hoverable">
-                    <a href="/pro03/GetTourCateListCtrl.do?cate=B" class="navbar-link cate">
+                    <a href="../tour/cateB.html" class="navbar-link cate">
                         체험
                     </a>
                     <div class="navbar-dropdown cate" id="cate02">
-
-                    </div>
+                        <a href="../tour/cateB1.html">파주 평화통일 체험학습장</a><br>
+                        <a href="../tour/cateB2.html">파주로1박2일</a><br></div>
                 </div>
                 <div class="navbar-item has-dropdown is-hoverable">
-                    <a href="/pro03/GetTourCateListCtrl.do?cate=C" class="navbar-link cate">
+                    <a href="../tour/cateC.html" class="navbar-link cate">
                         행사
                     </a>
                     <div class="navbar-dropdown cate" id="cate03">
-
-                    </div>
+                        <a href="../tour/cateC1.html">파주북소리</a><br>
+                        <a href="../tour/cateC2.html">운정호수공원 불꽃축제</a><br></div>
                 </div>
                 <div class="navbar-item has-dropdown is-hoverable">
-                    <a href="/pro03/GetTourCateListCtrl.do?cate=D" class="navbar-link cate">
+                    <a href="../tour/cateD.html" class="navbar-link cate">
                         축제
                     </a>
                     <div class="navbar-dropdown cate" id="cate04">
-
+                        <a href="../tour/cateD1.html">파주개성 인삼축제</a><br>
                     </div>
                 </div>
-                <div href="/pro03/GetTourCateListCtrl.do?cate=E" class="navbar-item has-dropdown is-hoverable">
+                <div href="../tour/cateE.html" class="navbar-item has-dropdown is-hoverable">
                     <a class="navbar-link cate">
                         숙박
                     </a>
                     <div class="navbar-dropdown cate" id="cate05">
-
+                        <a href="../tour/cateE1.html">헤이리 풀빌라 워라밸</a><br>
                     </div>
                 </div>
                 <div class="navbar-item has-dropdown is-hoverable">
-                    <a href="/pro03/GetTourCateListCtrl.do?cate=F" class="navbar-link cate">
+                    <a href="../tour/cateF.html" class="navbar-link cate">
                         음식
                     </a>
                     <div class="navbar-dropdown cate" id="cate06">
-
+                        <a href="../tour/cateF1.html">나정순할매쭈꾸미</a><br>
                     </div>
                 </div>
                 <div class="navbar-item has-dropdown is-hoverable">
-                    <a href="/pro03/GetTourCateListCtrl.do?cate=G" class="navbar-link cate">
+                    <a href="../tour/cateG.html" class="navbar-link cate">
                         쇼핑
                     </a>
                     <div class="navbar-dropdown cate" id="cate07">
-
-                    </div>
+                        <a href="../tour/cateG1.html">롯데 프리미엄아울렛 파주점</a><br></div>
                 </div>
                 <div class="navbar-item has-dropdown is-hoverable single">
                     <a class="navbar-link">
                         관광안내
                     </a>
                     <div class="navbar-dropdown single">
-                        <a class="navbar-item" href="/pro03/GetNoticeListCtrl.do">
+                        <a class="navbar-item" href="../notice/noticeList.html">
                             공지사항
                         </a>
-                        <a class="navbar-item" href="/pro03/GetReviewListCtrl.do">
+                        <a class="navbar-item" href="../review/reviewList.html">
                             이용 및 후기
                         </a>
-                        <a class="navbar-item" href="/pro03/GetNoticeListCtrl.do">
-                            Q&A
+                        <a class="navbar-item" href="../qna/qnaList.html">
+                            Q&amp;A
                         </a>
                     </div>
                 </div>
@@ -213,78 +192,30 @@
                     <a class="navbar-link">
                         이야기파주
                     </a>
-
+    
                     <div class="navbar-dropdown single">
-                        <a class="navbar-item">
-                            파주여행스토리
-                        </a>
-                        <a class="navbar-item">
-                            인물이야기
-                        </a>
-                        <a class="navbar-item">
+                        <a class="navbar-item" href="../story/storyA.html">
                             파주이야기
+                        </a>
+                        <a class="navbar-item" href="../story/storyB.html">
+                            인물이야기
                         </a>
                     </div>
                 </div>
             </div>
-
-        </div>
-        </div>
-        </div>
-        </nav>
         </div>
     </header>
-
-    <script>
-        $(document).ready(function () {
-            $.ajax({
-                url: "/pro03/MemuLoadCtrl.do",
-                type: "POST",
-                enctype: "UTF-8",
-                datatype: "json",
-                processData: false,
-                contentType: false,
-                cache: false,
-                success: function (data) {
-                    $(".navbar-dropdown.cate").empty();
-                    var trans = $.parseJSON(data);
-                    $.each(trans, function (key, value) {
-                        if (key == "data") {
-                            for (var i = 0; i < value.length; i++) {
-                                if (value[i].cate == "A") {
-                                    $("#cate01").append("<a href='/pro03/GetTourDetailCtrl.do?no=" + value[i].no + "'>" + value[i].place + "</a><br>");
-                                } else if (value[i].cate == "B") {
-                                    $("#cate02").append("<a href='/pro03/GetTourDetailCtrl.do?no=" + value[i].no + "'>" + value[i].place + "</a><br>");
-                                } else if (value[i].cate == "C") {
-                                    $("#cate03").append("<a href='/pro03/GetTourDetailCtrl.do?no=" + value[i].no + "'>" + value[i].place + "</a><br>");
-                                } else if (value[i].cate == "D") {
-                                    $("#cate04").append("<a href='/pro03/GetTourDetailCtrl.do?no=" + value[i].no + "'>" + value[i].place + "</a><br>");
-                                } else if (value[i].cate == "E") {
-                                    $("#cate05").append("<a href='/pro03/GetTourDetailCtrl.do?no=" + value[i].no + "'>" + value[i].place + "</a><br>");
-                                } else if (value[i].cate == "F") {
-                                    $("#cate06").append("<a href='/pro03/GetTourDetailCtrl.do?no=" + value[i].no + "'>" + value[i].place + "</a><br>");
-                                } else if (value[i].cate == "G") {
-                                    $("#cate07").append("<a href='/pro03/GetTourDetailCtrl.do?no=" + value[i].no + "'>" + value[i].place + "</a><br>");
-                                }
-                            }
-                        }
-                    });
-
-                }
-            });
-        });
-    </script>
     <nav class="breadcrumb" aria-label="breadcrumbs"
         style="border-bottom:2px solid #ddd; padding-bottom:8px; min-height:48px; line-height:48px;">
         <ul style="float:right;">
-            <li><a href="/pro03/">Home</a></li>
+            <li><a href="../">Home</a></li>
             <li class="is-active"><a href="#" aria-current="page">전체 장소 목록</a></li>
         </ul>
     </nav>
     <section class="section">
         <div class="container">
             <h1 class="title">장소 목록</h1>
-            <form name="frm1" id="frm1" class="search_form" action="/pro03/GetPlaceSearchCtrl.do" method="get">
+            <form name="frm1" id="frm1" class="search_form" action="../GetPlaceSearchCtrl.do" method="get">
                 <div class="select inline">
                     <select name="sel" id="sel" required>
                         <option value="">선택</option>
@@ -306,24 +237,13 @@
                     </tr>
                 </thead>
                 <tbody>
-
                     <tr>
                         <td>1</td>
                         <td>
-
-
                             <span>관광</span>
-
-
-
-
-
-
-
-
                         </td>
                         <td>
-                            <a href="/pro03/GetTourDetailCtrl.do?no=2">파주이이유적(사적 제525호)</a>
+                            <a href="./cateA1.html">파주이이유적(사적 제525호)</a>
                         </td>
                         <td>
                             <p class="comment2">율곡이이신도비는 자운서원 경내의 좌측 산기슭에 세워져 있는데 조선 중기 대학자인 율곡 이이(栗谷 李珥, 1536~1584)선생의
@@ -332,24 +252,13 @@
                                 비의 규모는 높이 223cm, 너비 109cm, 두께 39cm이며 현재 비각을 지어 보호하고 있다.</p>
                         </td>
                     </tr>
-
                     <tr>
                         <td>2</td>
                         <td>
-
-
                             <span>관광</span>
-
-
-
-
-
-
-
-
                         </td>
                         <td>
-                            <a href="/pro03/GetTourDetailCtrl.do?no=3">벽봉한국장신구박물관</a>
+                            <a href="./cateA2.html">벽봉한국장신구박물관</a>
                         </td>
                         <td>
                             <p class="comment2">벽봉한국장신구박물관은 한국전통문화의 격조와 품격을 알리기 위하여 2014년에 무형문화재가 설립한 1종 전문박물관으로, 조선시대
@@ -359,24 +268,13 @@
                                 친밀감을 높이고자 할 수 있다.</p>
                         </td>
                     </tr>
-
                     <tr>
                         <td>3</td>
                         <td>
-
-
                             <span>관광</span>
-
-
-
-
-
-
-
-
                         </td>
                         <td>
-                            <a href="/pro03/GetTourDetailCtrl.do?no=4">임진각 평화누리</a>
+                            <a href="./cateA3.html">임진각 평화누리</a>
                         </td>
                         <td>
                             <p class="comment2">2만 명의 관람객을 수용 할 수 있는 대형 잔디언덕과 수상야외공연장으로 이루어진 자연 친화적 공간으로 대륙과 장르를 넘어선 다양한
@@ -384,24 +282,13 @@
                                 마실 수 있습니다.</p>
                         </td>
                     </tr>
-
                     <tr>
                         <td>4</td>
                         <td>
-
-
                             <span>관광</span>
-
-
-
-
-
-
-
-
                         </td>
                         <td>
-                            <a href="/pro03/GetTourDetailCtrl.do?no=5">율곡문화제</a>
+                            <a href="./cateA4.html">율곡문화제</a>
                         </td>
                         <td>
                             <p class="comment2">문향(文鄕) 파주의 종합문화예술축제인 율곡문화제는 파주가 낳은 우리 민족사의 대선현(大先賢)이신 율곡(栗谷) 이이(李珥) 선생의
@@ -410,72 +297,39 @@
                             </p>
                         </td>
                     </tr>
-
                     <tr>
                         <td>5</td>
                         <td>
-
-
-
-
-
                             <span>축제</span>
-
-
-
-
-
                         </td>
                         <td>
-                            <a href="/pro03/GetTourDetailCtrl.do?no=6">파주개성인삼 축제</a>
+                            <a href="./cateB1.html">파주개성인삼 축제</a>
                         </td>
                         <td>
                             <p class="comment2">6년근 파주개성인삼은 고려인삼의 맥을 잇는 대한민국 대표인삼입니다. 올해에도 인삼은 역시 파주개성인삼이 으뜸이라는 것을 확인하시고
                                 파주시가 보증하는 최상 품질의 6년근 인삼을 만나보세요.</p>
                         </td>
                     </tr>
-
                     <tr>
                         <td>6</td>
                         <td>
-
-
-
-
-
-
                             <span>숙박</span>
-
-
-
-
                         </td>
                         <td>
-                            <a href="/pro03/GetTourDetailCtrl.do?no=8">헤이리 풀빌라 워라밸</a>
+                            <a href="./cateB2.html">헤이리 풀빌라 워라밸</a>
                         </td>
                         <td>
                             <p class="comment2">파주 헤이리마을과 프로방스 사이에 위치한 풀빌라 워라밸은 앞이 탁 트여 임진강 한강이 교차하는 리버뷰와 북녘땅이 바라보이고
                                 저녁노을이 아름다운 조망권이 있다.</p>
                         </td>
                     </tr>
-
                     <tr>
                         <td>7</td>
                         <td>
-
-
-
-
-
-
-
                             <span>음식</span>
-
-
-
                         </td>
                         <td>
-                            <a href="/pro03/GetTourDetailCtrl.do?no=9">나정순할매쭈꾸미</a>
+                            <a href="./cateC1.html">나정순할매쭈꾸미</a>
                         </td>
                         <td>
                             <p class="comment2">교하 중심부에 위치하고 있으며 양념이 버무려진 쭈꾸미를 제공받는 다른 업체와는 달리, 직접 전수 받은 양념 비법으로 매일매일 직접
@@ -483,24 +337,13 @@
                                 한번 먹어본 사람은 달콤하면서도 매콤하게 땡기는 맛을 잊을 수 없어 다시 찾습니다.</p>
                         </td>
                     </tr>
-
                     <tr>
                         <td>8</td>
                         <td>
-
-
-
-
-
-
-
-
                             <span>쇼핑</span>
-
-
                         </td>
                         <td>
-                            <a href="/pro03/GetTourDetailCtrl.do?no=11">롯데 프리미엄아울렛 파주점</a>
+                            <a href="./cateC2.html">롯데 프리미엄아울렛 파주점</a>
                         </td>
                         <td>
                             <p class="comment2">유럽풍의 고급스러운 외관에 조경과 인근 심학산이 만들어 내는 아름다운 자연환경은 편안한 휴식공간을 제공합니다. 그리고 출판단지,
@@ -508,48 +351,26 @@
                                 기본으로 한 롯데 프리미엄 아울렛 파주점은 쇼핑에서 문화 자연의 여유까지 하나로 통하는 공간이 될 수 있도록 정성을 다해 노력하겠습니다.</p>
                         </td>
                     </tr>
-
                     <tr>
                         <td>9</td>
                         <td>
-
-
-
-
                             <span>행사</span>
-
-
-
-
-
-
                         </td>
                         <td>
-                            <a href="/pro03/GetTourDetailCtrl.do?no=12">파주북소리</a>
+                            <a href="./cateC2.html">파주북소리</a>
                         </td>
                         <td>
                             <p class="comment2">풍성한 가을 들녘의 황금물결처럼 파주출판도시는 책을 비롯한 다양한 문화를 만들고 향유하는 사람이 함께 구현해온 인문정신으로 한층
                                 풍요로워질 것입니다.</p>
                         </td>
                     </tr>
-
                     <tr>
                         <td>10</td>
                         <td>
-
-
-
                             <span>체험</span>
-
-
-
-
-
-
-
                         </td>
                         <td>
-                            <a href="/pro03/GetTourDetailCtrl.do?no=13">파주 평화통일 체험학습장</a>
+                            <a href="../GetTourDetailCtrl.do?no=13">파주 평화통일 체험학습장</a>
                         </td>
                         <td>
                             <p class="comment2">북한의 언어, 생활ㆍ문화, 놀이, 통일 염원실을 마련하였다. 이곳을 경기도내 학생들의 통일대비교육의 중심지로 육성하여 북한을
@@ -557,70 +378,40 @@
                                 교육장으로 운영하는 일은 교육적 의의가 크다고 생각되어 술이홀통일체험학습장을 운영하게 되었다.</p>
                         </td>
                     </tr>
-
                     <tr>
                         <td>11</td>
                         <td>
-
-
-
                             <span>체험</span>
-
-
-
-
-
-
-
                         </td>
                         <td>
-                            <a href="/pro03/GetTourDetailCtrl.do?no=15">파주로1박2일</a>
+                            <a href="../GetTourDetailCtrl.do?no=15">파주로1박2일</a>
                         </td>
                         <td>
                             <p class="comment2">고구려목장 - 자연과 함께하는 체험공간 40여년간 운영되고 있는 자연건강 행복체험 목장이다. 치즈, 요거트, 피자만들기
                                 체험·구입과 동물건초주기, 송아지 우유주기 등 낙농체험도 가능하다.</p>
                         </td>
                     </tr>
-
                     <tr>
                         <td>12</td>
                         <td>
-
-
-
-
                             <span>행사</span>
-
-
-
-
-
-
                         </td>
                         <td>
-                            <a href="/pro03/GetTourDetailCtrl.do?no=16">운정호수공원 불꽃축제</a>
+                            <a href="../GetTourDetailCtrl.do?no=16">운정호수공원 불꽃축제</a>
                         </td>
                         <td>
                             <p class="comment2"> - (부대행사) 14:00~16:30 (지역예술인 공연, 버스킹, 체험부스)
                                 - (콘서트) 18:00~19:00 (육중완 밴드, 경서예지, 파주시립예술단)</p>
                         </td>
                     </tr>
-
-
                 </tbody>
             </table>
 
         </div>
     </section>
-
-
-
-
-
-
     <footer class="footer">
         <div class="content has-text-centered">
-            <img src="/pro03/img/flogo.png" alt="flogo" class="flogo">
+            <img src="../img/flogo.png" alt="flogo" class="flogo">
             <p>
                 파주시 홈페이지에 게시된 전자우편주소는 무단으로 수집할 수 없으며, 위반시 정보통신망법에 의해 처벌됩니다.
             </p>

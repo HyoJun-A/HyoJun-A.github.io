@@ -1,351 +1,260 @@
-
-
-
-
-
-
-
-
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>장소 상세보기</title>
-    
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>장소 상세보기</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+	<!-- 각 종 플러그인과 설정 파일 -->
+	<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR&display=swap"
+		rel="stylesheet">
+	<!-- 구형 브라우저 html5태그 인식 -->
+	<script src="../js/html5shiv.js"></script>
+	<!-- 구형 브라우저에서 css animation 인식 -->
+	<script src="../js/prefixfree.min.js"></script>
+	<!-- 구형 브라우저에서 미디어쿼리 인식 -->
+	<script src="../js/respond.min.js"></script>
+	<style>
+		.table {
+			min-width: 960px;
+		}
+
+		#logo {
+			display: block;
+			width: 92px;
+			height: 45px;
+			background-image: url("../img/logo.png");
+			background-size: 100% auto;
+			background-repeat: no-repeat;
+		}
+
+		#nav {
+			border-bottom: 3px solid #ddd;
+		}
+
+		.header {
+			border-bottom: 1px solid #EEE;
+		}
+
+		.hd {
+			width: 90%;
+			margin: 0 auto;
+		}
+
+		.navbar {
+			height: 80px;
+		}
 
 
+		.item img {
+			clear: both;
+			width: 200px;
+			margin-top: 10px;
+		}
 
+		.navbar-link {
+			width: 140px;
+			font-weight: 600;
+			font-size: 17px;
+			margin-left: 60px;
 
+		}
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-  <!-- 각 종 플러그인과 설정 파일 -->
-  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR&display=swap" rel="stylesheet">
-  <!-- 구형 브라우저 html5태그 인식 -->
-  <script src="/pro03/js/html5shiv.js"></script>
-  <!-- 구형 브라우저에서 css animation 인식 -->
-  <script src="/pro03/js/prefixfree.min.js"></script>
-  <!-- 구형 브라우저에서 미디어쿼리 인식 -->
-  <script src="/pro03/js/respond.min.js"></script>
-<style>
-.table { min-width:960px; }
-#logo { display:block; width:92px; height:45px; background-image:url("/pro03/data/logo.png");
-background-size:100% auto; background-repeat:no-repeat; }
-#nav { border-bottom:3px solid #ddd; }
-.header {
-    border-bottom: 1px solid #EEE;
-}
+		.nav2 {
+			height: 50px;
+		}
 
-.hd {
-    width: 90%;
-    margin: 0 auto;
-}
+		.search {
+			width: 700px;
+			margin: 0 auto;
+			float: right;
+			margin-left: 200px;
+			margin-top: 22px;
+			display: block;
+		}
 
-.navbar {
-    height: 80px;
-}
+		.simg {
+			float: right;
+			position: absolute;
+			margin-left: -40px;
+			margin-top: 5px;
+			width: 25px;
 
-
-.item img {
-    clear: both;
-    width: 200px;
-    margin-top: 10px;
-}
-
-.navbar-link {
-    width: 140px;
-    font-weight: 600;
-    font-size: 17px;
-    margin-left: 60px;
-    
-}
-.navbar-link:FIRST-CHILD{
-	
-}
-.nav2{
-    height: 50px;
-}
-.search {
-	width: 700px;
-	margin: 0 auto;
-	float: right;
-	argin-left: 200px;
-	margin-top: 22px;
-	display: block;
-}
-
-.simg {
-	float: right;
-	position: absolute;
-	margin-left: -40px;
-	margin-top: 5px;
-	width: 25px;
-	
-}
-</style>
-<script src="https://code.jquery.com/jquery-latest.js"></script>
-
-  </head>
-  <body>
-  
-
-  
-<header class="header">
-        <div class="hd">
-            <nav class="navbar" role="navigation" aria-label="main navigation">
-                <div class="navbar-brand">
-                    <a class="item" href="/pro03/">
-                        <!-- <img src="https://tour.paju.go.kr/resources/user/tour/images/layout/logo@2x.png" alt="Logo" > -->
-                        <img src="/pro03/img/logo.png" alt="Logo" >
-                    </a>
-                </div>
-                <div class="search">
-                    <form name="frm2" class="frm2" id="frm2" action="/pro03/GetSearchTour.do" method="post">
-                        <input class="input is-rounded" name="sea" id="sea" type="text" placeholder="통합검색">
-                        <a type="submit"><input type="image" src="/pro03/img/sr.png" alt="Logo" class="simg"></a>
-                	</form>
-                </div>
-                <div class="navbar-end">
-                    <div class="navbar-item">
-                        
-                            <div class="buttons">
-                                <a class="button is-primary" href="/pro03/user/login.jsp">
-                                    <img src="https://tour.paju.go.kr/resources/user/_common/images/ico-login-white.png" alt="login"> 로그인
-                                </a>
-                                <a class="button is-info" href="/pro03/user/agree.jsp">
-                                    <img src="https://tour.paju.go.kr/resources/user/_common/images/ico-join-white.png" alt="join">회원가입
-                                </a>
-                            </div>
-                        
-                        
-                    </div>
-                </div>
-            </nav>
-			</div>
-		
-			<div id="navbarBasicExample" class="navbar-menu">
-				<div class="navbar-start" id="gnb">
-					<!-- ajax로 메뉴 로딩하여 추가하기 -->
-					<div class="navbar-item has-dropdown is-hoverable">
-						<a href="/pro03/GetTourCateListCtrl.do?cate=A" class="navbar-link">
-							관광
-						</a>
-						<div class="navbar-dropdown cate" id="cate01">
-		
-						</div>
-					</div>
-					<div class="navbar-item has-dropdown is-hoverable">
-						<a href="/pro03/GetTourCateListCtrl.do?cate=B" class="navbar-link cate">
-							체험
-						</a>
-						<div class="navbar-dropdown cate" id="cate02">
-		
-						</div>
-					</div>
-					<div class="navbar-item has-dropdown is-hoverable">
-						<a href="/pro03/GetTourCateListCtrl.do?cate=C" class="navbar-link cate">
-							행사
-						</a>
-						<div class="navbar-dropdown cate" id="cate03">
-		
-						</div>
-					</div>
-					<div class="navbar-item has-dropdown is-hoverable">
-						<a href="/pro03/GetTourCateListCtrl.do?cate=D" class="navbar-link cate">
-							축제
-						</a>
-						<div class="navbar-dropdown cate" id="cate04">
-		
-						</div>
-					</div>
-					<div href="/pro03/GetTourCateListCtrl.do?cate=E" class="navbar-item has-dropdown is-hoverable">
-						<a class="navbar-link cate">
-							숙박
-						</a>
-						<div class="navbar-dropdown cate" id="cate05">
-		
-						</div>
-					</div>
-					<div class="navbar-item has-dropdown is-hoverable">
-						<a href="/pro03/GetTourCateListCtrl.do?cate=F" class="navbar-link cate">
-							음식
-						</a>
-						<div class="navbar-dropdown cate" id="cate06">
-		
-						</div>
-					</div>
-					<div class="navbar-item has-dropdown is-hoverable">
-						<a href="/pro03/GetTourCateListCtrl.do?cate=G" class="navbar-link cate">
-							쇼핑
-						</a>
-						<div class="navbar-dropdown cate" id="cate07">
-		
-						</div>
-					</div>
-					<div class="navbar-item has-dropdown is-hoverable single">
-						<a class="navbar-link">
-							관광안내
-						</a>
-						<div class="navbar-dropdown single">
-							<a class="navbar-item" href="/pro03/GetNoticeListCtrl.do">
-								공지사항
+		}
+	</style>
+	<script src="https://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body>
+	<header class="header">
+		<div class="hd">
+			<nav class="navbar" role="navigation" aria-label="main navigation">
+				<div class="navbar-brand">
+					<a class="item" href="../index.html">
+						<img src="../img/logo.png" alt="Logo">
+					</a>
+				</div>
+				<div class="search">
+					<form name="frm2" class="frm2" id="frm2" action="" method="post">
+						<input class="input is-rounded" name="sea" id="sea" type="text" placeholder="통합검색">
+						<a type="submit"><input type="image" src="../img/sr.png" alt="Logo" class="simg"></a>
+					</form>
+				</div>
+				<div class="navbar-end">
+					<div class="navbar-item">
+						<div class="buttons">
+							<a class="button is-primary" href="../user/login.html">
+								<img src="https://tour.paju.go.kr/resources/user/_common/images/ico-login-white.png" alt="login"> 로그인
 							</a>
-							<a class="navbar-item" href="/pro03/GetReviewListCtrl.do">
-								이용 및 후기
-							</a>
-							<a class="navbar-item" href="/pro03/GetNoticeListCtrl.do">
-								Q&A
-							</a>
-						</div>
-					</div>
-					<div class="navbar-item has-dropdown is-hoverable single">
-						<a class="navbar-link">
-							이야기파주
-						</a>
-		
-						<div class="navbar-dropdown single">
-							<a class="navbar-item">
-								파주여행스토리
-							</a>
-							<a class="navbar-item">
-								인물이야기
-							</a>
-							<a class="navbar-item">
-								파주이야기
+							<a class="button is-info" href="../user/agree.html">
+								<img src="https://tour.paju.go.kr/resources/user/_common/images/ico-join-white.png" alt="join">회원가입
 							</a>
 						</div>
 					</div>
 				</div>
-		
-			</div>
-			</div>
-			</div>
-		</nav>
-        </div>
-    </header>
-    
-    <script>
-	$(document).ready(function(){
-		$.ajax({
-			url:"/pro03/MemuLoadCtrl.do",
-			type:"POST",
-			enctype:"UTF-8",
-			datatype:"json",
-			processData:false,
-			contentType:false, 
-			cache:false,
-			success:function(data){
-				$(".navbar-dropdown.cate").empty();
-				var trans = $.parseJSON(data);
-				$.each(trans, function(key, value){
-					if(key=="data"){
-						for(var i=0;i<value.length;i++){
-							if(value[i].cate=="A"){
-								$("#cate01").append("<a href='/pro03/GetTourDetailCtrl.do?no="+value[i].no+"'>"+value[i].place+"</a><br>");
-							} else if(value[i].cate=="B"){
-								$("#cate02").append("<a href='/pro03/GetTourDetailCtrl.do?no="+value[i].no+"'>"+value[i].place+"</a><br>");
-							} else if(value[i].cate=="C"){
-								$("#cate03").append("<a href='/pro03/GetTourDetailCtrl.do?no="+value[i].no+"'>"+value[i].place+"</a><br>");
-							} else if(value[i].cate=="D"){
-								$("#cate04").append("<a href='/pro03/GetTourDetailCtrl.do?no="+value[i].no+"'>"+value[i].place+"</a><br>");
-							} else if(value[i].cate=="E"){
-								$("#cate05").append("<a href='/pro03/GetTourDetailCtrl.do?no="+value[i].no+"'>"+value[i].place+"</a><br>");
-							} else if(value[i].cate=="F"){
-								$("#cate06").append("<a href='/pro03/GetTourDetailCtrl.do?no="+value[i].no+"'>"+value[i].place+"</a><br>");
-							} else if(value[i].cate=="G"){
-								$("#cate07").append("<a href='/pro03/GetTourDetailCtrl.do?no="+value[i].no+"'>"+value[i].place+"</a><br>");
-							}
-						}
-					}
-				});
-				
-			}
-		});
-	});
-	</script>
-	<nav class="breadcrumb" aria-label="breadcrumbs" style="border-bottom:2px solid #ddd; padding-bottom:8px; min-height:48px; line-height:48px;">
-	  <ul style="float:right;">
-	    <li><a href="/pro03/">Home</a></li>
-	    <li><a href="/pro03/GetTourListCtrl.do">전체 장소</a></li>
-	    <li class="is-active"><a href="#" aria-current="page">
- 			 
-			
-			
-			
-			
-			
-			
-			
-			
-	    </a></li>
-	  </ul>
-	</nav>
-  <section class="section">
-    <div class="container">
-      <h1 class="title">			
-			
-			
-			
-			
-			
-			
-			
-			목록</h1>
-      	<div id="con">
-      		<div class="tile is-ancestor columns" style="padding-bottom:40px;">
-      			
-				
-			      <div class="tile is-3" style="box-sizing:border-box;">
-			        <article class="tile is-child is-one-third notification" style="background-color:transparent; border:1px solid #eee; margin-right:10px!important;">
-			          <p class="title">파주개성인삼 축제</p>
-			          <p class="subtitle">
-			 			 
-						
-						
-						
-						
-						
-						
-						
-						
-			          </p>
-			          <figure class="image is-4by3">
-			            <img src="/pro03/upload/insam.png" alt="파주개성인삼 축제">
-			          </figure>
-			          <div class="content" style="margin:10px;">
-			          	<p class="item_com">6년근 파주개성인삼은 고려인삼의 맥을 잇는 대한민국 대표인삼입니다. 올해에도 인삼은 역시 파주개성인삼이 으뜸이라는 것을 확인하시고 파주시가 보증하는 최상 품질의 6년근 인삼을 만나보세요.</p>
-			          </div>
-			          <a href="/pro03/GetTourDetailCtrl.do?no=6" class="button is-primary">자세히 보기</a>
-			        </article>
-			      </div>
-					
-		    	
-				
-			</div>
-      	</div>
-		<div class="buttons">
-		  <a href="/pro03/GetTourListCtrl.do" class="button is-info">전체 목록</a>
+			</nav>
 		</div>
-    </div>
-  </section>
+		<div id="navbarBasicExample" class="navbar-menu">
+			<div class="navbar-start" id="gnb">
+				<div class="navbar-item has-dropdown is-hoverable">
+					<a href="../tour/cateA.html" class="navbar-link">
+						관광
+					</a>
+					<div class="navbar-dropdown cate" id="cate01">
+						<a href="../tour/cateA1.html">파주이이유적(사적제525호)</a><br>
+						<a href="../tour/cateA2.html">벽봉한국장신구박물관</a><br>
+						<a href="../tour/cateA3.html">임진각 평화누리</a><br>
+						<a href="../tour/cateA4.html">율곡문화제</a><br></div>
+				</div>
+				<div class="navbar-item has-dropdown is-hoverable">
+					<a href="../tour/cateB.html" class="navbar-link cate">
+						체험
+					</a>
+					<div class="navbar-dropdown cate" id="cate02">
+						<a href="../tour/cateB1.html">파주 평화통일 체험학습장</a><br>
+						<a href="../tour/cateB2.html">파주로1박2일</a><br></div>
+				</div>
+				<div class="navbar-item has-dropdown is-hoverable">
+					<a href="../tour/cateC.html" class="navbar-link cate">
+						행사
+					</a>
+					<div class="navbar-dropdown cate" id="cate03">
+						<a href="../tour/cateC1.html">파주북소리</a><br>
+						<a href="../tour/cateC2.html">운정호수공원 불꽃축제</a><br></div>
+				</div>
+				<div class="navbar-item has-dropdown is-hoverable">
+					<a href="../tour/cateD.html" class="navbar-link cate">
+						축제
+					</a>
+					<div class="navbar-dropdown cate" id="cate04">
+						<a href="../tour/cateD1.html">파주개성 인삼축제</a><br>
+					</div>
+				</div>
+				<div href="../tour/cateE.html" class="navbar-item has-dropdown is-hoverable">
+					<a class="navbar-link cate">
+						숙박
+					</a>
+					<div class="navbar-dropdown cate" id="cate05">
+						<a href="../tour/cateE1.html">헤이리 풀빌라 워라밸</a><br>
+					</div>
+				</div>
+				<div class="navbar-item has-dropdown is-hoverable">
+					<a href="../tour/cateF.html" class="navbar-link cate">
+						음식
+					</a>
+					<div class="navbar-dropdown cate" id="cate06">
+						<a href="../tour/cateF1.html">나정순할매쭈꾸미</a><br>
+					</div>
+				</div>
+				<div class="navbar-item has-dropdown is-hoverable">
+					<a href="../tour/cateG.html" class="navbar-link cate">
+						쇼핑
+					</a>
+					<div class="navbar-dropdown cate" id="cate07">
+						<a href="../tour/cateG1.html">롯데 프리미엄아울렛 파주점</a><br></div>
+				</div>
+				<div class="navbar-item has-dropdown is-hoverable single">
+					<a class="navbar-link">
+						관광안내
+					</a>
+					<div class="navbar-dropdown single">
+						<a class="navbar-item" href="../notice/noticeList.html">
+							공지사항
+						</a>
+						<a class="navbar-item" href="../review/reviewList.html">
+							이용 및 후기
+						</a>
+						<a class="navbar-item" href="../qna/qnaList.html">
+							Q&amp;A
+						</a>
+					</div>
+				</div>
+				<div class="navbar-item has-dropdown is-hoverable single">
+					<a class="navbar-link">
+						이야기파주
+					</a>
 	
-  
+					<div class="navbar-dropdown single">
+						<a class="navbar-item" href="../story/storyA.html">
+							파주이야기
+						</a>
+						<a class="navbar-item" href="../story/storyB.html">
+							인물이야기
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<nav class="breadcrumb" aria-label="breadcrumbs"
+		style="border-bottom:2px solid #ddd; padding-bottom:8px; min-height:48px; line-height:48px;">
+		<ul style="float:right;">
+			<li><a href="../">Home</a></li>
+			<li><a href="./all.html">전체 장소</a></li>
+			<li class="is-active"><a href="#" aria-current="page">
+				</a></li>
+		</ul>
+	</nav>
+	<section class="section">
+		<div class="container">
+			<h1 class="title">
+				목록</h1>
+			<div id="con">
+				<div class="tile is-ancestor columns" style="padding-bottom:40px;">
+					<div class="tile is-3" style="box-sizing:border-box;">
+						<article class="tile is-child is-one-third notification"
+							style="background-color:transparent; border:1px solid #eee; margin-right:10px!important;">
+							<p class="title">파주개성인삼 축제</p>
+							<p class="subtitle">
+							</p>
+							<figure class="image is-4by3">
+								<img src="../img/insam.png" alt="파주개성인삼 축제">
+							</figure>
+							<div class="content" style="margin:10px;">
+								<p class="item_com">6년근 파주개성인삼은 고려인삼의 맥을 잇는 대한민국 대표인삼입니다. 올해에도 인삼은 역시 파주개성인삼이 으뜸이라는 것을
+									확인하시고 파주시가 보증하는 최상 품질의 6년근 인삼을 만나보세요.</p>
+							</div>
+							<a href="./cateD1.html" class="button is-primary">자세히 보기</a>
+						</article>
+					</div>
+				</div>
+			</div>
+			<div class="buttons">
+				<a href="./all.html" class="button is-info">전체 목록</a>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="content has-text-centered">
+			<img src="../img/flogo.png" alt="flogo" class="flogo">
+			<p>
+				파주시 홈페이지에 게시된 전자우편주소는 무단으로 수집할 수 없으며, 위반시 정보통신망법에 의해 처벌됩니다.
+			</p>
+			<p>
+				(우 10932) 경기도 파주시 시청로 50 | 대표전화 : 031) 940-4114<br>
+				COPYRIGHT(C) 2021, PAJU CITY ALL RIGHTS RESERVED
+			</p>
+		</div>
+	</footer>
+</body>
 
-
-
-
-
-<footer class="footer">
-    <div class="content has-text-centered">
-      <img src="/pro03/img/flogo.png" alt="flogo" class="flogo">
-      <p>
-        파주시 홈페이지에 게시된 전자우편주소는 무단으로 수집할 수 없으며, 위반시 정보통신망법에 의해 처벌됩니다.
-      </p>
-      <p>
-        (우 10932) 경기도 파주시 시청로 50 | 대표전화 : 031) 940-4114<br>
-        COPYRIGHT(C) 2021, PAJU CITY ALL RIGHTS RESERVED
-      </p>
-    </div>
-  </footer>
-  </body>
 </html>

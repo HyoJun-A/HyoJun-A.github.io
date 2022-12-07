@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,11 +10,11 @@
 	<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR&display=swap"
 		rel="stylesheet">
 	<!-- 구형 브라우저 html5태그 인식 -->
-	<script src="/js/html5shiv.js"></script>
+	<script src="../js/html5shiv.js"></script>
 	<!-- 구형 브라우저에서 css animation 인식 -->
-	<script src="/js/prefixfree.min.js"></script>
+	<script src="../js/prefixfree.min.js"></script>
 	<!-- 구형 브라우저에서 미디어쿼리 인식 -->
-	<script src="/js/respond.min.js"></script>
+	<script src="../js/respond.min.js"></script>
 	<style>
 		.table {
 			min-width: 960px;
@@ -60,8 +61,6 @@
 
 		}
 
-		.navbar-link:FIRST-CHILD {}
-
 		.nav2 {
 			height: 50px;
 		}
@@ -70,7 +69,7 @@
 			width: 700px;
 			margin: 0 auto;
 			float: right;
-			argin-left: 200px;
+			margin-left: 200px;
 			margin-top: 22px;
 			display: block;
 		}
@@ -85,7 +84,6 @@
 		}
 	</style>
 	<script src="https://code.jquery.com/jquery-latest.js"></script>
-
 	<link rel="stylesheet" type="text/css"
 		href="http://s1.daumcdn.net/svc/attach/U03/cssjs/mapapidoc/1421136453605/service.min.css">
 	<style>
@@ -94,14 +92,12 @@
 		}
 	</style>
 </head>
-
 <body class="web guide" data-page_section="web" data-page_type="guide" data-title="Daum 지도 Web API 가이드">
 	<header class="header">
 		<div class="hd">
 			<nav class="navbar" role="navigation" aria-label="main navigation">
 				<div class="navbar-brand">
 					<a class="item" href="../index.html">
-						<!-- <img src="https://tour.paju.go.kr/resources/user/tour/images/layout/logo@2x.png" alt="Logo" > -->
 						<img src="../img/logo.png" alt="Logo">
 					</a>
 				</div>
@@ -113,76 +109,76 @@
 				</div>
 				<div class="navbar-end">
 					<div class="navbar-item">
-
 						<div class="buttons">
 							<a class="button is-primary" href="../user/login.html">
-								<img src="https://tour.paju.go.kr/resources/user/_common/images/ico-login-white.png"
-									alt="login"> 로그인
+								<img src="https://tour.paju.go.kr/resources/user/_common/images/ico-login-white.png" alt="login"> 로그인
 							</a>
 							<a class="button is-info" href="../user/agree.html">
-								<img src="https://tour.paju.go.kr/resources/user/_common/images/ico-join-white.png"
-									alt="join">회원가입
+								<img src="https://tour.paju.go.kr/resources/user/_common/images/ico-join-white.png" alt="join">회원가입
 							</a>
 						</div>
 					</div>
 				</div>
 			</nav>
 		</div>
-
 		<div id="navbarBasicExample" class="navbar-menu">
 			<div class="navbar-start" id="gnb">
-				<!-- ajax로 메뉴 로딩하여 추가하기 -->
 				<div class="navbar-item has-dropdown is-hoverable">
-					<a href="../tour/cateA1.html" class="navbar-link">
+					<a href="../tour/cateA.html" class="navbar-link">
 						관광
 					</a>
-					<div class="navbar-dropdown cate" id="cate01"><a href="../tour/cateA1.html">파주이이유적(사적
-							제525호)</a><br><a href="../tour/cateA2.html">벽봉한국장신구박물관</a><br><a
-							href="../tour/cateA3.html">임진각 평화누리</a><br><a href="../tour/cateA4.html">율곡문화제</a><br></div>
+					<div class="navbar-dropdown cate" id="cate01">
+						<a href="../tour/cateA1.html">파주이이유적(사적제525호)</a><br>
+						<a href="../tour/cateA2.html">벽봉한국장신구박물관</a><br>
+						<a href="../tour/cateA3.html">임진각 평화누리</a><br>
+						<a href="../tour/cateA4.html">율곡문화제</a><br></div>
 				</div>
 				<div class="navbar-item has-dropdown is-hoverable">
-					<a href="../tour/cateB1.html" class="navbar-link cate">
+					<a href="../tour/cateB.html" class="navbar-link cate">
 						체험
 					</a>
-					<div class="navbar-dropdown cate" id="cate02"><a href="../tour/cateB1.html">파주 평화통일
-							체험학습장</a><br><a href="../tour/cateB2.html">파주로1박2일</a><br></div>
+					<div class="navbar-dropdown cate" id="cate02">
+						<a href="../tour/cateB1.html">파주 평화통일 체험학습장</a><br>
+						<a href="../tour/cateB2.html">파주로1박2일</a><br></div>
 				</div>
 				<div class="navbar-item has-dropdown is-hoverable">
-					<a href="../tour/cateC1.html" class="navbar-link cate">
+					<a href="../tour/cateC.html" class="navbar-link cate">
 						행사
 					</a>
-					<div class="navbar-dropdown cate" id="cate03"><a href="../tour/cateC1.html">파주북소리</a><br><a
-							href="../tour/cateC2.html">운정호수공원 불꽃축제</a><br></div>
+					<div class="navbar-dropdown cate" id="cate03">
+						<a href="../tour/cateC1.html">파주북소리</a><br>
+						<a href="../tour/cateC2.html">운정호수공원 불꽃축제</a><br></div>
 				</div>
 				<div class="navbar-item has-dropdown is-hoverable">
-					<a href="../tour/cateD1.html" class="navbar-link cate">
+					<a href="../tour/cateD.html" class="navbar-link cate">
 						축제
 					</a>
-					<div class="navbar-dropdown cate" id="cate04"><a href="../tour/cateD1.html">파주개성인삼
-							축제</a><br>
+					<div class="navbar-dropdown cate" id="cate04">
+						<a href="../tour/cateD1.html">파주개성 인삼축제</a><br>
 					</div>
 				</div>
-				<div href="../tour/cateE1.html" class="navbar-item has-dropdown is-hoverable">
+				<div href="../tour/cateE.html" class="navbar-item has-dropdown is-hoverable">
 					<a class="navbar-link cate">
 						숙박
 					</a>
-					<div class="navbar-dropdown cate" id="cate05"><a href="../tour/cateE1.html">헤이리 풀빌라
-							워라밸</a><br>
+					<div class="navbar-dropdown cate" id="cate05">
+						<a href="../tour/cateE1.html">헤이리 풀빌라 워라밸</a><br>
 					</div>
 				</div>
 				<div class="navbar-item has-dropdown is-hoverable">
-					<a href="../tour/cateF1.html" class="navbar-link cate">
+					<a href="../tour/cateF.html" class="navbar-link cate">
 						음식
 					</a>
-					<div class="navbar-dropdown cate" id="cate06"><a href="../tour/cateF1.html">나정순할매쭈꾸미</a><br>
+					<div class="navbar-dropdown cate" id="cate06">
+						<a href="../tour/cateF1.html">나정순할매쭈꾸미</a><br>
 					</div>
 				</div>
 				<div class="navbar-item has-dropdown is-hoverable">
-					<a href="../tour/cateG1.html" class="navbar-link cate">
+					<a href="../tour/cateG.html" class="navbar-link cate">
 						쇼핑
 					</a>
-					<div class="navbar-dropdown cate" id="cate07"><a href="../tour/cateG1.html">롯데 프리미엄아울렛
-							파주점</a><br></div>
+					<div class="navbar-dropdown cate" id="cate07">
+						<a href="../tour/cateG1.html">롯데 프리미엄아울렛 파주점</a><br></div>
 				</div>
 				<div class="navbar-item has-dropdown is-hoverable single">
 					<a class="navbar-link">
@@ -204,72 +200,25 @@
 					<a class="navbar-link">
 						이야기파주
 					</a>
-
+	
 					<div class="navbar-dropdown single">
 						<a class="navbar-item" href="../story/storyA.html">
-							파주여행스토리
+							파주이야기
 						</a>
 						<a class="navbar-item" href="../story/storyB.html">
 							인물이야기
-						</a>
-						<a class="navbar-item" href="../story/storyC.html">
-							파주이야기
 						</a>
 					</div>
 				</div>
 			</div>
 		</div>
-		</div>
-		</div>
-		</div>
-		</nav>
-		</div>
 	</header>
-	<script>
-		$(document).ready(function () {
-			$.ajax({
-				url: "/MemuLoadCtrl.do",
-				type: "POST",
-				enctype: "UTF-8",
-				datatype: "json",
-				processData: false,
-				contentType: false,
-				cache: false,
-				success: function (data) {
-					$(".navbar-dropdown.cate").empty();
-					var trans = $.parseJSON(data);
-					$.each(trans, function (key, value) {
-						if (key == "data") {
-							for (var i = 0; i < value.length; i++) {
-								if (value[i].cate == "A") {
-									$("#cate01").append("<a href='/GetTourDetailCtrl.do?no=" + value[i].no + "'>" + value[i].place + "</a><br>");
-								} else if (value[i].cate == "B") {
-									$("#cate02").append("<a href='/GetTourDetailCtrl.do?no=" + value[i].no + "'>" + value[i].place + "</a><br>");
-								} else if (value[i].cate == "C") {
-									$("#cate03").append("<a href='/GetTourDetailCtrl.do?no=" + value[i].no + "'>" + value[i].place + "</a><br>");
-								} else if (value[i].cate == "D") {
-									$("#cate04").append("<a href='/GetTourDetailCtrl.do?no=" + value[i].no + "'>" + value[i].place + "</a><br>");
-								} else if (value[i].cate == "E") {
-									$("#cate05").append("<a href='/GetTourDetailCtrl.do?no=" + value[i].no + "'>" + value[i].place + "</a><br>");
-								} else if (value[i].cate == "F") {
-									$("#cate06").append("<a href='/GetTourDetailCtrl.do?no=" + value[i].no + "'>" + value[i].place + "</a><br>");
-								} else if (value[i].cate == "G") {
-									$("#cate07").append("<a href='/GetTourDetailCtrl.do?no=" + value[i].no + "'>" + value[i].place + "</a><br>");
-								}
-							}
-						}
-					});
-
-				}
-			});
-		});
-	</script>
 	<nav class="breadcrumb" aria-label="breadcrumbs"
 		style="border-bottom:2px solid #ddd; padding-bottom:8px; min-height:48px; line-height:48px;">
 		<ul style="float:right;">
 			<li><a href="../index.html">Home</a></li>
 			<li><a href="./all.html">전체 장소</a></li>
-			<li><a href="./cate.html">
+			<li><a href="./cateA.html">
 					<span>관광</span>
 				</a></li>
 			<li class="is-active"><a href="#" aria-current="page">파주이이유적(사적 제525호)</a></li>
@@ -283,7 +232,6 @@
 					<tr>
 						<td>
 							<img src="../img/ee.jpg" class="lazy" onerror="this.style.display='none'" alt="배너" />
-							<!-- onerror="this.style.display='none'"  -->
 						</td>
 					</tr>
 					</tbody>
@@ -339,54 +287,13 @@
 				</tbody>
 			</table>
 			<div style="clear:both; margin-bottom:20px; padding-bottom:20px; ">
-				<div id="map" style="margin-left:120px;	margin-top:50px; width:800px;height:600px; background:white; ">
+				<div id="map" style="margin-left:180px;	margin-top:50px; width:800px;height:600px; background:white; ">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3149.8296905912957!2d126.86871871565377!3d37.86427521477748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ce94d9dd651d9%3A0xe11f6118ef5005a3!2z6rK96riw64-EIO2MjOyjvOyLnCDrspXsm5DsnY0g7J6Q7Jq07ISc7JuQ66GcIDIwNA!5e0!3m2!1sko!2skr!4v1670401194315!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 				</div>
-				<script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
-				<!-- https://developers.kakao.com/ 회원가입 후 -> 내 애플리케이션 -> 애플리케이션 추가 -> 추가된 해당 앱을 클릭하면 발급받은  API키를 확인할 수 있음  -->
-				<script type="text/javascript"
-					src="http://dapi.kakao.com/v2/maps/sdk.js?appkey=607a69e515f41cce8457d4f50bf372ee&libraries=services"></script>
-				<script>
-					var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
-						mapOption = {
-							center: new kakao.maps.LatLng(37.7598688, 126.7801781), // 지도의 중심좌표
-							level: 7 // 지도의 확대 레벨
-						};
-
-					// 지도를 생성합니다    
-					var map = new kakao.maps.Map(mapContainer, mapOption);
-
-					// 주소-좌표 변환 객체를 생성합니다
-					var geocoder = new kakao.maps.services.Geocoder();
-
-					// 주소로 좌표를 검색합니다
-					geocoder.addressSearch($("#addr").val(), function (result, status) {
-
-						// 정상적으로 검색이 완료됐으면 
-						if (status === kakao.maps.services.Status.OK) {
-
-							var coords = new kakao.maps.LatLng(result[0].y, result[0].x);
-
-							// 결과값으로 받은 위치를 마커로 표시합니다
-							var marker = new kakao.maps.Marker({
-								map: map,
-								position: coords
-							});
-
-							// 인포윈도우로 장소에 대한 설명을 표시합니다
-							var infowindow = new kakao.maps.InfoWindow({
-								content: '<div style="width:150px;text-align:center;padding:6px 0;">' + $('#place').val() + '</div>'
-							});
-							infowindow.open(map, marker);
-
-							// 지도의 중심을 결과값으로 받은 위치로 이동시킵니다
-							map.setCenter(coords);
-						}
-					});    
-				</script>
 			</div>
 			<div class="buttons">
 				<a href="../tour/all.html" class="button is-info">전체 목록</a>
-				<a href="../tour/cate.html" class="button is-info">카테고리 목록</a>
+				<a href="../tour/cateA.html" class="button is-info">카테고리 목록</a>
 
 
 			</div>

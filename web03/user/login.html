@@ -1,26 +1,17 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 	<title>로그인</title>
-
-
-
-
-
-
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 	<!-- 각 종 플러그인과 설정 파일 -->
 	<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR&display=swap"
 		rel="stylesheet">
-	<!-- 구형 브라우저 html5태그 인식 -->
-	<script src="/js/html5shiv.js"></script>
 	<!-- 구형 브라우저에서 css animation 인식 -->
-	<script src="/js/prefixfree.min.js"></script>
+	<script src="../js/prefixfree.min.js"></script>
 	<!-- 구형 브라우저에서 미디어쿼리 인식 -->
-	<script src="/js/respond.min.js"></script>
+	<script src="../js/respond.min.js"></script>
 	<style>
 		.table {
 			min-width: 960px;
@@ -66,18 +57,14 @@
 			margin-left: 60px;
 
 		}
-
-		.navbar-link:FIRST-CHILD {}
-
 		.nav2 {
 			height: 50px;
 		}
-
 		.search {
 			width: 700px;
 			margin: 0 auto;
 			float: right;
-			argin-left: 200px;
+			margin-left: 200px;
 			margin-top: 22px;
 			display: block;
 		}
@@ -92,7 +79,6 @@
 		}
 	</style>
 	<script src="https://code.jquery.com/jquery-latest.js"></script>
-
 	<style>
 		.title {
 			padding-top: 36px;
@@ -100,11 +86,7 @@
 		}
 	</style>
 </head>
-
 <body>
-
-
-
 	<header class="header">
 		<div class="hd">
 			<nav class="navbar" role="navigation" aria-label="main navigation">
@@ -122,78 +104,76 @@
 				</div>
 				<div class="navbar-end">
 					<div class="navbar-item">
-
 						<div class="buttons">
 							<a class="button is-primary" href="../user/login.html">
-								<img src="https://tour.paju.go.kr/resources/user/_common/images/ico-login-white.png"
-									alt="login"> 로그인
+								<img src="https://tour.paju.go.kr/resources/user/_common/images/ico-login-white.png" alt="login"> 로그인
 							</a>
 							<a class="button is-info" href="../user/agree.html">
-								<img src="https://tour.paju.go.kr/resources/user/_common/images/ico-join-white.png"
-									alt="join">회원가입
+								<img src="https://tour.paju.go.kr/resources/user/_common/images/ico-join-white.png" alt="join">회원가입
 							</a>
 						</div>
-
-
 					</div>
 				</div>
 			</nav>
 		</div>
-
 		<div id="navbarBasicExample" class="navbar-menu">
 			<div class="navbar-start" id="gnb">
-				<!-- ajax로 메뉴 로딩하여 추가하기 -->
 				<div class="navbar-item has-dropdown is-hoverable">
-					<a href="../tour/cateA1.html" class="navbar-link">
+					<a href="../tour/cateA.html" class="navbar-link">
 						관광
 					</a>
-					<div class="navbar-dropdown cate" id="cate01"><a href="../tour/cateA1.html">파주이이유적(사적
-							제525호)</a><br><a href="../tour/cateA2.html">벽봉한국장신구박물관</a><br><a
-							href="../tour/cateA3.html">임진각 평화누리</a><br><a href="../tour/cateA4.html">율곡문화제</a><br></div>
+					<div class="navbar-dropdown cate" id="cate01">
+						<a href="../tour/cateA1.html">파주이이유적(사적제525호)</a><br>
+						<a href="../tour/cateA2.html">벽봉한국장신구박물관</a><br>
+						<a href="../tour/cateA3.html">임진각 평화누리</a><br>
+						<a href="../tour/cateA4.html">율곡문화제</a><br></div>
 				</div>
 				<div class="navbar-item has-dropdown is-hoverable">
-					<a href="../tour/cateB1.html" class="navbar-link cate">
+					<a href="../tour/cateB.html" class="navbar-link cate">
 						체험
 					</a>
-					<div class="navbar-dropdown cate" id="cate02"><a href="../tour/cateB1.html">파주 평화통일
-							체험학습장</a><br><a href="../tour/cateB2.html">파주로1박2일</a><br></div>
+					<div class="navbar-dropdown cate" id="cate02">
+						<a href="../tour/cateB1.html">파주 평화통일 체험학습장</a><br>
+						<a href="../tour/cateB2.html">파주로1박2일</a><br></div>
 				</div>
 				<div class="navbar-item has-dropdown is-hoverable">
-					<a href="../tour/cateC1.html" class="navbar-link cate">
+					<a href="../tour/cateC.html" class="navbar-link cate">
 						행사
 					</a>
-					<div class="navbar-dropdown cate" id="cate03"><a href="../tour/cateC1.html">파주북소리</a><br><a
-							href="../tour/cateC2.html">운정호수공원 불꽃축제</a><br></div>
+					<div class="navbar-dropdown cate" id="cate03">
+						<a href="../tour/cateC1.html">파주북소리</a><br>
+						<a href="../tour/cateC2.html">운정호수공원 불꽃축제</a><br></div>
 				</div>
 				<div class="navbar-item has-dropdown is-hoverable">
-					<a href="../tour/cateD1.html" class="navbar-link cate">
+					<a href="../tour/cateD.html" class="navbar-link cate">
 						축제
 					</a>
-					<div class="navbar-dropdown cate" id="cate04"><a href="../tour/cateD1.html">파주개성인삼
-							축제</a><br>
+					<div class="navbar-dropdown cate" id="cate04">
+						<a href="../tour/cateD1.html">파주개성 인삼축제</a><br>
 					</div>
 				</div>
-				<div href="../tour/cateE1.html" class="navbar-item has-dropdown is-hoverable">
+				<div href="../tour/cateE.html" class="navbar-item has-dropdown is-hoverable">
 					<a class="navbar-link cate">
 						숙박
 					</a>
-					<div class="navbar-dropdown cate" id="cate05"><a href="../tour/cateE1.html">헤이리 풀빌라
-							워라밸</a><br>
+					<div class="navbar-dropdown cate" id="cate05">
+						<a href="../tour/cateE1.html">헤이리 풀빌라 워라밸</a><br>
 					</div>
 				</div>
 				<div class="navbar-item has-dropdown is-hoverable">
-					<a href="../tour/cateF1.html" class="navbar-link cate">
+					<a href="../tour/cateF.html" class="navbar-link cate">
 						음식
 					</a>
-					<div class="navbar-dropdown cate" id="cate06"><a href="../tour/cateF1.html">나정순할매쭈꾸미</a><br>
+					<div class="navbar-dropdown cate" id="cate06">
+						<a href="../tour/cateF1.html">나정순할매쭈꾸미</a><br>
 					</div>
 				</div>
 				<div class="navbar-item has-dropdown is-hoverable">
-					<a href="../tour/cateG1.html" class="navbar-link cate">
+					<a href="../tour/cateG.html" class="navbar-link cate">
 						쇼핑
 					</a>
-					<div class="navbar-dropdown cate" id="cate07"><a href="../tour/cateG1.html">롯데 프리미엄아울렛
-							파주점</a><br></div>
+					<div class="navbar-dropdown cate" id="cate07">
+						<a href="../tour/cateG1.html">롯데 프리미엄아울렛 파주점</a><br></div>
 				</div>
 				<div class="navbar-item has-dropdown is-hoverable single">
 					<a class="navbar-link">
@@ -218,64 +198,16 @@
 
 					<div class="navbar-dropdown single">
 						<a class="navbar-item" href="../story/storyA.html">
-							파주여행스토리
+							파주이야기
 						</a>
 						<a class="navbar-item" href="../story/storyB.html">
 							인물이야기
-						</a>
-						<a class="navbar-item" href="../story/storyC.html">
-							파주이야기
 						</a>
 					</div>
 				</div>
 			</div>
 		</div>
-
-		</div>
-		</div>
-		</div>
-		</nav>
-		</div>
 	</header>
-	<script>
-		$(document).ready(function () {
-			$.ajax({
-				url: "/MemuLoadCtrl.do",
-				type: "POST",
-				enctype: "UTF-8",
-				datatype: "json",
-				processData: false,
-				contentType: false,
-				cache: false,
-				success: function (data) {
-					$(".navbar-dropdown.cate").empty();
-					var trans = $.parseJSON(data);
-					$.each(trans, function (key, value) {
-						if (key == "data") {
-							for (var i = 0; i < value.length; i++) {
-								if (value[i].cate == "A") {
-									$("#cate01").append("<a href='/GetTourDetailCtrl.do?no=" + value[i].no + "'>" + value[i].place + "</a><br>");
-								} else if (value[i].cate == "B") {
-									$("#cate02").append("<a href='/GetTourDetailCtrl.do?no=" + value[i].no + "'>" + value[i].place + "</a><br>");
-								} else if (value[i].cate == "C") {
-									$("#cate03").append("<a href='/GetTourDetailCtrl.do?no=" + value[i].no + "'>" + value[i].place + "</a><br>");
-								} else if (value[i].cate == "D") {
-									$("#cate04").append("<a href='/GetTourDetailCtrl.do?no=" + value[i].no + "'>" + value[i].place + "</a><br>");
-								} else if (value[i].cate == "E") {
-									$("#cate05").append("<a href='/GetTourDetailCtrl.do?no=" + value[i].no + "'>" + value[i].place + "</a><br>");
-								} else if (value[i].cate == "F") {
-									$("#cate06").append("<a href='/GetTourDetailCtrl.do?no=" + value[i].no + "'>" + value[i].place + "</a><br>");
-								} else if (value[i].cate == "G") {
-									$("#cate07").append("<a href='/GetTourDetailCtrl.do?no=" + value[i].no + "'>" + value[i].place + "</a><br>");
-								}
-							}
-						}
-					});
-
-				}
-			});
-		});
-	</script>
 	<section class="section">
 		<div class="container">
 			<h2 class="title">로그인</h2>
@@ -301,22 +233,14 @@
 				<div class="btn-group">
 					<input type="submit" name="submit-btn" class="button button-info" value="로그인">
 					<input type="reset" name="reset-btn" class="button button-info" value="취소">
-					<a href="/user/agree.html" class="button button-danger">회원가입</a>
+					<a href="../user/agree.html" class="button button-danger">회원가입</a>
 				</div>
 			</form>
-			<script>
-			</script>
 		</div>
 	</section>
-
-
-
-
-
-
 	<footer class="footer">
 		<div class="content has-text-centered">
-			<img src="/img/flogo.png" alt="flogo" class="flogo">
+			<img src="../img/flogo.png" alt="flogo" class="flogo">
 			<p>
 				파주시 홈페이지에 게시된 전자우편주소는 무단으로 수집할 수 없으며, 위반시 정보통신망법에 의해 처벌됩니다.
 			</p>
@@ -327,5 +251,4 @@
 		</div>
 	</footer>
 </body>
-
 </html>

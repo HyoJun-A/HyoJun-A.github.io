@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="UTF-8">
   <title>메인페이지</title>
@@ -8,12 +7,13 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
   <!-- 각 종 플러그인과 설정 파일 -->
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR&display=swap" rel="stylesheet">
-  <!-- 구형 브라우저 html5태그 인식 -->
-  <script src="./js/html5shiv.js"></script>
   <!-- 구형 브라우저에서 css animation 인식 -->
   <script src="./js/prefixfree.min.js"></script>
   <!-- 구형 브라우저에서 미디어쿼리 인식 -->
   <script src="./js/respond.min.js"></script>
+  <script src="https://code.jquery.com/jquery-latest.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
   <style>
     .table {
       min-width: 960px;
@@ -60,8 +60,6 @@
 
     }
 
-    .navbar-link:FIRST-CHILD {}
-
     .nav2 {
       height: 50px;
     }
@@ -84,9 +82,6 @@
 
     }
   </style>
-  <script src="https://code.jquery.com/jquery-latest.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css" />
-  <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
   <link rel="stylesheet" href="./css/style2.css" />
   <style>
     .slider-text {
@@ -177,107 +172,103 @@
       <div class="hd">
           <nav class="navbar" role="navigation" aria-label="main navigation">
               <div class="navbar-brand">
-                  <a class="item" href="../index.html">
-                      <!-- <img src="https://tour.paju.go.kr/resources/user/tour/images/layout/logo@2x.png" alt="Logo" > -->
-                      <img src="../img/logo.png" alt="Logo">
+                  <a class="item" href="./index.html">
+                      <img src="./img/logo.png" alt="Logo">
                   </a>
               </div>
               <div class="search">
                   <form name="frm2" class="frm2" id="frm2" action="" method="post">
                       <input class="input is-rounded" name="sea" id="sea" type="text" placeholder="통합검색">
-                      <a type="submit"><input type="image" src="../img/sr.png" alt="Logo" class="simg"></a>
+                      <a type="submit"><input type="image" src="./img/sr.png" alt="Logo" class="simg"></a>
                   </form>
               </div>
               <div class="navbar-end">
                   <div class="navbar-item">
   
                       <div class="buttons">
-                          <a class="button is-primary" href="../user/login.html">
-                              <img src="https://tour.paju.go.kr/resources/user/_common/images/ico-login-white.png"
-                                  alt="login"> 로그인
+                          <a class="button is-primary" href="./user/login.html">
+                              <img src="https://tour.paju.go.kr/resources/user/_common/images/ico-login-white.png" alt="login"> 로그인
                           </a>
-                          <a class="button is-info" href="../user/agree.html">
-                              <img src="https://tour.paju.go.kr/resources/user/_common/images/ico-join-white.png"
-                                  alt="join">회원가입
+                          <a class="button is-info" href="./user/agree.html">
+                              <img src="https://tour.paju.go.kr/resources/user/_common/images/ico-join-white.png" alt="join">회원가입
                           </a>
                       </div>
-  
-  
                   </div>
               </div>
           </nav>
       </div>
-  
       <div id="navbarBasicExample" class="navbar-menu">
           <div class="navbar-start" id="gnb">
               <!-- ajax로 메뉴 로딩하여 추가하기 -->
               <div class="navbar-item has-dropdown is-hoverable">
-                  <a href="../tour/cateA1.html" class="navbar-link">
+                  <a href="./tour/cateA.html" class="navbar-link">
                       관광
                   </a>
-                  <div class="navbar-dropdown cate" id="cate01"><a href="../tour/cateA1.html">파주이이유적(사적
-                          제525호)</a><br><a href="../tour/cateA2.html">벽봉한국장신구박물관</a><br><a
-                          href="../tour/cateA3.html">임진각 평화누리</a><br><a
-                          href="../tour/cateA4.html">율곡문화제</a><br></div>
+                  <div class="navbar-dropdown cate" id="cate01">
+                    <a href="./tour/cateA1.html">파주이이유적(사적제525호)</a><br>
+                    <a href="./tour/cateA2.html">벽봉한국장신구박물관</a><br>
+                    <a href="./tour/cateA3.html">임진각 평화누리</a><br>
+                    <a href="./tour/cateA4.html">율곡문화제</a><br></div>
               </div>
               <div class="navbar-item has-dropdown is-hoverable">
-                  <a href="../tour/cateB1.html" class="navbar-link cate">
+                  <a href="./tour/cateB.html" class="navbar-link cate">
                       체험
                   </a>
-                  <div class="navbar-dropdown cate" id="cate02"><a href="../tour/cateB1.html">파주 평화통일
-                          체험학습장</a><br><a href="../tour/cateB2.html">파주로1박2일</a><br></div>
+                  <div class="navbar-dropdown cate" id="cate02">
+                    <a href="./tour/cateB1.html">파주 평화통일 체험학습장</a><br>
+                    <a href="./tour/cateB2.html">파주로1박2일</a><br></div>
               </div>
               <div class="navbar-item has-dropdown is-hoverable">
-                  <a href="../tour/cateC1.html" class="navbar-link cate">
+                  <a href="./tour/cateC.html" class="navbar-link cate">
                       행사
                   </a>
-                  <div class="navbar-dropdown cate" id="cate03"><a
-                          href="../tour/cateC1.html">파주북소리</a><br><a
-                          href="../tour/cateC2.html">운정호수공원 불꽃축제</a><br></div>
+                  <div class="navbar-dropdown cate" id="cate03">
+                    <a href="./tour/cateC1.html">파주북소리</a><br>
+                    <a href="./tour/cateC2.html">운정호수공원 불꽃축제</a><br></div>
               </div>
               <div class="navbar-item has-dropdown is-hoverable">
-                  <a href="../tour/cateD1.html" class="navbar-link cate">
+                  <a href="./tour/cateD.html" class="navbar-link cate">
                       축제
                   </a>
-                  <div class="navbar-dropdown cate" id="cate04"><a href="../tour/cateD1.html">파주개성인삼
-                          축제</a><br>
+                  <div class="navbar-dropdown cate" id="cate04">
+                    <a href="./tour/cateD1.html">파주개성인삼 축제</a><br>
                   </div>
               </div>
-              <div href="../tour/cateE1.html" class="navbar-item has-dropdown is-hoverable">
+              <div href="./tour/cateE.html" class="navbar-item has-dropdown is-hoverable">
                   <a class="navbar-link cate">
                       숙박
                   </a>
-                  <div class="navbar-dropdown cate" id="cate05"><a href="../tour/cateE1.html">헤이리 풀빌라
-                          워라밸</a><br>
+                  <div class="navbar-dropdown cate" id="cate05">
+                    <a href="./tour/cateE1.html">헤이리 풀빌라 워라밸</a><br>
                   </div>
               </div>
               <div class="navbar-item has-dropdown is-hoverable">
-                  <a href="../tour/cateF1.html" class="navbar-link cate">
+                  <a href="./tour/cateF.html" class="navbar-link cate">
                       음식
                   </a>
-                  <div class="navbar-dropdown cate" id="cate06"><a
-                          href="../tour/cateF1.html">나정순할매쭈꾸미</a><br>
+                  <div class="navbar-dropdown cate" id="cate06">
+                    <a href="./tour/cateF1.html">나정순할매쭈꾸미</a><br>
                   </div>
               </div>
               <div class="navbar-item has-dropdown is-hoverable">
-                  <a href="../tour/cateG1.html" class="navbar-link cate">
+                  <a href="./tour/cateG.html" class="navbar-link cate">
                       쇼핑
                   </a>
-                  <div class="navbar-dropdown cate" id="cate07"><a href="../tour/cateG1.html">롯데 프리미엄아울렛
-                          파주점</a><br></div>
+                  <div class="navbar-dropdown cate" id="cate07">
+                    <a href="./tour/cateG1.html">롯데 프리미엄아울렛 파주점</a><br></div>
               </div>
               <div class="navbar-item has-dropdown is-hoverable single">
                   <a class="navbar-link">
                       관광안내
                   </a>
                   <div class="navbar-dropdown single">
-                      <a class="navbar-item" href="../notice/noticeList.html">
+                      <a class="navbar-item" href="./notice/noticeList.html">
                           공지사항
                       </a>
-                      <a class="navbar-item" href="../review/reviewList.html">
+                      <a class="navbar-item" href="./review/reviewList.html">
                           이용 및 후기
                       </a>
-                      <a class="navbar-item" href="../qna/qnaList.html">
+                      <a class="navbar-item" href="./qna/qnaList.html">
                           Q&amp;A
                       </a>
                   </div>
@@ -286,26 +277,16 @@
                   <a class="navbar-link">
                       이야기파주
                   </a>
-  
                   <div class="navbar-dropdown single">
-                      <a class="navbar-item" href="../story/storyA.html">
-                          파주여행스토리
-                      </a>
-                      <a class="navbar-item" href="../story/storyB.html">
-                          인물이야기
-                      </a>
-                      <a class="navbar-item" href="../story/storyC.html">
+                      <a class="navbar-item" href="./story/storyA.html">
                           파주이야기
+                      </a>
+                      <a class="navbar-item" href="./story/storyB.html">
+                          인물이야기
                       </a>
                   </div>
               </div>
           </div>
-      </div>
-  
-      </div>
-      </div>
-      </div>
-      </nav>
       </div>
   </header>
   <section class="test">
@@ -320,35 +301,35 @@
       <div class="card ">
         <div class="card-image">
           <figure class="image is-16by9 is-covered" style="padding-top : 30.25%">
-            <img src="./img/m2.jpg" alt="" />
+            <img src="./img/m2.jpg" alt="비쥬얼2" />
           </figure>
         </div>
       </div>
       <div class="card ">
         <div class="card-image">
           <p class="image is-16by9 is-covered" style="padding-top : 30.25%">
-            <img src="./img/m3.jpg" alt="" />
+            <img src="./img/m3.jpg" alt="비쥬얼3" />
           </p>
         </div>
       </div>
       <div class="card ">
         <div class="card-image">
           <p class="image is-16by9 is-covered" style="padding-top : 30.25%">
-            <img src="./img/m4.jpg" alt="" />
+            <img src="./img/m4.jpg" alt="비쥬얼4" />
           </p>
         </div>
       </div>
       <div class="card ">
         <div class="card-image">
           <p class="image is-16by9 is-covered" style="padding-top : 30.25%">
-            <img src="./img/m6.jpg" alt="" />
+            <img src="./img/m6.jpg" alt="비쥬얼5" />
           </p>
         </div>
       </div>
       <div class="card ">
         <div class="card-image">
           <p class="image is-16by9 is-covered" style="padding-top : 30.25%">
-            <img src="./img/m7.jpg" alt="" />
+            <img src="./img/m7.jpg" alt="비쥬얼6" />
           </p>
         </div>
       </div>
@@ -360,22 +341,16 @@
         <section class="section section-notice">
           <h3 class="title"><span>새소식</span></h3>
           <ul class="notice-list">
-
             <li>
-              <a href="#">임진각평화곤돌라와
-                함께하는 캠프그리브스 유료 시범투어 안내</a>
+              <a href="#">임진각평화곤돌라와 함께하는 캠프그리브스 유료 시범투어 안내</a>
               <span class="date">2022-11-11</span>
             </li>
-
             <li>
-              <a href="#">'제1회
-                파주평화페스티벌' 개최 안내</a>
+              <a href="#">'제1회 파주평화페스티벌' 개최 안내</a>
               <span class="date">2022-10-25</span>
             </li>
-
           </ul>
         </section>
-
         <section class="section section-guide">
           <div class="main-tel">
             <h3 class="title">파주 관광안내</h3>
@@ -408,17 +383,15 @@
           </ul>
         </section>
       </div>
-
       <section class="section section-keyword">
         <h3 class="title"><span>Hot ! 키워드</span></h3>
         <ul class="keyword-list">
           <li><a href="#"><span>안보테마
-                여행</span></a></li>
+              여행</span></a></li>
           <li><a href="#"><span>자연명소</span></a></li>
           <li><a href="#"><span>임진각
-                평화누리</span></a></li>
-          <li><a href="#"><span>장단콩
-                축제</span></a></li>
+            평화누리</span></a></li>
+          <li><a href="#"><span>장단콩축제</span></a></li>
           <li><a href="#"><span>인삼축제</span></a>
           </li>
           <li><a href="#"><span>율곡수목원</span></a>
@@ -426,7 +399,7 @@
           <li><a href="#"><span>캠핑장</span></a></li>
           <li><a href="#"><span>군장병할인</span></a></li>
           <li><a href="#"><span>국가지정
-                문화재</span></a></li>
+            문화재</span></a></li>
         </ul>
       </section>
 
