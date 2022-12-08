@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>장소 상세보기</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+	<!-- 각 종 플러그인과 설정 파일 -->
+	<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR&display=swap"
+		rel="stylesheet">
+	<!-- 구형 브라우저 html5태그 인식 -->
+	<script src="../js/html5shiv.js"></script>
+	<!-- 구형 브라우저에서 css animation 인식 -->
+	<script src="../js/prefixfree.min.js"></script>
+	<!-- 구형 브라우저에서 미디어쿼리 인식 -->
+	<script src="../js/respond.min.js"></script>
+	<style>
+		.table {
+			min-width: 960px;
+		}
+
+		#logo {
+			display: block;
+			width: 92px;
+			height: 45px;
+			background-image: url("/data/logo.png");
+			background-size: 100% auto;
+			background-repeat: no-repeat;
+		}
+
+		#nav {
+			border-bottom: 3px solid #ddd;
+		}
+
+		.header {
+			border-bottom: 1px solid #EEE;
+		}
+
+		.hd {
+			width: 90%;
+			margin: 0 auto;
+		}
+
+		.navbar {
+			height: 80px;
+		}
+
+
+		.item img {
+			clear: both;
+			width: 200px;
+			margin-top: 10px;
+		}
+
+		.navbar-link {
+			width: 140px;
+			font-weight: 600;
+			font-size: 17px;
+			margin-left: 60px;
+
+		}
+
+		.nav2 {
+			height: 50px;
+		}
+
+		.search {
+			width: 700px;
+			margin: 0 auto;
+			float: right;
+			margin-left: 200px;
+			margin-top: 22px;
+			display: block;
+		}
+
+		.simg {
+			float: right;
+			position: absolute;
+			margin-left: -40px;
+			margin-top: 5px;
+			width: 25px;
+
+		}
+	</style>
+	<script src="https://code.jquery.com/jquery-latest.js"></script>
+	<link rel="stylesheet" type="text/css"
+		href="http://s1.daumcdn.net/svc/attach/U03/cssjs/mapapidoc/1421136453605/service.min.css">
+	<style>
+		body {
+			background: white;
+		}
+	</style>
+</head>
+<body class="web guide" data-page_section="web" data-page_type="guide" data-title="Daum 지도 Web API 가이드">
+	<header class="header">
+        <div class="hd">
+            <nav class="navbar" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                    <a class="item" href="../index.html">
+                        <img src="../img/logo.png" alt="Logo">
+                    </a>
+                </div>
+                <div class="search">
+                    <form name="frm2" class="frm2" id="frm2" action="" method="post">
+                        <input class="input is-rounded" name="sea" id="sea" type="text" placeholder="통합검색">
+                        <a type="submit"><input type="image" src="../img/sr.png" alt="Logo" class="simg"></a>
+                    </form>
+                </div>
+                <div class="navbar-end">
+                    <div class="navbar-item">
+    
+                        <div class="buttons">
+                            <a class="button is-primary" href="../user/login.html">
+                                <img src="../img/ico-login-white.png" alt="login"> 로그인
+                            </a>
+                            <a class="button is-info" href="../user/agree.html">
+                                <img src="../img/ico-join-white.png" alt="join">회원가입
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start" id="gnb">
+                <!-- ajax로 메뉴 로딩하여 추가하기 -->
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a href="../tour/cateA.html" class="navbar-link">
+                        관광
+                    </a>
+                    <div class="navbar-dropdown cate" id="cate01">
+                      <a href="../tour/cateA1.html">파주이이유적(사적제525호)</a><br>
+                      <a href="../tour/cateA2.html">벽봉한국장신구박물관</a><br>
+                      <a href="../tour/cateA3.html">임진각 평화누리</a><br>
+                      <a href="../tour/cateA4.html">율곡문화제</a><br></div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a href="../tour/cateB.html" class="navbar-link cate">
+                        체험
+                    </a>
+                    <div class="navbar-dropdown cate" id="cate02">
+                      <a href="../tour/cateB1.html">파주 평화통일 체험학습장</a><br>
+                      <a href="../tour/cateB2.html">파주로1박2일</a><br></div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a href="../tour/cateC.html" class="navbar-link cate">
+                        행사
+                    </a>
+                    <div class="navbar-dropdown cate" id="cate03">
+                      <a href="../tour/cateC1.html">파주북소리</a><br>
+                      <a href="../tour/cateC2.html">운정호수공원 불꽃축제</a><br></div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a href="../tour/cateD.html" class="navbar-link cate">
+                        축제
+                    </a>
+                    <div class="navbar-dropdown cate" id="cate04">
+                      <a href="../tour/cateD1.html">파주개성인삼 축제</a><br>
+                      <a href="../tour/cateD2.html">파주장단콩 축제</a><br>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a href="../tour/cateE.html" class="navbar-link cate">
+                      숙박
+                    </a>
+                    <div class="navbar-dropdown cate" id="cate05">
+                      <a href="../tour/cateE1.html">헤이리 풀빌라 워라밸</a><br>
+                      <a href="../tour/cateE2.html">호텔 시에나</a><br>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a href="../tour/cateF.html" class="navbar-link cate">
+                        음식
+                    </a>
+                    <div class="navbar-dropdown cate" id="cate06">
+                      <a href="../tour/cateF1.html">나정순할매쭈꾸미</a><br>
+                      <a href="../tour/cateF2.html">샤브샤브와 한정식</a><br>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a href="../tour/cateG.html" class="navbar-link cate">
+                        쇼핑
+                    </a>
+                    <div class="navbar-dropdown cate" id="cate07">
+                      <a href="../tour/cateG1.html">롯데 프리미엄아울렛 파주점</a><br>
+                      <a href="../tour/cateG1.html">전통시장</a><br>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable single">
+                    <a class="navbar-link">
+                        관광안내
+                    </a>
+                    <div class="navbar-dropdown single">
+                        <a class="navbar-item" href="../notice/noticeList.html">
+                            공지사항
+                        </a>
+                        <a class="navbar-item" href="../review/reviewList.html">
+                            이용 및 후기
+                        </a>
+                        <a class="navbar-item" href="../qna/qnaList.html">
+                            Q&amp;A
+                        </a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable single">
+                    <a class="navbar-link">
+                        이야기파주
+                    </a>
+                    <div class="navbar-dropdown single">
+                        <a class="navbar-item" href="../story/storyA.html">
+                            파주이야기
+                        </a>
+                        <a class="navbar-item" href="../story/storyB.html">
+                            인물이야기
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+	<nav class="breadcrumb" aria-label="breadcrumbs"
+		style="border-bottom:2px solid #ddd; padding-bottom:8px; min-height:48px; line-height:48px;">
+		<ul style="float:right;">
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="./all.html">전체 장소</a></li>
+			<li><a href="./cateE.html">
+					<span>숙박</span>
+				</a></li>
+			<li class="is-active"><a href="#" aria-current="page">호텔시에나</a></li>
+		</ul>
+	</nav>
+	<section class="section">
+		<div class="container">
+			<h1 class="title">호텔시에나 상세보기</h1>
+			<div id="con">
+				<table class="table">
+					<tr>
+						<td>
+							<img src="../img/ht.jpg" class="lazy" onerror="this.style.display='none'" alt="배너" />
+						</td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+			<table class="table">
+				<tbody>
+					<tr>
+						<th style="min-width:180px;">번호</th>
+						<td>8</td>
+					</tr>
+					<tr>
+						<th>분류</th>
+						<td>
+							<span>숙박</span>
+						</td>
+					</tr>
+					<tr>
+						<th>장소 번호</th>
+						<td>
+							<p>E0008</p>
+							<input type="hidden" name="tourno" id="tourno" value="E0008" />
+						</td>
+					</tr>
+					<tr>
+						<th>장소명</th>
+						<td>
+							호텔 시에나
+						</td>
+					</tr>
+					<tr>
+						<th>장소 주요 설명</th>
+						<td>
+							<p>호텔</p>
+						</td>
+					</tr>
+					<tr>
+						<th>장소 상세 설명</th>
+						<td>
+							<p>파주 운정신도시에 위치한 비즈니스 관광호텔로 파주, 고양시에 방문목적을 가진 비즈니스 출장객, 내외국인 관광객에게 최적의 숙박장소를 제공하고 있습니다.
+                                본 호텔은 파주 소재의 산업단지, 외국계 기업체들과 MOU를 체결 하였으며 파주 대표 관광지 (예- 헤이리 예술마을)의  공식지정숙박업소로 선정된 바 있습니다.
+                                또한 킨텍스의 공식숙박 제휴업체로 선정되어 있습니다.
+                                호텔시에나는 파주시 최대 규모의 관광호텔로 총 100개의 객실, 그 중 50개의 객실은 트윈룸으로 이루어져 단체투숙객을 유치하기에 알맞은 숙박업체입니다. 
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<th>주소</th>
+						<td>파주시 소리천로 31
+							<input type="hidden" name="addr" id="addr" value="파주시 소리천로 31" />
+							<input type="hidden" name="place" id="place" value="호텔 시에나" />
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div style="clear:both; margin-bottom:20px; padding-bottom:20px; ">
+				<div id="map" style="margin-left:180px;	margin-top:50px; width:800px;height:600px; background:white; ">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1578.0515440239515!2d126.76061205827787!3d37.717258044942554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c8e36465ba97b%3A0x424f30e483c23c9!2z7Zi47YWUIOyLnOyXkOuCmA!5e0!3m2!1sko!2skr!4v1670479571500!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+				
+			</div>
+			<div class="buttons">
+				<a href="./all.html" class="button is-info">전체 목록</a>
+				<a href="./cateE.html" class="button is-info">카테고리 목록</a>
+
+
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="content has-text-centered">
+			<img src="../img/flogo.png" alt="flogo" class="flogo">
+			<p>
+				파주시 홈페이지에 게시된 전자우편주소는 무단으로 수집할 수 없으며, 위반시 정보통신망법에 의해 처벌됩니다.
+			</p>
+			<p>
+				(우 10932) 경기도 파주시 시청로 50 | 대표전화 : 031) 940-4114<br>
+				COPYRIGHT(C) 2021, PAJU CITY ALL RIGHTS RESERVED
+			</p>
+		</div>
+	</footer>
+</body>
+
+</html>
