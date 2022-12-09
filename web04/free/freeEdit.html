@@ -1,209 +1,238 @@
-
-
-
-
-
-
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>글 수정하기</title>
-    <!-- 헤드 부분 인클루드 -->
-    
+	<script src="https://code.jquery.com/jquery-latest.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.css">
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation-prototype.min.css">
+	<link href='https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css' rel='stylesheet'
+		type='text/css'>
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.js"></script>
+	<script type="text/javascript" src="../ckeditor/ckeditor.js"></script>
+	<style>
+		.title-bar-left img {
+			height: 40px;
+		}
 
+		.off-canvas-absolute {
+			background-color: #0a0a0a;
+		}
 
+		.acolor {
+			color: #FEFEFE;
+			text-decoration: none
+		}
 
+		#acolor {
+			color: #FEFEFE;
+		}
 
-<script src="https://code.jquery.com/jquery-latest.js"></script>
-<link rel="stylesheet" href="resources/css/normalize.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation-prototype.min.css">
-<link href='https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css' rel='stylesheet' type='text/css'>
-<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.js"></script>
-<script type="text/javascript" src="/resources/ckeditor/ckeditor.js"></script>
-<style>
-.title-bar-left img{ height: 40px;}
-.off-canvas-absolute { background-color: #0a0a0a;}
-.acolor {color:#FEFEFE; text-decoration:none}
-#acolor {color:#FEFEFE;}
-#ft { background-color: #0a0a0a;}
-.content { width: 1330px; margin-top: 50px; background-color: #FEFEFE;}
-.content1 { width: 1330px; margin-top: 50px; background-color: #FEFEFE;}
-#smenu { width: 100%;}
-#footer { position : absolute;
-bottom : 0; width: 100%; height: 53px;}
-#smenu { width: 100%;  height: 100%;  background-color: #0a0a0a;}
-	html,body {
-        width: 100%;
-        height: 95%;
-      }
-    .mung { color:#FEFEFE; text-align: center; font-family: fantasy; font-weight: 200;} 
-.login-center {
-	height: 40px;
-	width: 1000px;
-	display: block;
-	float: left;
-}
-.login-center:after { content=""; display: block; clear: both;}
-.login input{
-	width: 200px;
-	height: 25px;
-	float: left;
-	margin-right: 20px;
-	margin-top: 8px;
-}
-</style>
+		#ft {
+			background-color: #0a0a0a;
+		}
+
+		.content {
+			width: 1330px;
+			margin-top: 50px;
+			background-color: #FEFEFE;
+		}
+
+		.h1 {
+			color: #FEFEFE;
+		}
+
+		.content1 {
+			width: 1330px;
+			margin-top: 50px;
+			background-color: #0a0a0a;
+		}
+
+		#smenu {
+			width: 100%;
+		}
+
+		#footer {
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			height: 53px;
+		}
+
+		#smenu {
+			width: 100%;
+			height: 100%;
+			background-color: #0a0a0a;
+		}
+
+		html,
+		body {
+			width: 100%;
+			height: 95%;
+		}
+
+		.mung {
+			color: #FEFEFE;
+			text-align: center;
+			font-family: fantasy;
+			font-weight: 200;
+		}
+
+		.login-center {
+			height: 40px;
+			width: 1000px;
+			display: block;
+			float: left;
+		}
+
+		.login-center:after {
+			content:"";
+			display: block;
+			clear: both;
+		}
+
+		.login input {
+			width: 200px;
+			height: 25px;
+			float: left;
+			margin-right: 20px;
+			margin-top: 8px;
+		}
+	</style>
 </head>
+
 <body>
-		<!-- 헤더 부분 인클루드 -->
-	 	
+	<header id="header">
+		<div class="title-bar">
+			<div class="title-bar-left">
+				<button class="menu-icon" type="button" data-open="offCanvasLeftSplit1" data-close></button>
+				<a href="../index.html"><img alt="logo" src="../img/rlogo.png"></a>
+				<span class="title-bar-title">
+					HJpoto
+				</span>
+			</div>
+			<div class="top-bar-right">
+				<ul class="menu">
+					<li><a href="../member/login.html" class="clear button success" id="acolor">Login</a></li>&nbsp;
+					<li><a href="../member/agree.html" class="clear button alert" id="acolor">signup</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<div class="grid-x" style="list-style-type: none;" id="smenu">
+		<div class="cell small-2">
+			<div class="off-canvas-wrapper">
+				<div class="off-canvas-absolute position-left" id="offCanvasLeftSplit1" data-off-canvas>
+					<button class="close-button" aria-label="Close menu" type="button" data-close>
+						<span aria-hidden="true">
+						</span>
+					</button>
+					<ul class="vertical menu accordion-menu" data-accordion-menu>
+						<li>
+							<a class="acolor" href="#">기업소개</a>
+							<ul class="menu vertical nested">
+								<li><a class="acolor" href="../company/hj.html">경영진</a></li>
+								<li><a class="acolor" href="../company/man.html">회사</a></li>
+							</ul>
+						</li>
+						<li>
+							<a class="acolor href=" #">작품</a>
+							<ul class="menu vertical nested">
+								<li><a class="acolor" href="../work/natural.html">자연</a></li>
+								<li><a class="acolor" href="../work/city.html">도시</a></li>
+							</ul>
+						</li>
+						<li>
+							<a class="acolor href=" #">갤러리</a>
+							<ul class="menu vertical nested">
+								<li><a class="acolor" href="../gallery/gallery.html">HJ갤러리</a></li>
+							</ul>
+						</li>
+						<li>
+							<a class="acolor href=" #">고객서비스</a>
+							<ul class="menu vertical nested">
+								<li><a class="acolor" href="../board/boardList.html">공지사항</a></li>
+								<li><a class="acolor" href="../free/freeList.html">자유게시판</a></li>
+								<li><a class="acolor" href="../qna/qnaList.html">Q & A</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="off-canvas-content" style="min-height: 300px;" data-off-canvas-content>
+				</div>
+			</div>
+		</div>
+		<div class="content1" id="content2">
+			<div class="row column text-center">
+				<h2 class="h1">공지사항 글 수정</h2>
+				<hr>
+				<div class="container">
+					<form action="/free/edit.do" method="post">
+						<table id="table1">
+							<tbody>
+								<tr>
+									<th style="background-color:#dcdcdc">글 제목</th>
+									<td>
+										<input type="hidden" name="fseq" id="fseq" value="2">
+										<input type="text" name="title" id="title" placeholder="제목 입력"
+											value="이미지 등록 테스트" maxlength="98" required>
+									</td>
+								</tr>
+								<tr>
+									<th style="background-color:#dcdcdc">글 내용</th>
+									<td>
+										<textarea name="content" id="content" placeholder="내용 입력" rows="8" cols="100"
+											maxlength="800" required><p>이미지 등록 테스트</p>
 
+											<p><img alt="" src="../img/d3.jpg" style="height:240px; width:240px" /></p>
+										</textarea>
+										<script>
+											CKEDITOR.replace("content", { filebrowserUploadUrl: '/free/imageUpload.do' })
+										</script>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2">
+										<input type="submit" class="submit success button" value="글 수정">
+										<a class="button" href="./freeList.html">글 목록</a>
+									</td>
 
-
-
-<header id="header">
-    <div class="title-bar">
-        <div class="title-bar-left">
-            <button class="menu-icon" type="button" data-open="offCanvasLeftSplit1" data-close></button>
-            <a href="/"><img alt="logo" src="/resources/img/rlogo.png"></a>
-            <span class="title-bar-title">
-                HJpoto
-            </span>
-        </div>
-        
-        <div class="top-bar-right">
-            <ul class="menu">
-                
-		          	<li><a href="/member/loginForm.do" class="clear button success" id="acolor">Login</a></li>&nbsp;
-                	<li><a href="/member/agree.do" class="clear button alert" id="acolor">signup</a></li>
-		        
-		          
-		         
-            </ul>
-        </div>
-    </div>
-    </header>
-    <div class="grid-x" style="list-style-type: none;" id="smenu">
-        <div class="cell small-2">
-            <div class="off-canvas-wrapper">
-                <div class="off-canvas-absolute position-left" id="offCanvasLeftSplit1" data-off-canvas>
-                    <button class="close-button" aria-label="Close menu" type="button" data-close>
-                        <span aria-hidden="true">
-                        </span>
-                    </button>
-                    <ul class="vertical menu accordion-menu" data-accordion-menu>
-		  <li>
-		    <a class="acolor" href="#">기업소개</a>
-		    <ul class="menu vertical nested">
-		      <li><a class="acolor" href="/management.do">경영진</a></li>
-		      <li><a class="acolor" href="/hjcompany.do">회사</a></li>
-		    </ul>
-		  </li>
-		  <li>
-		    <a class="acolor href="#">작품</a>
-		    <ul class="menu vertical nested">
-		      <li><a class="acolor" href="#">자연</a></li>
-		      <li><a class="acolor" href="#">도시</a></li>
-		    </ul>
-		  </li>
-		  <li>
-		    <a class="acolor href="#">전시관</a>
-		    <ul class="menu vertical nested">
-		      <li><a class="acolor" href="#">H전시관</a></li>
-		      <li><a class="acolor" href="#">J전시관</a></li>
-		    </ul>
-		  </li>
-		  <li>
-		    <a class="acolor href="#">고객서비스</a>
-		    <ul class="menu vertical nested">
-		      <li><a class="acolor" href="/board/list.do">공지사항</a></li>
-		      <li><a class="acolor" href="/free/list.do">자유게시판</a></li>
-		      <li><a class="acolor" href="/qna/list.do">Q & A</a></li>
-		    </ul>
-		  </li>
-		</ul>
-                </div>
-                <div class="off-canvas-content" style="min-height: 300px;" data-off-canvas-content>
-                </div>
-            </div>
-        </div>
-   
-	
-	<div class="content1" id="content2">
-	    <div class="row column text-center">
-	      <h2 class="h1">공지사항 글 수정</h2>
-	      <hr>
-	      <div class="container">
-	      	<form action="/free/edit.do" method="post">
-			      <table id="table1">
-			      	<tbody>
-			      		<tr>
-			      			<th style="background-color:#dcdcdc">글 제목</th>
-			      			<td>
-			      				<input type="hidden" name="fseq" id="fseq" value="2" >
-			      				<input type="text" name="title" id="title" placeholder="제목 입력" value="이미지 등록 테스트" maxlength="98" required>
-			      			</td>
-			      		</tr>
-			      		<tr>
-			      			<th style="background-color:#dcdcdc">글 내용</th>
-			      			<td>
-			      				<textarea name="content" id="content" placeholder="내용 입력" rows="8" cols="100" maxlength="800" required><p>이미지 등록 테스트</p>
-
-<p><img alt="" src="/free/ckImgSubmit.do?uid=a3aa3979-11bd-496f-87fe-c31fd0ac5a83&amp;fileName=flogo.png" style="height:240px; width:240px" /></p>
-</textarea>
-			      				<script>
-					      	CKEDITOR.replace("content", {filebrowserUploadUrl:'/free/imageUpload.do'})
-					      	</script>
-			      			</td>
-			      		</tr>
-			      		<tr>
-			      			<td colspan="2">
-			      				<input type="submit" class="submit success button" value="글 수정" >
-			      				<a class="button" href="/free/list.do">글 목록</a>
-			      			</td>
-			      			
-			      		</tr>
-			      	</tbody>
-			      </table>
-			   </form>   
-	      </div>
-	    </div>
+								</tr>
+							</tbody>
+						</table>
+					</form>
+				</div>
+			</div>
+		</div>
 	</div>
-    <footer id="footer" class="footer-nav row expanded collapse">
-    	<!-- 푸터 부분 인클루드 -->
-    	
-
-
-
-</div>
-    <script>
-        $(document).foundation();
-    </script>
-
-<footer id="footer">
-    	<div class="grid-x grid-margin-y expanded" id="ft">
-	        <div class="medium-6 cell">
-	          <ul class="menu">
-	            <li><a class="acolor" href="#">기업소개 </a></li>
-	            <li><a class="acolor" href="#">이용약관</a></li>
-	            <li><a class="acolor" href="#">개인정보처리방침</a></li>
-	          </ul>
-	        </div>
-	        <div class="medium-6 cell">
-	          <ul class="menu align-right">
-	            <li class="acolor">Copyright © 2022 HJpoto &nbsp; &nbsp;</li>
-	          </ul>
-	        </div>
-      </div>
-    </footer>
- <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
- <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
-    </footer>
+	<script>
+		$(document).foundation();
+	</script>
+	<footer id="footer" class="footer-nav row expanded collapse">
+		<div class="grid-x grid-margin-y expanded" id="ft">
+			<div class="medium-6 cell">
+				<ul class="menu">
+					<li><a class="acolor" href="#">기업소개 </a></li>
+					<li><a class="acolor" href="#">이용약관</a></li>
+					<li><a class="acolor" href="#">개인정보처리방침</a></li>
+				</ul>
+			</div>
+			<div class="medium-6 cell">
+				<ul class="menu align-right">
+					<li class="acolor">Copyright © 2022 HJpoto &nbsp; &nbsp;</li>
+				</ul>
+			</div>
+		</div>
+		<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+	</footer>
 </body>
+
 </html>

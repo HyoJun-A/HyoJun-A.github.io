@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
+  <title>index</title>
   <script src="https://code.jquery.com/jquery-latest.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.css">
@@ -15,89 +15,22 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.js"></script>
   <script type="text/javascript" src="./ckeditor/ckeditor.js"></script>
   <style>
-    .title-bar-left img {
-      height: 40px;
-    }
-
-    .off-canvas-absolute {
-      background-color: #0a0a0a;
-    }
-
-    .acolor {
-      color: #FEFEFE;
-      text-decoration: none
-    }
-
-    #acolor {
-      color: #FEFEFE;
-    }
-
-    #ft {
-      background-color: #0a0a0a;
-    }
-
-    .content {
-      width: 1330px;
-      margin-top: 50px;
-      background-color: #FEFEFE;
-    }
-
-    .content1 {
-      width: 1330px;
-      margin-top: 50px;
-      background-color: #FEFEFE;
-    }
-
-    #smenu {
-      width: 100%;
-    }
-
-    #footer {
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      height: 53px;
-    }
-
-    #smenu {
-      width: 100%;
-      height: 100%;
-      background-color: #0a0a0a;
-    }
-
+    .title-bar-left img { height: 40px;}
+    .off-canvas-absolute { background-color: #0a0a0a;}
+    .acolor { color: #FEFEFE; text-decoration: none}
+    #acolor { color: #FEFEFE;}
+    #ft { background-color: #0a0a0a; }
+    .content {  width: 1330px; margin-top: 50px; background-color: #FEFEFE;}
+    .content1 { width: 1330px; margin-top: 50px; background-color: #FEFEFE;}
+    #smenu { width: 100%; }
+    #footer { position: absolute; bottom: 0; width: 100%; height: 53px;}
+    #smenu { width: 100%; height: 100%; background-color: #0a0a0a;}
     html,
-    body {
-      width: 100%;
-      height: 95%;
-    }
-
-    .mung {
-      color: #FEFEFE;
-      text-align: center;
-      font-family: fantasy;
-      font-weight: 200;
-    }
-
-    .login-center {
-      height: 40px;
-      width: 1000px;
-      display: block;
-      float: left;
-    }
-
-    .login-center:after {
-      content:"";
-      display: block;
-      clear: both;
-    }
-
-    .login input {
-      width: 200px;
-      height: 25px;
-      float: left;
-      margin-right: 20px;
-      margin-top: 8px;
-    }
+    body { width: 100%; height: 95%;}
+    .mung { color: #FEFEFE; text-align: center; font-family: fantasy; font-weight: 200;}
+    .login-center { height: 40px; width: 1000px; display: block; float: left;}
+    .login-center:after { content:""; display: block; clear: both;}
+    .login input { width: 200px; height: 25px; float: left; margin-right: 20px; margin-top: 8px;}
   </style>
   <style>
     .content {
@@ -110,15 +43,15 @@
     <div class="title-bar">
       <div class="title-bar-left">
         <button class="menu-icon" type="button" data-open="offCanvasLeftSplit1" data-close></button>
-        <a href="/"><img alt="logo" src="./img/rlogo.png"></a>
+        <a href=""><img alt="logo" src="./img/rlogo.png"></a>
         <span class="title-bar-title">
           HJpoto
         </span>
       </div>
       <div class="top-bar-right">
         <ul class="menu">
-          <li><a href="/member/loginForm.do" class="clear button success" id="acolor">Login</a></li>&nbsp;
-          <li><a href="/member/agree.do" class="clear button alert" id="acolor">signup</a></li>
+          <li><a href="./member/login.html" class="clear button success" id="acolor">Login</a></li>&nbsp;
+          <li><a href="./member/agree.html" class="clear button alert" id="acolor">signup</a></li>
         </ul>
       </div>
     </div>
@@ -135,30 +68,29 @@
             <li>
               <a class="acolor" href="#">기업소개</a>
               <ul class="menu vertical nested">
-                <li><a class="acolor" href="/management.do">경영진</a></li>
-                <li><a class="acolor" href="/hjcompany.do">회사</a></li>
+                <li><a class="acolor" href="./company/hj.html">경영진</a></li>
+                <li><a class="acolor" href="./company/man.html">회사</a></li>
               </ul>
             </li>
             <li>
               <a class="acolor href=" #">작품</a>
               <ul class="menu vertical nested">
-                <li><a class="acolor" href="#">자연</a></li>
-                <li><a class="acolor" href="#">도시</a></li>
+                <li><a class="acolor" href="./work/natural.html">자연</a></li>
+                <li><a class="acolor" href="./work/city.html">도시</a></li>
               </ul>
             </li>
             <li>
-              <a class="acolor href=" #">전시관</a>
+              <a class="acolor href=" #">갤러리</a>
               <ul class="menu vertical nested">
-                <li><a class="acolor" href="#">H전시관</a></li>
-                <li><a class="acolor" href="#">J전시관</a></li>
+                <li><a class="acolor" href="./gallery/gallery.html">HJ갤러리</a></li>
               </ul>
             </li>
             <li>
               <a class="acolor href=" #">고객서비스</a>
               <ul class="menu vertical nested">
-                <li><a class="acolor" href="/board/list.do">공지사항</a></li>
-                <li><a class="acolor" href="/free/list.do">자유게시판</a></li>
-                <li><a class="acolor" href="/qna/list.do">Q & A</a></li>
+                <li><a class="acolor" href="./board/boardList.html">공지사항</a></li>
+                <li><a class="acolor" href="./free/freeList.html">자유게시판</a></li>
+                <li><a class="acolor" href="./qna/qnaList.html">Q & A</a></li>
               </ul>
             </li>
           </ul>
@@ -222,7 +154,7 @@
     <div class="grid-x grid-margin-y expanded" id="ft">
       <div class="medium-6 cell">
         <ul class="menu">
-          <li><a class="acolor" href="#">기업소개 </a></li>
+          <li><a class="acolor" href="./company/man.html">기업소개 </a></li>
           <li><a class="acolor" href="#">이용약관</a></li>
           <li><a class="acolor" href="#">개인정보처리방침</a></li>
         </ul>
