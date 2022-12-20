@@ -1,0 +1,210 @@
+{
+  "id": "b5412fb0-d3b3-4cc3-b28a-98842e8c8ecc",
+  "version": "2.0",
+  "name": "wnsgy79",
+  "url": "https://hyojun-a.github.io/web04",
+  "tests": [{
+    "id": "b64f2f1a-6698-41c8-b254-eef3385912f5",
+    "name": "Q1",
+    "commands": [{
+      "id": "253fedee-bf31-430b-8655-ae453b0a814e",
+      "comment": "",
+      "command": "open",
+      "target": "/web04/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ebeaf70c-3e4d-45ee-ae0f-08b9a112d02a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0284a1ab-73d7-43b8-b13a-270e811ca9ba",
+      "comment": "",
+      "command": "click",
+      "target": "css=.menu-icon",
+      "targets": [
+        ["css=.menu-icon", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//header[@id='header']/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "858f7ded-910b-490a-880a-d43e3ce4bc9c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=기업소개",
+      "targets": [
+        ["linkText=기업소개", "linkText"],
+        ["css=#r05yyn-acc-menu-link > .acolor", "css:finder"],
+        ["xpath=//a[contains(text(),'기업소개')]", "xpath:link"],
+        ["xpath=//li[@id='r05yyn-acc-menu-link']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//div/div/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'기업소개')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1e0bfc3b-391f-49db-86fe-12762c294141",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=회사",
+      "targets": [
+        ["linkText=회사", "linkText"],
+        ["css=#\\35pgapk-acc-menu > .is-submenu-item:nth-child(2) > .acolor", "css:finder"],
+        ["xpath=//a[contains(text(),'회사')]", "xpath:link"],
+        ["xpath=//ul[@id='5pgapk-acc-menu']/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './company/man.html')]", "xpath:href"],
+        ["xpath=//li/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'회사')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "23208482-1e73-4e1a-8eeb-3bb9c280870b",
+    "name": "Q2",
+    "commands": [{
+      "id": "2e31d810-7ad4-4e7b-85c2-8e207221a7ba",
+      "comment": "",
+      "command": "open",
+      "target": "https://hyojun-a.github.io/web04/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "af3a23ab-85a9-44a4-acce-a777b19b47d1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fdb96b9a-9ed8-4d1a-b6e1-903edd869395",
+      "comment": "",
+      "command": "click",
+      "target": "css=.menu-icon",
+      "targets": [
+        ["css=.menu-icon", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//header[@id='header']/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "042c9b94-7066-4429-9661-9d69a0e4787d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=고객서비스",
+      "targets": [
+        ["linkText=고객서비스", "linkText"],
+        ["css=#tq4s75-acc-menu-link > .acolor", "css:finder"],
+        ["xpath=//a[contains(text(),'고객서비스')]", "xpath:link"],
+        ["xpath=//li[@id='tq4s75-acc-menu-link']/a", "xpath:idRelative"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'고객서비스')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "abc88af2-fd3b-4b6b-913a-a994a764b6c0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=공지사항",
+      "targets": [
+        ["linkText=공지사항", "linkText"],
+        ["css=#lmwiil-acc-menu > .is-submenu-item:nth-child(1) > .acolor", "css:finder"],
+        ["xpath=//a[contains(text(),'공지사항')]", "xpath:link"],
+        ["xpath=//ul[@id='lmwiil-acc-menu']/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './board/boardList.html')]", "xpath:href"],
+        ["xpath=//li[4]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'공지사항')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ea74e2d-71fd-4881-9ea7-f848da154115",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=글 제목 테스트2",
+      "targets": [
+        ["linkText=글 제목 테스트2", "linkText"],
+        ["css=tr:nth-child(2) a", "css:finder"],
+        ["xpath=//a[contains(text(),'글 제목 테스트2')]", "xpath:link"],
+        ["xpath=//div[@id='content']/div/div/table/tbody/tr[2]/td[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, './boardDetail.html')])[2]", "xpath:href"],
+        ["xpath=//tr[2]/td[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'글 제목 테스트2')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "dc413ce3-c3e1-494d-ad47-20bce449c5b3",
+    "name": "Q3",
+    "commands": [{
+      "id": "beaaf09c-b3aa-4ee7-9c9a-a8d1a1df31bc",
+      "comment": "",
+      "command": "open",
+      "target": "https://hyojun-a.github.io/web04/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "76809fd0-6289-4d70-b7c6-01434ceb87b9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "64d20b51-4aed-4f64-b1a6-518cd528e20d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.menu-icon",
+      "targets": [
+        ["css=.menu-icon", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//header[@id='header']/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7057a2b9-b65c-40de-8219-967dca663a2d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=작품",
+      "targets": [
+        ["linkText=작품", "linkText"],
+        ["css=#jlo66a-acc-menu-link > .acolor", "css:finder"],
+        ["xpath=//a[contains(text(),'작품')]", "xpath:link"],
+        ["xpath=//li[@id='jlo66a-acc-menu-link']/a", "xpath:idRelative"],
+        ["xpath=//div/div/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'작품')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f3919b36-f209-4052-8d86-534d04e6704c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=자연",
+      "targets": [
+        ["linkText=자연", "linkText"],
+        ["css=#\\34y8cjn-acc-menu > .is-submenu-item:nth-child(1) > .acolor", "css:finder"],
+        ["xpath=//a[contains(text(),'자연')]", "xpath:link"],
+        ["xpath=//ul[@id='4y8cjn-acc-menu']/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './work/natural.html')]", "xpath:href"],
+        ["xpath=//li[2]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'자연')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "e09758ef-165f-410a-b732-b975eb92436e",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["b64f2f1a-6698-41c8-b254-eef3385912f5"]
+  }],
+  "urls": ["https://hyojun-a.github.io/"],
+  "plugins": []
+}

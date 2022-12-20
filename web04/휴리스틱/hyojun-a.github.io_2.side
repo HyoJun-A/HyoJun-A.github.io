@@ -1,0 +1,76 @@
+{
+  "id": "4e2cff47-d768-430e-a57d-51cae7a46614",
+  "version": "2.0",
+  "name": "https://hyojun-a.github.io/web04",
+  "url": "https://hyojun-a.github.io",
+  "tests": [{
+    "id": "6ec5fc6a-3f9a-4978-bd66-6393c841d27d",
+    "name": "https://hyojun-a.github.io/web04",
+    "commands": [{
+      "id": "2d2bf49a-544c-4495-9511-58d7b0e81505",
+      "comment": "",
+      "command": "open",
+      "target": "/web04/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9e32f6e2-eb3b-4305-8071-086003180086",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1449x941",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "19b53d6a-1f07-4e47-ae14-2891a60c138e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.menu-icon",
+      "targets": [
+        ["css=.menu-icon", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//header[@id='header']/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c014d139-a3f7-492a-8ae7-31e753075661",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=고객서비스",
+      "targets": [
+        ["linkText=고객서비스", "linkText"],
+        ["css=#p6imis-acc-menu-link > .acolor", "css:finder"],
+        ["xpath=//a[contains(text(),'고객서비스')]", "xpath:link"],
+        ["xpath=//li[@id='p6imis-acc-menu-link']/a", "xpath:idRelative"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'고객서비스')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b084577b-1cae-4670-a2e7-de14bf9286a6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=공지사항",
+      "targets": [
+        ["linkText=공지사항", "linkText"],
+        ["css=#\\30 7o4pp-acc-menu > .is-submenu-item:nth-child(1) > .acolor", "css:finder"],
+        ["xpath=//a[contains(text(),'공지사항')]", "xpath:link"],
+        ["xpath=//ul[@id='07o4pp-acc-menu']/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './board/boardList.html')]", "xpath:href"],
+        ["xpath=//li[4]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'공지사항')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "39f9dc81-a84d-4687-b574-cce97f97ea33",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["6ec5fc6a-3f9a-4978-bd66-6393c841d27d"]
+  }],
+  "urls": ["https://hyojun-a.github.io/"],
+  "plugins": []
+}

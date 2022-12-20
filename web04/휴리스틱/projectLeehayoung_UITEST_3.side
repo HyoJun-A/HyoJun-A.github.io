@@ -1,0 +1,186 @@
+{
+  "id": "b7bfd34d-23bf-433d-b282-f57bc3618cc8",
+  "version": "2.0",
+  "name": "projectLeehayoung_UITEST",
+  "url": "https://hyojun-a.github.io/web04",
+  "tests": [{
+    "id": "97be5dfb-a7af-48fe-94f2-a9c350b47c4e",
+    "name": "projectLeehayoung_UITEST_3",
+    "commands": [{
+      "id": "4d283b81-a3db-4a95-b097-fcde3a925351",
+      "comment": "",
+      "command": "open",
+      "target": "https://hyojun-a.github.io/web04/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5a0ae13c-b243-49a7-b0ea-d27cd12e7452",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1219x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c3d8118d-7eaf-4171-849d-bc7be413d58a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.menu-icon",
+      "targets": [
+        ["css=.menu-icon", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//header[@id='header']/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dbcb27e2-4f93-4c54-a66c-3f57b1b3b0e7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=갤러리",
+      "targets": [
+        ["linkText=갤러리", "linkText"],
+        ["css=#xzbk55-acc-menu-link > .acolor", "css:finder"],
+        ["xpath=//a[contains(text(),'갤러리')]", "xpath:link"],
+        ["xpath=//li[@id='xzbk55-acc-menu-link']/a", "xpath:idRelative"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'갤러리')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ed7de0f5-fa2a-42f2-9899-ed3eb5e43ff8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=갤러리",
+      "targets": [
+        ["linkText=갤러리", "linkText"],
+        ["css=#xzbk55-acc-menu-link > .acolor", "css:finder"],
+        ["xpath=//a[contains(text(),'갤러리')]", "xpath:link"],
+        ["xpath=//li[@id='xzbk55-acc-menu-link']/a", "xpath:idRelative"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'갤러리')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "86a253b6-4a0d-47fa-ab52-edbb06e6a875",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=갤러리",
+      "targets": [
+        ["linkText=갤러리", "linkText"],
+        ["css=#xzbk55-acc-menu-link > .acolor", "css:finder"],
+        ["xpath=//a[contains(text(),'갤러리')]", "xpath:link"],
+        ["xpath=//li[@id='xzbk55-acc-menu-link']/a", "xpath:idRelative"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'갤러리')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "03920de1-d622-4e8c-9f45-af71c5111ea6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=HJ갤러리",
+      "targets": [
+        ["linkText=HJ갤러리", "linkText"],
+        ["css=#\\33 0v4p0-acc-menu .acolor", "css:finder"],
+        ["xpath=//a[contains(text(),'HJ갤러리')]", "xpath:link"],
+        ["xpath=//ul[@id='30v4p0-acc-menu']/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './gallery/gallery.html')]", "xpath:href"],
+        ["xpath=//li[3]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'HJ갤러리')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1fe6ba3e-f53c-429d-bf56-c001235101b0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.menu-icon",
+      "targets": [
+        ["css=.menu-icon", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//header[@id='header']/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "360f73f2-be72-4ac6-b633-cc50d5082f8a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=작품",
+      "targets": [
+        ["linkText=작품", "linkText"],
+        ["css=#rzdfjx-acc-menu-link > .acolor", "css:finder"],
+        ["xpath=//a[contains(text(),'작품')]", "xpath:link"],
+        ["xpath=//li[@id='rzdfjx-acc-menu-link']/a", "xpath:idRelative"],
+        ["xpath=//div/div/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'작품')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3fc8d382-f88c-42e6-b863-ed2b5aded365",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=자연",
+      "targets": [
+        ["linkText=자연", "linkText"],
+        ["css=#\\37 2566w-acc-menu > .is-submenu-item:nth-child(1) > .acolor", "css:finder"],
+        ["xpath=//a[contains(text(),'자연')]", "xpath:link"],
+        ["xpath=//ul[@id='72566w-acc-menu']/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '../work/natural.html')]", "xpath:href"],
+        ["xpath=//li[2]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'자연')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "89d5540b-bafc-4212-8b86-eba11cec6cf4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.menu-icon",
+      "targets": [
+        ["css=.menu-icon", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//header[@id='header']/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "13491829-6204-4668-94e7-81f63ddc6116",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=작품",
+      "targets": [
+        ["linkText=작품", "linkText"],
+        ["css=#dn9cq0-acc-menu-link > .acolor", "css:finder"],
+        ["xpath=//a[contains(text(),'작품')]", "xpath:link"],
+        ["xpath=//li[@id='dn9cq0-acc-menu-link']/a", "xpath:idRelative"],
+        ["xpath=//div/div/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'작품')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ed3a9dcc-58e6-4d74-889d-c6d38f97d516",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=도시",
+      "targets": [
+        ["linkText=도시", "linkText"],
+        ["css=#jr6tt3-acc-menu > .is-submenu-item:nth-child(2) > .acolor", "css:finder"],
+        ["xpath=//a[contains(text(),'도시')]", "xpath:link"],
+        ["xpath=//ul[@id='jr6tt3-acc-menu']/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '../work/city.html')]", "xpath:href"],
+        ["xpath=//li[2]/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'도시')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "f5eec7ab-ead7-4b55-b0ae-14164f9e8040",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://hyojun-a.github.io/"],
+  "plugins": []
+}

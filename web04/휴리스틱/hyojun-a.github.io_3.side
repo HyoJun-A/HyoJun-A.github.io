@@ -1,0 +1,76 @@
+{
+  "id": "a63e3345-ee1e-4d0e-ac5c-c945ef4b32c2",
+  "version": "2.0",
+  "name": "https://hyojun-a.github.io/web04",
+  "url": "https://hyojun-a.github.io",
+  "tests": [{
+    "id": "40d04634-80f8-4ab2-9080-bc9738a5f37a",
+    "name": "https://hyojun-a.github.io/web04",
+    "commands": [{
+      "id": "f082dc56-ff6c-4f4a-b9e0-4b04921708af",
+      "comment": "",
+      "command": "open",
+      "target": "/web04/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8512f93e-e473-4fc2-84d5-79c1d52e0f33",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1449x941",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1d7b426b-8cea-40a3-a143-5807e8eed557",
+      "comment": "",
+      "command": "click",
+      "target": "css=.menu-icon",
+      "targets": [
+        ["css=.menu-icon", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//header[@id='header']/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "50089e5f-61aa-4b5c-a4b7-188ebc19c400",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=작품",
+      "targets": [
+        ["linkText=작품", "linkText"],
+        ["css=#en20od-acc-menu-link > .acolor", "css:finder"],
+        ["xpath=//a[contains(text(),'작품')]", "xpath:link"],
+        ["xpath=//li[@id='en20od-acc-menu-link']/a", "xpath:idRelative"],
+        ["xpath=//div/div/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'작품')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "aa2e3756-4bc5-4872-a2cf-7e75d7aeaa64",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=자연",
+      "targets": [
+        ["linkText=자연", "linkText"],
+        ["css=#eesbc6-acc-menu > .is-submenu-item:nth-child(1) > .acolor", "css:finder"],
+        ["xpath=//a[contains(text(),'자연')]", "xpath:link"],
+        ["xpath=//ul[@id='eesbc6-acc-menu']/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './work/natural.html')]", "xpath:href"],
+        ["xpath=//li[2]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'자연')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "75404ffe-8fa2-46e0-8d8d-db72bf45769f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["40d04634-80f8-4ab2-9080-bc9738a5f37a"]
+  }],
+  "urls": ["https://hyojun-a.github.io/"],
+  "plugins": []
+}

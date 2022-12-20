@@ -1,0 +1,61 @@
+{
+  "id": "9aa16e97-ff10-472c-82b9-20d1ef7f4acd",
+  "version": "2.0",
+  "name": "3",
+  "url": "https://hyojun-a.github.io",
+  "tests": [{
+    "id": "30cfda43-d89d-4d02-873e-29bb4c1cda97",
+    "name": "3",
+    "commands": [{
+      "id": "1e06a143-f624-4588-a5bb-10e017a0dd41",
+      "comment": "",
+      "command": "open",
+      "target": "/web04/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d960518b-5049-4223-af08-2e96f5bb0888",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7c6a1422-2c4f-46af-9c3b-c47ed2e43683",
+      "comment": "",
+      "command": "click",
+      "target": "css=.menu-icon",
+      "targets": [
+        ["css=.menu-icon", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//header[@id='header']/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b1c6a47-8b1e-4b0c-abc4-8ec3c338c097",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=작품",
+      "targets": [
+        ["linkText=작품", "linkText"],
+        ["css=#p07na6-acc-menu-link > .acolor", "css:finder"],
+        ["xpath=//a[contains(text(),'작품')]", "xpath:link"],
+        ["xpath=//li[@id='p07na6-acc-menu-link']/a", "xpath:idRelative"],
+        ["xpath=//div/div/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'작품')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "fd5cbabb-505f-462f-99a5-5b7d7bdb2f9f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["30cfda43-d89d-4d02-873e-29bb4c1cda97"]
+  }],
+  "urls": ["https://hyojun-a.github.io/"],
+  "plugins": []
+}

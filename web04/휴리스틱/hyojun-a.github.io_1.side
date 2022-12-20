@@ -1,0 +1,77 @@
+{
+  "id": "ec17f992-b929-48f4-94b7-ca1072beb7c9",
+  "version": "2.0",
+  "name": "https://hyojun-a.github.io/web04",
+  "url": "https://hyojun-a.github.io",
+  "tests": [{
+    "id": "ce37ba9d-4e07-4b88-91fa-d1dffe438c2b",
+    "name": "https://hyojun-a.github.io/web04_1",
+    "commands": [{
+      "id": "e05f132a-75a5-4dd8-b3c2-6b23af3cc812",
+      "comment": "",
+      "command": "open",
+      "target": "/web04/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a8de6010-610d-4f80-bb11-c00cc4d24334",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1449x941",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "606f6c96-7109-4e15-9cbe-c5be9d30fdfe",
+      "comment": "",
+      "command": "click",
+      "target": "css=.menu-icon",
+      "targets": [
+        ["css=.menu-icon", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//header[@id='header']/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "31ad6947-1b40-47fd-b943-f36e776c1fa7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=기업소개",
+      "targets": [
+        ["linkText=기업소개", "linkText"],
+        ["css=#pz0tup-acc-menu-link > .acolor", "css:finder"],
+        ["xpath=//a[contains(text(),'기업소개')]", "xpath:link"],
+        ["xpath=//li[@id='pz0tup-acc-menu-link']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//div/div/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'기업소개')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d559d33-c8dd-4dcf-b1cf-4d699f8cd71c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=회사",
+      "targets": [
+        ["linkText=회사", "linkText"],
+        ["css=#l1fh5r-acc-menu > .is-submenu-item:nth-child(2) > .acolor", "css:finder"],
+        ["xpath=//a[contains(text(),'회사')]", "xpath:link"],
+        ["xpath=//ul[@id='l1fh5r-acc-menu']/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './company/man.html')]", "xpath:href"],
+        ["xpath=//li/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'회사')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "bf6a7484-6090-4198-a758-8f437064df81",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ce37ba9d-4e07-4b88-91fa-d1dffe438c2b"]
+  }],
+  "urls": ["https://hyojun-a.github.io/"],
+  "plugins": []
+}

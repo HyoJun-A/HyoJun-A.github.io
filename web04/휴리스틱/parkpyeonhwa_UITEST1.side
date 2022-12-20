@@ -1,0 +1,534 @@
+{
+  "id": "27480a3a-3a9c-45ae-ba8a-2407c9c2bb50",
+  "version": "2.0",
+  "name": "parkpyeonhwa_UITEST1",
+  "url": "https://hyojun-a.github.io/web04/",
+  "tests": [{
+    "id": "f32bfee0-e261-40e2-9343-1302dd6e212b",
+    "name": "parkpyeonghwa_UITEST1",
+    "commands": [{
+      "id": "cd1c30ff-143a-48ef-bdba-44684e6cb2c6",
+      "comment": "",
+      "command": "open",
+      "target": "/web04/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "be7b0686-874f-4829-ba25-9ed0fc072e4a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6e5042dc-bfe8-483a-bd8e-2f3f3863bf52",
+      "comment": "",
+      "command": "click",
+      "target": "css=.orbit-bullets > button:nth-child(2)",
+      "targets": [
+        ["css=.orbit-bullets > button:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='7j2673-orbit']/nav/button[2]", "xpath:idRelative"],
+        ["xpath=//nav/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Second slide details.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5e5bbf2c-a811-46d3-adf0-bae689cc50b3",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(3)",
+      "targets": [
+        ["css=button:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='7j2673-orbit']/nav/button[3]", "xpath:idRelative"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'Third slide details.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "22371bfb-ae48-483a-9cb3-9a4280d2b800",
+      "comment": "",
+      "command": "click",
+      "target": "css=.orbit-bullets",
+      "targets": [
+        ["css=.orbit-bullets", "css:finder"],
+        ["xpath=//div[@id='7j2673-orbit']/nav", "xpath:idRelative"],
+        ["xpath=//nav", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "610d63ea-5c70-44dd-a68f-d458b15e6db8",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(4)",
+      "targets": [
+        ["css=button:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='7j2673-orbit']/nav/button[4]", "xpath:idRelative"],
+        ["xpath=//button[4]", "xpath:position"],
+        ["xpath=//button[contains(.,'Fourth slide details.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4c359087-f4b7-44fd-967c-757fc8554ea7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.menu-icon",
+      "targets": [
+        ["css=.menu-icon", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//header[@id='header']/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "65773edc-5ffb-4daf-9a43-7ea1e3a25aa4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=기업소개",
+      "targets": [
+        ["linkText=기업소개", "linkText"],
+        ["css=#zpk6fy-acc-menu-link > .acolor", "css:finder"],
+        ["xpath=//a[contains(text(),'기업소개')]", "xpath:link"],
+        ["xpath=//li[@id='zpk6fy-acc-menu-link']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//div/div/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'기업소개')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4504bb8-819b-475e-af94-f6ce6d190454",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=경영진",
+      "targets": [
+        ["linkText=경영진", "linkText"],
+        ["css=#gxyk4n-acc-menu > .is-submenu-item:nth-child(1) > .acolor", "css:finder"],
+        ["xpath=//a[contains(text(),'경영진')]", "xpath:link"],
+        ["xpath=//ul[@id='gxyk4n-acc-menu']/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './company/hj.html')]", "xpath:href"],
+        ["xpath=//li/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'경영진')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ae97dd3f-eeac-48eb-9705-3810c670988f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.menu-icon",
+      "targets": [
+        ["css=.menu-icon", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//header[@id='header']/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b374f6d0-c4ca-40da-a486-96a1710b794b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=기업소개",
+      "targets": [
+        ["linkText=기업소개", "linkText"],
+        ["css=#xoxj7d-acc-menu-link > .acolor", "css:finder"],
+        ["xpath=//a[contains(text(),'기업소개')]", "xpath:link"],
+        ["xpath=//li[@id='xoxj7d-acc-menu-link']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//div/div/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'기업소개')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b894d2c3-91be-4401-822e-68412521670e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=회사",
+      "targets": [
+        ["linkText=회사", "linkText"],
+        ["css=#\\32knsls-acc-menu > .is-submenu-item:nth-child(2) > .acolor", "css:finder"],
+        ["xpath=//a[contains(text(),'회사')]", "xpath:link"],
+        ["xpath=//ul[@id='2knsls-acc-menu']/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '../company/man.html')]", "xpath:href"],
+        ["xpath=//li/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'회사')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cac8017d-20b8-4ede-bd1c-1a876c229f6f",
+      "comment": "",
+      "command": "click",
+      "target": "css=p:nth-child(4)",
+      "targets": [
+        ["css=p:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='title']/p[2]", "xpath:idRelative"],
+        ["xpath=//p[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "11fb84b5-320e-4d0a-8a5a-02b8ee294d73",
+      "comment": "",
+      "command": "click",
+      "target": "css=p:nth-child(4)",
+      "targets": [
+        ["css=p:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='title']/p[2]", "xpath:idRelative"],
+        ["xpath=//p[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7cc7182e-2ff6-4d78-b6c3-e0cfbd068ca6",
+      "comment": "",
+      "command": "click",
+      "target": "css=p:nth-child(4)",
+      "targets": [
+        ["css=p:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='title']/p[2]", "xpath:idRelative"],
+        ["xpath=//p[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "80bd7fa2-483d-4f9b-9c66-03970ae35686",
+    "name": "parkpyeonghwa_UITEST2",
+    "commands": [{
+      "id": "645f9655-fc7e-4a1f-ac46-71ebf432bb2d",
+      "comment": "",
+      "command": "open",
+      "target": "https://hyojun-a.github.io/web04/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8c173aa9-6206-4b27-af91-c7ab3e786cad",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "71d9f75b-33cc-40d4-a91d-08ba3b5698db",
+      "comment": "",
+      "command": "click",
+      "target": "css=.menu-icon",
+      "targets": [
+        ["css=.menu-icon", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//header[@id='header']/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e503edc1-100e-4243-b414-e7112f18e04b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=고객서비스",
+      "targets": [
+        ["linkText=고객서비스", "linkText"],
+        ["css=#\\30mym6i-acc-menu-link > .acolor", "css:finder"],
+        ["xpath=//a[contains(text(),'고객서비스')]", "xpath:link"],
+        ["xpath=//li[@id='0mym6i-acc-menu-link']/a", "xpath:idRelative"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'고객서비스')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "635cf19b-0b4b-410a-b77a-3a5de62eee13",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=공지사항",
+      "targets": [
+        ["linkText=공지사항", "linkText"],
+        ["css=#\\36j2mb4-acc-menu > .is-submenu-item:nth-child(1) > .acolor", "css:finder"],
+        ["xpath=//a[contains(text(),'공지사항')]", "xpath:link"],
+        ["xpath=//ul[@id='6j2mb4-acc-menu']/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './board/boardList.html')]", "xpath:href"],
+        ["xpath=//li[4]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'공지사항')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ebbad13f-2052-4d15-8325-f24b93090d10",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(2) > td:nth-child(2)",
+      "targets": [
+        ["css=tr:nth-child(2) > td:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='content']/div/div/table/tbody/tr[2]/td[2]", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'글 제목 테스트2')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d2124c0-c275-4751-aa37-abef05f0a432",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(2) > td:nth-child(2)",
+      "targets": [
+        ["css=tr:nth-child(2) > td:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='content']/div/div/table/tbody/tr[2]/td[2]", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'글 제목 테스트2')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9f305afe-bf38-426e-813d-de1c083ce937",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=글 제목 테스트2",
+      "targets": [
+        ["linkText=글 제목 테스트2", "linkText"],
+        ["css=tr:nth-child(2) a", "css:finder"],
+        ["xpath=//a[contains(text(),'글 제목 테스트2')]", "xpath:link"],
+        ["xpath=//div[@id='content']/div/div/table/tbody/tr[2]/td[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, './boardDetail.html')])[2]", "xpath:href"],
+        ["xpath=//tr[2]/td[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'글 제목 테스트2')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "8dedd1f2-3b80-44f5-96cc-cb998c6ec139",
+    "name": "parkpyeonghwa_UITEST3",
+    "commands": [{
+      "id": "bde5f1ae-ccd5-4d57-acc9-d68aa22d0e07",
+      "comment": "",
+      "command": "open",
+      "target": "https://hyojun-a.github.io/web04/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b3782143-1c61-4a17-89cc-b380c576999b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "30d72ffe-f680-45c2-9e63-27c03bc0908e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.title-bar-left",
+      "targets": [
+        ["css=.title-bar-left", "css:finder"],
+        ["xpath=//header[@id='header']/div/div", "xpath:idRelative"],
+        ["xpath=//div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "501d6f11-0a83-4973-8194-3b69ad8d8449",
+      "comment": "",
+      "command": "click",
+      "target": "css=.menu-icon",
+      "targets": [
+        ["css=.menu-icon", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//header[@id='header']/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "632c621a-0db7-4cde-ba08-7897c504bde9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=기업소개",
+      "targets": [
+        ["linkText=기업소개", "linkText"],
+        ["css=#wdum2a-acc-menu-link > .acolor", "css:finder"],
+        ["xpath=//a[contains(text(),'기업소개')]", "xpath:link"],
+        ["xpath=//li[@id='wdum2a-acc-menu-link']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//div/div/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'기업소개')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6b96afa2-83c6-4b70-876f-aa3489e19f69",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=기업소개",
+      "targets": [
+        ["linkText=기업소개", "linkText"],
+        ["css=#wdum2a-acc-menu-link > .acolor", "css:finder"],
+        ["xpath=//a[contains(text(),'기업소개')]", "xpath:link"],
+        ["xpath=//li[@id='wdum2a-acc-menu-link']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//div/div/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'기업소개')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "073a0f38-e4f6-4622-a2b9-9cb7bf6e0227",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=작품",
+      "targets": [
+        ["linkText=작품", "linkText"],
+        ["css=#vqwpc5-acc-menu-link > .acolor", "css:finder"],
+        ["xpath=//a[contains(text(),'작품')]", "xpath:link"],
+        ["xpath=//li[@id='vqwpc5-acc-menu-link']/a", "xpath:idRelative"],
+        ["xpath=//div/div/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'작품')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a8527f1a-b90e-4895-8a1f-b49e0a21e04f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=자연",
+      "targets": [
+        ["linkText=자연", "linkText"],
+        ["css=#zb7uvy-acc-menu > .is-submenu-item:nth-child(1) > .acolor", "css:finder"],
+        ["xpath=//a[contains(text(),'자연')]", "xpath:link"],
+        ["xpath=//ul[@id='zb7uvy-acc-menu']/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './work/natural.html')]", "xpath:href"],
+        ["xpath=//li[2]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'자연')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fe3c00f0-69e9-4c4a-84b1-d40bba7c59f8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.title-bar-left",
+      "targets": [
+        ["css=.title-bar-left", "css:finder"],
+        ["xpath=//header[@id='header']/div/div", "xpath:idRelative"],
+        ["xpath=//div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a9db2684-9b64-400b-b245-8eb3141bad49",
+      "comment": "",
+      "command": "click",
+      "target": "css=.menu-icon",
+      "targets": [
+        ["css=.menu-icon", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//header[@id='header']/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "370788a6-ab95-4825-b678-0c87deddb572",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=작품",
+      "targets": [
+        ["linkText=작품", "linkText"],
+        ["css=#\\31 07cw9-acc-menu-link > .acolor", "css:finder"],
+        ["xpath=//a[contains(text(),'작품')]", "xpath:link"],
+        ["xpath=//li[@id='107cw9-acc-menu-link']/a", "xpath:idRelative"],
+        ["xpath=//div/div/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'작품')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d95cd104-08d8-417a-b9c9-ba401734704d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=도시",
+      "targets": [
+        ["linkText=도시", "linkText"],
+        ["css=#ge5h76-acc-menu > .is-submenu-item:nth-child(2) > .acolor", "css:finder"],
+        ["xpath=//a[contains(text(),'도시')]", "xpath:link"],
+        ["xpath=//ul[@id='ge5h76-acc-menu']/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '../work/city.html')]", "xpath:href"],
+        ["xpath=//li[2]/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'도시')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b24483fc-fa3a-4900-b901-4ffc51940f35",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//div[@id='ssimg']/img)[3]",
+      "targets": [
+        ["xpath=(//div[@id='ssimg']/img)[3]", "xpath:idRelative"],
+        ["xpath=//div[3]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ef9a827-78f2-4ced-a58b-0db0b62f04db",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//div[@id='ssimg']/img)[4]",
+      "targets": [
+        ["xpath=(//div[@id='ssimg']/img)[4]", "xpath:idRelative"],
+        ["xpath=//div[4]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "36706f9e-f6fd-4549-ac2b-cfb1e9a002a8",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//div[@id='ssimg']/img)[4]",
+      "targets": [
+        ["xpath=(//div[@id='ssimg']/img)[4]", "xpath:idRelative"],
+        ["xpath=//div[4]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0bc094ea-bc34-40b7-b483-84b56e1f5e8c",
+      "comment": "",
+      "command": "click",
+      "target": "id=simg",
+      "targets": [
+        ["id=simg", "id"],
+        ["css=#simg", "css:finder"],
+        ["xpath=//div[@id='simg']", "xpath:attributes"],
+        ["xpath=//div[@id='smenu']/div[2]/div", "xpath:idRelative"],
+        ["xpath=//body/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d66bed85-1c72-49e3-b96f-6ec45e4e82fb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.content",
+      "targets": [
+        ["css=.content", "css:finder"],
+        ["xpath=//div[@id='smenu']/div[2]", "xpath:idRelative"],
+        ["xpath=//body/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9520709-dede-458e-9fe7-e0da560aa4fd",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//div[@id='ssimg']/img)[5]",
+      "targets": [
+        ["xpath=(//div[@id='ssimg']/img)[5]", "xpath:idRelative"],
+        ["xpath=//div[5]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a26632d0-38d4-43ba-82bd-5b9684c3b6c0",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//div[@id='ssimg']/img)[4]",
+      "targets": [
+        ["xpath=(//div[@id='ssimg']/img)[4]", "xpath:idRelative"],
+        ["xpath=//div[4]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "19285a85-feb6-4f73-97ac-145bd27b82d7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.content",
+      "targets": [
+        ["css=.content", "css:finder"],
+        ["xpath=//div[@id='smenu']/div[2]", "xpath:idRelative"],
+        ["xpath=//body/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "2794188c-76e4-448b-a7d7-766281a956e2",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["f32bfee0-e261-40e2-9343-1302dd6e212b"]
+  }],
+  "urls": ["https://hyojun-a.github.io/"],
+  "plugins": []
+}
