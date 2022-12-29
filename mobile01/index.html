@@ -5,6 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
     <title>대준신발</title>
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta http-equiv="refresh" content="600">
+    <meta http-equiv="Page-Enter" content="revealtrans(Duration=1,Transition=12)">
+
+    <meta name="application-name" content="대준신발">
+    <meta name="subject" content="대준신발">
+    <meta name="keywords" content="신발 할인 판매">
+    <meta name="description" content="대준 신발은 다양한 브랜드의 신발을 판매합니다.">
+    <meta name="url" content="https://hyojun-a.github.io/mobile01">
+    <meta name="author" content="ahn hyo jun">
+    <meta name="email" content="wnsgy79@gmail.com">
+    <meta name="robots" content="index, flow">
+
+    <!-- 오픈 그래프 -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hyojun-a.github.io/mobile01">
+    <meta property="og:title" content="대준신발">
+    <meta property="og:site_name" content="대준신발">
+    <meta property="og:image" content="assets/images/site.png">
+    <meta property="og:image:width" content="1000">
+    <meta property="og:image:height" content="400">
+    <meta property="og:locale" content="ko_KR">
+    <meta name="twitter:card" content="video">
+    <meta name="twitter:title" content="대준신발">
+    <meta name="twitter:description" content="대준 신발은 다양한 브랜드의 신발을 판매합니다.">
+    <meta name="twitter:image" content="assets/images/site.png">
+
+    <meta name="apple-mobile-web-app-capable" href="yes">
+
     <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
     <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
@@ -95,17 +125,13 @@
         }
         /* 태블릿 768px ~ 959px */
         @media screen and (min-width:768px) and (max-width:959px) { 
-
+            .pt { font-size:0.9rem; text-align: center;}
+            .st { text-align: center;}
         } 
         /* 데스크탑 또는 랩탑 960px 이상 */     
         @media screen and (min-width:960px) { 
-
-        }
-        @media screen and (orientation:landscape){
-
-        }
-        @media print {
-            
+            .pt { font-size:1rem; text-align: center;}
+            .st { text-align: center;}
         }
         </style>
 </head>
@@ -155,7 +181,7 @@
                     <ul data-role="listview">
                         <li><a href="#page19">자주 묻는 질문</a></li>
                         <li><a href="#page20">공지사항</a></li>
-                        <li><a href="#">질문 및 답변</a></li>
+                        <li><a href="#page22">질문 및 답변</a></li>
                     </ul>
                 </div>
             </div>
@@ -492,31 +518,31 @@
                 <div data-role="collapsible" data-mini="true">
                     <h4>신발</h4>
                     <ul data-role="listview">
-                        <li><a href="#">Men</a></li>
-                        <li><a href="#">WOMEN</a></li>
-                        <li><a href="#">KID</a></li>
+                        <li><a href="#page4">Men</a></li>
+                        <li><a href="#page6">WOMEN</a></li>
+                        <li><a href="#page8">KID</a></li>
                     </ul>
                 </div>
                 <div data-role="collapsible" data-mini="true">
                     <h4>할인</h4>
                     <ul data-role="listview">
-                        <li><a href="#">Men</a></li>
-                        <li><a href="#">WOMEN</a></li>
-                        <li><a href="#">KID</a></li>
+                        <li><a href="#page10">Men</a></li>
+                        <li><a href="#page12">WOMEN</a></li>
+                        <li><a href="#page13">KID</a></li>
                     </ul>
                 </div>
                 <div data-role="collapsible" data-mini="true">
                     <h4>홍보영상</h4>
                     <ul data-role="listview">
-                        <li><a href="#">영상</a></li>
+                        <li><a href="#page16">영상</a></li>
                     </ul>
                 </div>
                 <div data-role="collapsible" data-mini="true">
                     <h4>고객센터</h4>
                     <ul data-role="listview">
-                        <li><a href="#">자주 묻는 질문</a></li>
-                        <li><a href="#">공지사항</a></li>
-                        <li><a href="#">질문 및 답변</a></li>
+                        <li><a href="#page19">자주 묻는 질문</a></li>
+                        <li><a href="#page20">공지사항</a></li>
+                        <li><a href="#page22">질문 및 답변</a></li>
                     </ul>
                 </div>
             </div>
@@ -594,31 +620,31 @@
                 <div data-role="collapsible" data-mini="true">
                     <h4>신발</h4>
                     <ul data-role="listview">
-                        <li><a href="#">Men</a></li>
-                        <li><a href="#">WOMEN</a></li>
-                        <li><a href="#">KID</a></li>
+                        <li><a href="#page4">Men</a></li>
+                        <li><a href="#page6">WOMEN</a></li>
+                        <li><a href="#page8">KID</a></li>
                     </ul>
                 </div>
                 <div data-role="collapsible" data-mini="true">
                     <h4>할인</h4>
                     <ul data-role="listview">
-                        <li><a href="#">Men</a></li>
-                        <li><a href="#">WOMEN</a></li>
-                        <li><a href="#">KID</a></li>
+                        <li><a href="#page10">Men</a></li>
+                        <li><a href="#page12">WOMEN</a></li>
+                        <li><a href="#page13">KID</a></li>
                     </ul>
                 </div>
                 <div data-role="collapsible" data-mini="true">
                     <h4>홍보영상</h4>
                     <ul data-role="listview">
-                        <li><a href="#">영상</a></li>
+                        <li><a href="#page16">영상</a></li>
                     </ul>
                 </div>
                 <div data-role="collapsible" data-mini="true">
                     <h4>고객센터</h4>
                     <ul data-role="listview">
-                        <li><a href="#">자주 묻는 질문</a></li>
-                        <li><a href="#">공지사항</a></li>
-                        <li><a href="#">질문 및 답변</a></li>
+                        <li><a href="#page19">자주 묻는 질문</a></li>
+                        <li><a href="#page20">공지사항</a></li>
+                        <li><a href="#page22">질문 및 답변</a></li>
                     </ul>
                 </div>
             </div>
@@ -1512,7 +1538,6 @@
                         <label for="ck_item2" class="form-check-label">개인정보처리방침에 동의</label><br><br>
                     </div><br><hr><br>
                     <div class="btn-group">
-                        <label for="ck_item3" onclick="protocol()" class="button is-info">전체 약관에 동의</label>
                         <button type="button" id="in_btn1" class="button is-info">다음 단계</button>
                     </div>
                     <script>
@@ -1527,10 +1552,6 @@
                             return;
                         }
                     });
-                    function protocol(){
-                        ck_item1.checked = true;
-                        ck_item2.checked = true;
-                    }
                     </script>
         </div>
         <!-- TODO page2 footer -->
@@ -1581,31 +1602,31 @@
                 <div data-role="collapsible" data-mini="true">
                     <h4>신발</h4>
                     <ul data-role="listview">
-                        <li><a href="#">Men</a></li>
-                        <li><a href="#">WOMEN</a></li>
-                        <li><a href="#">KID</a></li>
+                        <li><a href="#page4">Men</a></li>
+                        <li><a href="#page6">WOMEN</a></li>
+                        <li><a href="#page8">KID</a></li>
                     </ul>
                 </div>
                 <div data-role="collapsible" data-mini="true">
                     <h4>할인</h4>
                     <ul data-role="listview">
-                        <li><a href="#">Men</a></li>
-                        <li><a href="#">WOMEN</a></li>
-                        <li><a href="#">KID</a></li>
+                        <li><a href="#page10">Men</a></li>
+                        <li><a href="#page12">WOMEN</a></li>
+                        <li><a href="#page13">KID</a></li>
                     </ul>
                 </div>
                 <div data-role="collapsible" data-mini="true">
                     <h4>홍보영상</h4>
                     <ul data-role="listview">
-                        <li><a href="#">영상</a></li>
+                        <li><a href="#page16">영상</a></li>
                     </ul>
                 </div>
                 <div data-role="collapsible" data-mini="true">
                     <h4>고객센터</h4>
                     <ul data-role="listview">
-                        <li><a href="#">자주 묻는 질문</a></li>
-                        <li><a href="#">공지사항</a></li>
-                        <li><a href="#">질문 및 답변</a></li>
+                        <li><a href="#page19">자주 묻는 질문</a></li>
+                        <li><a href="#page20">공지사항</a></li>
+                        <li><a href="#page22">질문 및 답변</a></li>
                     </ul>
                 </div>
             </div>
@@ -1725,31 +1746,31 @@
                 <div data-role="collapsible" data-mini="true">
                     <h4>신발</h4>
                     <ul data-role="listview">
-                        <li><a href="#">Men</a></li>
-                        <li><a href="#">WOMEN</a></li>
-                        <li><a href="#">KID</a></li>
+                        <li><a href="#page4">Men</a></li>
+                        <li><a href="#page6">WOMEN</a></li>
+                        <li><a href="#page8">KID</a></li>
                     </ul>
                 </div>
                 <div data-role="collapsible" data-mini="true">
                     <h4>할인</h4>
                     <ul data-role="listview">
-                        <li><a href="#">Men</a></li>
-                        <li><a href="#">WOMEN</a></li>
-                        <li><a href="#">KID</a></li>
+                        <li><a href="#page10">Men</a></li>
+                        <li><a href="#page12">WOMEN</a></li>
+                        <li><a href="#page13">KID</a></li>
                     </ul>
                 </div>
                 <div data-role="collapsible" data-mini="true">
                     <h4>홍보영상</h4>
                     <ul data-role="listview">
-                        <li><a href="#">영상</a></li>
+                        <li><a href="#page16">영상</a></li>
                     </ul>
                 </div>
                 <div data-role="collapsible" data-mini="true">
                     <h4>고객센터</h4>
                     <ul data-role="listview">
-                        <li><a href="#">자주 묻는 질문</a></li>
-                        <li><a href="#">공지사항</a></li>
-                        <li><a href="#">질문 및 답변</a></li>
+                        <li><a href="#page19">자주 묻는 질문</a></li>
+                        <li><a href="#page20">공지사항</a></li>
+                        <li><a href="#page22">질문 및 답변</a></li>
                     </ul>
                 </div>
             </div>
@@ -1848,31 +1869,31 @@
                 <div data-role="collapsible" data-mini="true">
                     <h4>신발</h4>
                     <ul data-role="listview">
-                        <li><a href="#">Men</a></li>
-                        <li><a href="#">WOMEN</a></li>
-                        <li><a href="#">KID</a></li>
+                        <li><a href="#page4">Men</a></li>
+                        <li><a href="#page6">WOMEN</a></li>
+                        <li><a href="#page8">KID</a></li>
                     </ul>
                 </div>
                 <div data-role="collapsible" data-mini="true">
                     <h4>할인</h4>
                     <ul data-role="listview">
-                        <li><a href="#">Men</a></li>
-                        <li><a href="#">WOMEN</a></li>
-                        <li><a href="#">KID</a></li>
+                        <li><a href="#page10">Men</a></li>
+                        <li><a href="#page12">WOMEN</a></li>
+                        <li><a href="#page13">KID</a></li>
                     </ul>
                 </div>
                 <div data-role="collapsible" data-mini="true">
                     <h4>홍보영상</h4>
                     <ul data-role="listview">
-                        <li><a href="#">영상</a></li>
+                        <li><a href="#page16">영상</a></li>
                     </ul>
                 </div>
                 <div data-role="collapsible" data-mini="true">
                     <h4>고객센터</h4>
                     <ul data-role="listview">
-                        <li><a href="#">자주 묻는 질문</a></li>
-                        <li><a href="#">공지사항</a></li>
-                        <li><a href="#">질문 및 답변</a></li>
+                        <li><a href="#page19">자주 묻는 질문</a></li>
+                        <li><a href="#page20">공지사항</a></li>
+                        <li><a href="#page22">질문 및 답변</a></li>
                     </ul>
                 </div>
             </div>
@@ -1949,31 +1970,31 @@
                 <div data-role="collapsible" data-mini="true">
                     <h4>신발</h4>
                     <ul data-role="listview">
-                        <li><a href="#">Men</a></li>
-                        <li><a href="#">WOMEN</a></li>
-                        <li><a href="#">KID</a></li>
+                        <li><a href="#page4">Men</a></li>
+                        <li><a href="#page6">WOMEN</a></li>
+                        <li><a href="#page8">KID</a></li>
                     </ul>
                 </div>
                 <div data-role="collapsible" data-mini="true">
                     <h4>할인</h4>
                     <ul data-role="listview">
-                        <li><a href="#">Men</a></li>
-                        <li><a href="#">WOMEN</a></li>
-                        <li><a href="#">KID</a></li>
+                        <li><a href="#page10">Men</a></li>
+                        <li><a href="#page12">WOMEN</a></li>
+                        <li><a href="#page13">KID</a></li>
                     </ul>
                 </div>
                 <div data-role="collapsible" data-mini="true">
                     <h4>홍보영상</h4>
                     <ul data-role="listview">
-                        <li><a href="#">영상</a></li>
+                        <li><a href="#page16">영상</a></li>
                     </ul>
                 </div>
                 <div data-role="collapsible" data-mini="true">
                     <h4>고객센터</h4>
                     <ul data-role="listview">
-                        <li><a href="#">자주 묻는 질문</a></li>
-                        <li><a href="#">공지사항</a></li>
-                        <li><a href="#">질문 및 답변</a></li>
+                        <li><a href="#page19">자주 묻는 질문</a></li>
+                        <li><a href="#page20">공지사항</a></li>
+                        <li><a href="#page22">질문 및 답변</a></li>
                     </ul>
                 </div>
             </div>
@@ -2072,31 +2093,31 @@
                 <div data-role="collapsible" data-mini="true">
                     <h4>신발</h4>
                     <ul data-role="listview">
-                        <li><a href="#">Men</a></li>
-                        <li><a href="#">WOMEN</a></li>
-                        <li><a href="#">KID</a></li>
+                        <li><a href="#page4">Men</a></li>
+                        <li><a href="#page6">WOMEN</a></li>
+                        <li><a href="#page8">KID</a></li>
                     </ul>
                 </div>
                 <div data-role="collapsible" data-mini="true">
                     <h4>할인</h4>
                     <ul data-role="listview">
-                        <li><a href="#">Men</a></li>
-                        <li><a href="#">WOMEN</a></li>
-                        <li><a href="#">KID</a></li>
+                        <li><a href="#page10">Men</a></li>
+                        <li><a href="#page12">WOMEN</a></li>
+                        <li><a href="#page13">KID</a></li>
                     </ul>
                 </div>
                 <div data-role="collapsible" data-mini="true">
                     <h4>홍보영상</h4>
                     <ul data-role="listview">
-                        <li><a href="#">영상</a></li>
+                        <li><a href="#page16">영상</a></li>
                     </ul>
                 </div>
                 <div data-role="collapsible" data-mini="true">
                     <h4>고객센터</h4>
                     <ul data-role="listview">
-                        <li><a href="#">자주 묻는 질문</a></li>
-                        <li><a href="#">공지사항</a></li>
-                        <li><a href="#">질문 및 답변</a></li>
+                        <li><a href="#page19">자주 묻는 질문</a></li>
+                        <li><a href="#page20">공지사항</a></li>
+                        <li><a href="#page22">질문 및 답변</a></li>
                     </ul>
                 </div>
             </div>
@@ -2173,31 +2194,31 @@
                 <div data-role="collapsible" data-mini="true">
                     <h4>신발</h4>
                     <ul data-role="listview">
-                        <li><a href="#">Men</a></li>
-                        <li><a href="#">WOMEN</a></li>
-                        <li><a href="#">KID</a></li>
+                        <li><a href="#page4">Men</a></li>
+                        <li><a href="#page6">WOMEN</a></li>
+                        <li><a href="#page8">KID</a></li>
                     </ul>
                 </div>
                 <div data-role="collapsible" data-mini="true">
                     <h4>할인</h4>
                     <ul data-role="listview">
-                        <li><a href="#">Men</a></li>
-                        <li><a href="#">WOMEN</a></li>
-                        <li><a href="#">KID</a></li>
+                        <li><a href="#page10">Men</a></li>
+                        <li><a href="#page12">WOMEN</a></li>
+                        <li><a href="#page13">KID</a></li>
                     </ul>
                 </div>
                 <div data-role="collapsible" data-mini="true">
                     <h4>홍보영상</h4>
                     <ul data-role="listview">
-                        <li><a href="#">영상</a></li>
+                        <li><a href="#page16">영상</a></li>
                     </ul>
                 </div>
                 <div data-role="collapsible" data-mini="true">
                     <h4>고객센터</h4>
                     <ul data-role="listview">
-                        <li><a href="#">자주 묻는 질문</a></li>
-                        <li><a href="#">공지사항</a></li>
-                        <li><a href="#">질문 및 답변</a></li>
+                        <li><a href="#page19">자주 묻는 질문</a></li>
+                        <li><a href="#page20">공지사항</a></li>
+                        <li><a href="#page22">질문 및 답변</a></li>
                     </ul>
                 </div>
             </div>
@@ -2296,31 +2317,31 @@
                 <div data-role="collapsible" data-mini="true">
                     <h4>신발</h4>
                     <ul data-role="listview">
-                        <li><a href="#">Men</a></li>
-                        <li><a href="#">WOMEN</a></li>
-                        <li><a href="#">KID</a></li>
+                        <li><a href="#page4">Men</a></li>
+                        <li><a href="#page6">WOMEN</a></li>
+                        <li><a href="#page8">KID</a></li>
                     </ul>
                 </div>
                 <div data-role="collapsible" data-mini="true">
                     <h4>할인</h4>
                     <ul data-role="listview">
-                        <li><a href="#">Men</a></li>
-                        <li><a href="#">WOMEN</a></li>
-                        <li><a href="#">KID</a></li>
+                        <li><a href="#page10">Men</a></li>
+                        <li><a href="#page12">WOMEN</a></li>
+                        <li><a href="#page13">KID</a></li>
                     </ul>
                 </div>
                 <div data-role="collapsible" data-mini="true">
                     <h4>홍보영상</h4>
                     <ul data-role="listview">
-                        <li><a href="#">영상</a></li>
+                        <li><a href="#page16">영상</a></li>
                     </ul>
                 </div>
                 <div data-role="collapsible" data-mini="true">
                     <h4>고객센터</h4>
                     <ul data-role="listview">
-                        <li><a href="#">자주 묻는 질문</a></li>
-                        <li><a href="#">공지사항</a></li>
-                        <li><a href="#">질문 및 답변</a></li>
+                        <li><a href="#page19">자주 묻는 질문</a></li>
+                        <li><a href="#page20">공지사항</a></li>
+                        <li><a href="#page22">질문 및 답변</a></li>
                     </ul>
                 </div>
             </div>
@@ -2397,31 +2418,31 @@
                 <div data-role="collapsible" data-mini="true">
                     <h4>신발</h4>
                     <ul data-role="listview">
-                        <li><a href="#">Men</a></li>
-                        <li><a href="#">WOMEN</a></li>
-                        <li><a href="#">KID</a></li>
+                        <li><a href="#page4">Men</a></li>
+                        <li><a href="#page6">WOMEN</a></li>
+                        <li><a href="#page8">KID</a></li>
                     </ul>
                 </div>
                 <div data-role="collapsible" data-mini="true">
                     <h4>할인</h4>
                     <ul data-role="listview">
-                        <li><a href="#">Men</a></li>
-                        <li><a href="#">WOMEN</a></li>
-                        <li><a href="#">KID</a></li>
+                        <li><a href="#page10">Men</a></li>
+                        <li><a href="#page12">WOMEN</a></li>
+                        <li><a href="#page13">KID</a></li>
                     </ul>
                 </div>
                 <div data-role="collapsible" data-mini="true">
                     <h4>홍보영상</h4>
                     <ul data-role="listview">
-                        <li><a href="#">영상</a></li>
+                        <li><a href="#page16">영상</a></li>
                     </ul>
                 </div>
                 <div data-role="collapsible" data-mini="true">
                     <h4>고객센터</h4>
                     <ul data-role="listview">
-                        <li><a href="#">자주 묻는 질문</a></li>
-                        <li><a href="#">공지사항</a></li>
-                        <li><a href="#">질문 및 답변</a></li>
+                        <li><a href="#page19">자주 묻는 질문</a></li>
+                        <li><a href="#page20">공지사항</a></li>
+                        <li><a href="#page22">질문 및 답변</a></li>
                     </ul>
                 </div>
             </div>
@@ -2526,31 +2547,31 @@
                 <div data-role="collapsible" data-mini="true">
                     <h4>신발</h4>
                     <ul data-role="listview">
-                        <li><a href="#">Men</a></li>
-                        <li><a href="#">WOMEN</a></li>
-                        <li><a href="#">KID</a></li>
+                        <li><a href="#page4">Men</a></li>
+                        <li><a href="#page6">WOMEN</a></li>
+                        <li><a href="#page8">KID</a></li>
                     </ul>
                 </div>
                 <div data-role="collapsible" data-mini="true">
                     <h4>할인</h4>
                     <ul data-role="listview">
-                        <li><a href="#">Men</a></li>
-                        <li><a href="#">WOMEN</a></li>
-                        <li><a href="#">KID</a></li>
+                        <li><a href="#page10">Men</a></li>
+                        <li><a href="#page12">WOMEN</a></li>
+                        <li><a href="#page13">KID</a></li>
                     </ul>
                 </div>
                 <div data-role="collapsible" data-mini="true">
                     <h4>홍보영상</h4>
                     <ul data-role="listview">
-                        <li><a href="#">영상</a></li>
+                        <li><a href="#page16">영상</a></li>
                     </ul>
                 </div>
                 <div data-role="collapsible" data-mini="true">
                     <h4>고객센터</h4>
                     <ul data-role="listview">
-                        <li><a href="#">자주 묻는 질문</a></li>
-                        <li><a href="#">공지사항</a></li>
-                        <li><a href="#">질문 및 답변</a></li>
+                        <li><a href="#page19">자주 묻는 질문</a></li>
+                        <li><a href="#page20">공지사항</a></li>
+                        <li><a href="#page22">질문 및 답변</a></li>
                     </ul>
                 </div>
             </div>
@@ -2629,31 +2650,31 @@
                 <div data-role="collapsible" data-mini="true">
                     <h4>신발</h4>
                     <ul data-role="listview">
-                        <li><a href="#">Men</a></li>
-                        <li><a href="#">WOMEN</a></li>
-                        <li><a href="#">KID</a></li>
+                        <li><a href="#page4">Men</a></li>
+                        <li><a href="#page6">WOMEN</a></li>
+                        <li><a href="#page8">KID</a></li>
                     </ul>
                 </div>
                 <div data-role="collapsible" data-mini="true">
                     <h4>할인</h4>
                     <ul data-role="listview">
-                        <li><a href="#">Men</a></li>
-                        <li><a href="#">WOMEN</a></li>
-                        <li><a href="#">KID</a></li>
+                        <li><a href="#page10">Men</a></li>
+                        <li><a href="#page12">WOMEN</a></li>
+                        <li><a href="#page13">KID</a></li>
                     </ul>
                 </div>
                 <div data-role="collapsible" data-mini="true">
                     <h4>홍보영상</h4>
                     <ul data-role="listview">
-                        <li><a href="#">영상</a></li>
+                        <li><a href="#page16">영상</a></li>
                     </ul>
                 </div>
                 <div data-role="collapsible" data-mini="true">
                     <h4>고객센터</h4>
                     <ul data-role="listview">
-                        <li><a href="#">자주 묻는 질문</a></li>
-                        <li><a href="#">공지사항</a></li>
-                        <li><a href="#">질문 및 답변</a></li>
+                        <li><a href="#page19">자주 묻는 질문</a></li>
+                        <li><a href="#page20">공지사항</a></li>
+                        <li><a href="#page22">질문 및 답변</a></li>
                     </ul>
                 </div>
             </div>
@@ -2758,31 +2779,31 @@
                 <div data-role="collapsible" data-mini="true">
                     <h4>신발</h4>
                     <ul data-role="listview">
-                        <li><a href="#">Men</a></li>
-                        <li><a href="#">WOMEN</a></li>
-                        <li><a href="#">KID</a></li>
+                        <li><a href="#page4">Men</a></li>
+                        <li><a href="#page6">WOMEN</a></li>
+                        <li><a href="#page8">KID</a></li>
                     </ul>
                 </div>
                 <div data-role="collapsible" data-mini="true">
                     <h4>할인</h4>
                     <ul data-role="listview">
-                        <li><a href="#">Men</a></li>
-                        <li><a href="#">WOMEN</a></li>
-                        <li><a href="#">KID</a></li>
+                        <li><a href="#page10">Men</a></li>
+                        <li><a href="#page12">WOMEN</a></li>
+                        <li><a href="#page13">KID</a></li>
                     </ul>
                 </div>
                 <div data-role="collapsible" data-mini="true">
                     <h4>홍보영상</h4>
                     <ul data-role="listview">
-                        <li><a href="#">영상</a></li>
+                        <li><a href="#page16">영상</a></li>
                     </ul>
                 </div>
                 <div data-role="collapsible" data-mini="true">
                     <h4>고객센터</h4>
                     <ul data-role="listview">
-                        <li><a href="#">자주 묻는 질문</a></li>
-                        <li><a href="#">공지사항</a></li>
-                        <li><a href="#">질문 및 답변</a></li>
+                        <li><a href="#page19">자주 묻는 질문</a></li>
+                        <li><a href="#page20">공지사항</a></li>
+                        <li><a href="#page22">질문 및 답변</a></li>
                     </ul>
                 </div>
             </div>
@@ -2861,31 +2882,31 @@
                 <div data-role="collapsible" data-mini="true">
                     <h4>신발</h4>
                     <ul data-role="listview">
-                        <li><a href="#">Men</a></li>
-                        <li><a href="#">WOMEN</a></li>
-                        <li><a href="#">KID</a></li>
+                        <li><a href="#page4">Men</a></li>
+                        <li><a href="#page6">WOMEN</a></li>
+                        <li><a href="#page8">KID</a></li>
                     </ul>
                 </div>
                 <div data-role="collapsible" data-mini="true">
                     <h4>할인</h4>
                     <ul data-role="listview">
-                        <li><a href="#">Men</a></li>
-                        <li><a href="#">WOMEN</a></li>
-                        <li><a href="#">KID</a></li>
+                        <li><a href="#page10">Men</a></li>
+                        <li><a href="#page12">WOMEN</a></li>
+                        <li><a href="#page13">KID</a></li>
                     </ul>
                 </div>
                 <div data-role="collapsible" data-mini="true">
                     <h4>홍보영상</h4>
                     <ul data-role="listview">
-                        <li><a href="#">영상</a></li>
+                        <li><a href="#page16">영상</a></li>
                     </ul>
                 </div>
                 <div data-role="collapsible" data-mini="true">
                     <h4>고객센터</h4>
                     <ul data-role="listview">
-                        <li><a href="#">자주 묻는 질문</a></li>
-                        <li><a href="#">공지사항</a></li>
-                        <li><a href="#">질문 및 답변</a></li>
+                        <li><a href="#page19">자주 묻는 질문</a></li>
+                        <li><a href="#page20">공지사항</a></li>
+                        <li><a href="#page22">질문 및 답변</a></li>
                     </ul>
                 </div>
             </div>
@@ -2990,31 +3011,31 @@
                 <div data-role="collapsible" data-mini="true">
                     <h4>신발</h4>
                     <ul data-role="listview">
-                        <li><a href="#">Men</a></li>
-                        <li><a href="#">WOMEN</a></li>
-                        <li><a href="#">KID</a></li>
+                        <li><a href="#page4">Men</a></li>
+                        <li><a href="#page6">WOMEN</a></li>
+                        <li><a href="#page8">KID</a></li>
                     </ul>
                 </div>
                 <div data-role="collapsible" data-mini="true">
                     <h4>할인</h4>
                     <ul data-role="listview">
-                        <li><a href="#">Men</a></li>
-                        <li><a href="#">WOMEN</a></li>
-                        <li><a href="#">KID</a></li>
+                        <li><a href="#page10">Men</a></li>
+                        <li><a href="#page12">WOMEN</a></li>
+                        <li><a href="#page13">KID</a></li>
                     </ul>
                 </div>
                 <div data-role="collapsible" data-mini="true">
                     <h4>홍보영상</h4>
                     <ul data-role="listview">
-                        <li><a href="#">영상</a></li>
+                        <li><a href="#page16">영상</a></li>
                     </ul>
                 </div>
                 <div data-role="collapsible" data-mini="true">
                     <h4>고객센터</h4>
                     <ul data-role="listview">
-                        <li><a href="#">자주 묻는 질문</a></li>
-                        <li><a href="#">공지사항</a></li>
-                        <li><a href="#">질문 및 답변</a></li>
+                        <li><a href="#page19">자주 묻는 질문</a></li>
+                        <li><a href="#page20">공지사항</a></li>
+                        <li><a href="#page22">질문 및 답변</a></li>
                     </ul>
                 </div>
             </div>
@@ -3093,31 +3114,31 @@
                 <div data-role="collapsible" data-mini="true">
                     <h4>신발</h4>
                     <ul data-role="listview">
-                        <li><a href="#">Men</a></li>
-                        <li><a href="#">WOMEN</a></li>
-                        <li><a href="#">KID</a></li>
+                        <li><a href="#page4">Men</a></li>
+                        <li><a href="#page6">WOMEN</a></li>
+                        <li><a href="#page8">KID</a></li>
                     </ul>
                 </div>
                 <div data-role="collapsible" data-mini="true">
                     <h4>할인</h4>
                     <ul data-role="listview">
-                        <li><a href="#">Men</a></li>
-                        <li><a href="#">WOMEN</a></li>
-                        <li><a href="#">KID</a></li>
+                        <li><a href="#page10">Men</a></li>
+                        <li><a href="#page12">WOMEN</a></li>
+                        <li><a href="#page13">KID</a></li>
                     </ul>
                 </div>
                 <div data-role="collapsible" data-mini="true">
                     <h4>홍보영상</h4>
                     <ul data-role="listview">
-                        <li><a href="#">영상</a></li>
+                        <li><a href="#page16">영상</a></li>
                     </ul>
                 </div>
                 <div data-role="collapsible" data-mini="true">
                     <h4>고객센터</h4>
                     <ul data-role="listview">
-                        <li><a href="#">자주 묻는 질문</a></li>
-                        <li><a href="#">공지사항</a></li>
-                        <li><a href="#">질문 및 답변</a></li>
+                        <li><a href="#page19">자주 묻는 질문</a></li>
+                        <li><a href="#page20">공지사항</a></li>
+                        <li><a href="#page22">질문 및 답변</a></li>
                     </ul>
                 </div>
             </div>
@@ -3231,31 +3252,31 @@
                 <div data-role="collapsible" data-mini="true">
                     <h4>신발</h4>
                     <ul data-role="listview">
-                        <li><a href="#">Men</a></li>
-                        <li><a href="#">WOMEN</a></li>
-                        <li><a href="#">KID</a></li>
+                        <li><a href="#page4">Men</a></li>
+                        <li><a href="#page6">WOMEN</a></li>
+                        <li><a href="#page8">KID</a></li>
                     </ul>
                 </div>
                 <div data-role="collapsible" data-mini="true">
                     <h4>할인</h4>
                     <ul data-role="listview">
-                        <li><a href="#">Men</a></li>
-                        <li><a href="#">WOMEN</a></li>
-                        <li><a href="#">KID</a></li>
+                        <li><a href="#page10">Men</a></li>
+                        <li><a href="#page12">WOMEN</a></li>
+                        <li><a href="#page13">KID</a></li>
                     </ul>
                 </div>
                 <div data-role="collapsible" data-mini="true">
                     <h4>홍보영상</h4>
                     <ul data-role="listview">
-                        <li><a href="#">영상</a></li>
+                        <li><a href="#page16">영상</a></li>
                     </ul>
                 </div>
                 <div data-role="collapsible" data-mini="true">
                     <h4>고객센터</h4>
                     <ul data-role="listview">
-                        <li><a href="#">자주 묻는 질문</a></li>
-                        <li><a href="#">공지사항</a></li>
-                        <li><a href="#">질문 및 답변</a></li>
+                        <li><a href="#page19">자주 묻는 질문</a></li>
+                        <li><a href="#page20">공지사항</a></li>
+                        <li><a href="#page22">질문 및 답변</a></li>
                     </ul>
                 </div>
             </div>
@@ -3329,31 +3350,31 @@
                 <div data-role="collapsible" data-mini="true">
                     <h4>신발</h4>
                     <ul data-role="listview">
-                        <li><a href="#">Men</a></li>
-                        <li><a href="#">WOMEN</a></li>
-                        <li><a href="#">KID</a></li>
+                        <li><a href="#page4">Men</a></li>
+                        <li><a href="#page6">WOMEN</a></li>
+                        <li><a href="#page8">KID</a></li>
                     </ul>
                 </div>
                 <div data-role="collapsible" data-mini="true">
                     <h4>할인</h4>
                     <ul data-role="listview">
-                        <li><a href="#">Men</a></li>
-                        <li><a href="#">WOMEN</a></li>
-                        <li><a href="#">KID</a></li>
+                        <li><a href="#page10">Men</a></li>
+                        <li><a href="#page12">WOMEN</a></li>
+                        <li><a href="#page13">KID</a></li>
                     </ul>
                 </div>
                 <div data-role="collapsible" data-mini="true">
                     <h4>홍보영상</h4>
                     <ul data-role="listview">
-                        <li><a href="#">영상</a></li>
+                        <li><a href="#page16">영상</a></li>
                     </ul>
                 </div>
                 <div data-role="collapsible" data-mini="true">
                     <h4>고객센터</h4>
                     <ul data-role="listview">
-                        <li><a href="#">자주 묻는 질문</a></li>
-                        <li><a href="#">공지사항</a></li>
-                        <li><a href="#">질문 및 답변</a></li>
+                        <li><a href="#page19">자주 묻는 질문</a></li>
+                        <li><a href="#page20">공지사항</a></li>
+                        <li><a href="#page22">질문 및 답변</a></li>
                     </ul>
                 </div>
             </div>
@@ -3367,7 +3388,7 @@
                             <th data-priority="2" data-colstart="2" class="ui-table-priority-2 ui-table-cell-visible">연번</th>
                             <th data-colstart="2">제목</th>
                             <th data-priority="3" data-colstart="3" class="ui-table-priority-3 ui-table-cell-visible">작성일</th>
-                            <th data-priority="1" data-colstart="4" class="ui-table-priority-1"><abbr title="Rotten Tomato Rating">만족도</abbr></th>
+                            <th data-priority="1" data-colstart="4" class="ui-table-priority-1"><abbr title="Rotten Tomato Rating">작성자</abbr></th>
                             <th data-priority="5" data-colstart="5" class="ui-table-priority-5 ui-table-cell-hidden">조회수</th>
                         </tr>
                     </thead>
@@ -3376,56 +3397,56 @@
                             <th class="ui-table-priority-2 ui-table-cell-visible">1</th>
                             <td><a href="#page21" data-rel="external">2022년도 마지막 세일</a></td>
                             <td class="ui-table-priority-3 ui-table-cell-visible">22/12/28</td>
-                            <td class="ui-table-priority-1">100%</td>
+                            <td class="ui-table-priority-1">관리자A</td>
                             <td class="ui-table-priority-5 ui-table-cell-hidden">74</td>
                         </tr>
                         <tr>
                             <th class="ui-table-priority-2 ui-table-cell-visible">2</th>
                             <td><a href="#page21" data-rel="external">2022년도 마지막 세일</a></td>
                             <td class="ui-table-priority-3 ui-table-cell-visible">22/12/28</td>
-                            <td class="ui-table-priority-1">100%</td>
+                            <td class="ui-table-priority-1">관리자B</td>
                             <td class="ui-table-priority-5 ui-table-cell-hidden">74</td>
                         </tr>
                         <tr>
                             <th class="ui-table-priority-2 ui-table-cell-visible">3</th>
                             <td><a href="#page21" data-rel="external">2022년도 마지막 세일</a></td>
                             <td class="ui-table-priority-3 ui-table-cell-visible">22/12/28</td>
-                            <td class="ui-table-priority-1">100%</td>
+                            <td class="ui-table-priority-1">관리자C</td>
                             <td class="ui-table-priority-5 ui-table-cell-hidden">74</td>
                         </tr>
                         <tr>
                             <th class="ui-table-priority-2 ui-table-cell-visible">4</th>
                             <td><a href="#page21" data-rel="external">2022년도 마지막 세일</a></td>
                             <td class="ui-table-priority-3 ui-table-cell-visible">22/12/28</td>
-                            <td class="ui-table-priority-1">100%</td>
+                            <td class="ui-table-priority-1">관리자B</td>
                             <td class="ui-table-priority-5 ui-table-cell-hidden">74</td>
                         </tr>
                         <tr>
                             <th class="ui-table-priority-2 ui-table-cell-visible">5</th>
                             <td><a href="#page21" data-rel="external">2022년도 마지막 세일</a></td>
                             <td class="ui-table-priority-3 ui-table-cell-visible">22/12/28</td>
-                            <td class="ui-table-priority-1">100%</td>
+                            <td class="ui-table-priority-1">관리자C</td>
                             <td class="ui-table-priority-5 ui-table-cell-hidden">74</td>
                         </tr>
                         <tr>
                             <th class="ui-table-priority-2 ui-table-cell-visible">6</th>
                             <td><a href="#page21" data-rel="external">2022년도 마지막 세일</a></td>
                             <td class="ui-table-priority-3 ui-table-cell-visible">22/12/28</td>
-                            <td class="ui-table-priority-1">100%</td>
+                            <td class="ui-table-priority-1">관리자A</td>
                             <td class="ui-table-priority-5 ui-table-cell-hidden">74</td>
                         </tr>
                         <tr>
                             <th class="ui-table-priority-2 ui-table-cell-visible">1</th>
                             <td><a href="#page21" data-rel="external">2022년도 마지막 세일</a></td>
                             <td class="ui-table-priority-3 ui-table-cell-visible">22/12/28</td>
-                            <td class="ui-table-priority-1">100%</td>
+                            <td class="ui-table-priority-1">관리자C</td>
                             <td class="ui-table-priority-5 ui-table-cell-hidden">74</td>
                         </tr>
                         <tr>
                             <th class="ui-table-priority-2 ui-table-cell-visible">1</th>
                             <td><a href="#page21" data-rel="external">2022년도 마지막 세일</a></td>
                             <td class="ui-table-priority-3 ui-table-cell-visible">22/12/28</td>
-                            <td class="ui-table-priority-1">100%</td>
+                            <td class="ui-table-priority-1">관리자B</td>
                             <td class="ui-table-priority-5 ui-table-cell-hidden">74</td>
                         </tr>
                     </tbody>
@@ -3433,6 +3454,456 @@
             </div>
         </div>
         <!-- TODO page20 footer -->
+        <footer data-role="footer" class="ui-footer" data-theme="b" data-position="fixed">
+            <div class="content has-text-centered">
+                <p class="ft">
+                    <a href="">
+                        <i class="fab fa-facebook-square fa-2x"></i>
+                    </a>
+                    <a href="">
+                        <i class="fab fa-twitter-square fa-2x"></i>
+                    </a>
+                    <a href="">
+                        <i class="fab fa-instagram fa-2x"></i>
+                    </a>
+                    <a href="">
+                        <i class="fab fa-snapchat fa-2x"></i>
+                    </a>
+                </p>
+                <p class="ft">
+                    <a href="#page0">
+                        <img src="assets/icon/icon.png" alt="Made with Bulma" width="25" height="25">
+                    </a>
+                </p>
+            </div>
+        </footer>
+    </div>
+    <!-- TODO page21 -->
+    <div id="page21" data-role="page" class="ui-page ui-page-theme-a ">
+        <!-- TODO page21 header -->
+        <header data-role="header" class="ui-header" data-theme="b">
+            <a data-iconpos="notext" data-role="button" data-icon="custom" class="custom" title="shoes" href="#page0">Shoes</a>
+            <h1>대준신발</h1>
+            <a data-iconpos="notext" href="#pane21" data-role="button" data-icon="bars"></a>
+        </header>
+        <div data-role="panel" id="pane21" data-position="right" data-theme="a" data-display="push">
+            <div data-role="container">
+                <div data-role="container">
+                    <div data-role="button-groups">
+                        <a href="#page1" class="ui-btn" data-rel="dialog" data-transition="pop">
+                            로그인
+                        </a>
+                        <a href="#page2" class="ui-btn" data-rel="dialog" data-transition="pop">
+                            회원가입
+                        </a>
+                    </div>
+                </div>
+                <div data-role="collapsible" data-mini="true">
+                    <h4>신발</h4>
+                    <ul data-role="listview">
+                        <li><a href="#page4">Men</a></li>
+                        <li><a href="#page6">WOMEN</a></li>
+                        <li><a href="#page8">KID</a></li>
+                    </ul>
+                </div>
+                <div data-role="collapsible" data-mini="true">
+                    <h4>할인</h4>
+                    <ul data-role="listview">
+                        <li><a href="#page10">Men</a></li>
+                        <li><a href="#page12">WOMEN</a></li>
+                        <li><a href="#page13">KID</a></li>
+                    </ul>
+                </div>
+                <div data-role="collapsible" data-mini="true">
+                    <h4>홍보영상</h4>
+                    <ul data-role="listview">
+                        <li><a href="#page16">영상</a></li>
+                    </ul>
+                </div>
+                <div data-role="collapsible" data-mini="true">
+                    <h4>고객센터</h4>
+                    <ul data-role="listview">
+                        <li><a href="#page19">자주 묻는 질문</a></li>
+                        <li><a href="#page20">공지사항</a></li>
+                        <li><a href="#page22">질문 및 답변</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-role="content" class="ui-content">
+            <h2>공지사항 상세보기</h2>
+        <table class="table is-striped">
+            <tbody>
+                <tr>
+                    <th>글번호</th>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <th>제목</th>
+                    <td>2022년도 마지막 세일</td>
+                </tr>
+                <tr>
+                    <th>내용</th>
+                    <td>2022년 12월 28일 ~ 2022년 12월 30일 80%세일 이벤트</td>
+                </tr>
+                <tr>
+                    <th>작성일</th>
+                    <td>2022-12-28</td>
+                </tr>
+                <tr>
+                    <th>읽은 횟수</th>
+                    <td>74</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="buttons">
+            <a href="#page20" class="button is-success">목록</a>
+        </div>
+        </div>
+        <!-- TODO page21 footer -->
+        <footer data-role="footer" class="ui-footer" data-theme="b" data-position="fixed">
+            <div class="content has-text-centered">
+                <p class="ft">
+                    <a href="">
+                        <i class="fab fa-facebook-square fa-2x"></i>
+                    </a>
+                    <a href="">
+                        <i class="fab fa-twitter-square fa-2x"></i>
+                    </a>
+                    <a href="">
+                        <i class="fab fa-instagram fa-2x"></i>
+                    </a>
+                    <a href="">
+                        <i class="fab fa-snapchat fa-2x"></i>
+                    </a>
+                </p>
+                <p class="ft">
+                    <a href="#page0">
+                        <img src="assets/icon/icon.png" alt="Made with Bulma" width="25" height="25">
+                    </a>
+                </p>
+            </div>
+        </footer>
+    </div>
+    <!-- TODO page22 -->
+    <div id="page22" data-role="page" class="ui-page ui-page-theme-a ">
+        <!-- TODO page22 header -->
+        <header data-role="header" class="ui-header" data-theme="b">
+            <a data-iconpos="notext" data-role="button" data-icon="custom" class="custom" title="shoes" href="#page0">Shoes</a>
+            <h1>대준신발</h1>
+            <a data-iconpos="notext" href="#pane22" data-role="button" data-icon="bars"></a>
+        </header>
+        <div data-role="panel" id="pane22" data-position="right" data-theme="a" data-display="push">
+            <div data-role="container">
+                <div data-role="container">
+                    <div data-role="button-groups">
+                        <a href="#page1" class="ui-btn" data-rel="dialog" data-transition="pop">
+                            로그인
+                        </a>
+                        <a href="#page2" class="ui-btn" data-rel="dialog" data-transition="pop">
+                            회원가입
+                        </a>
+                    </div>
+                </div>
+                <div data-role="collapsible" data-mini="true">
+                    <h4>신발</h4>
+                    <ul data-role="listview">
+                        <li><a href="#page4">Men</a></li>
+                        <li><a href="#page6">WOMEN</a></li>
+                        <li><a href="#page8">KID</a></li>
+                    </ul>
+                </div>
+                <div data-role="collapsible" data-mini="true">
+                    <h4>할인</h4>
+                    <ul data-role="listview">
+                        <li><a href="#page10">Men</a></li>
+                        <li><a href="#page12">WOMEN</a></li>
+                        <li><a href="#page13">KID</a></li>
+                    </ul>
+                </div>
+                <div data-role="collapsible" data-mini="true">
+                    <h4>홍보영상</h4>
+                    <ul data-role="listview">
+                        <li><a href="#page16">영상</a></li>
+                    </ul>
+                </div>
+                <div data-role="collapsible" data-mini="true">
+                    <h4>고객센터</h4>
+                    <ul data-role="listview">
+                        <li><a href="#page19">자주 묻는 질문</a></li>
+                        <li><a href="#page20">공지사항</a></li>
+                        <li><a href="#page22">질문 및 답변</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-role="content" class="ui-content">
+            <h2 class="ui-title">질문 및 답변</h2>
+        <ul class="ui-listview ui-listview-inset ui-corner-all ui-shadow" data-inset="true" data-role="listview" data-filter="true" data-filter-placeholder="Search Notice...">
+            <li data-role="list-divider" role="heading" class="ui-li-divider ui-bar-inherit ui-li-has-count ui-first-child">2022-12-28
+                <span class="ui-li-count ui-body-inherit">15</span>
+            </li>
+            <li>
+                <a href="#page23" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                    <h2>안**</h2>
+                    <p>
+                        <strong>신발 사이즈 질문드려요</strong>
+                    </p>
+                    <p>XX신발 구매하려 하는데 평소270이면 270으로 구매하면 좋을까요?</p>
+                    <p class="ui-li-aside">
+                        <strong>질문</strong>
+                    </p>
+                </a>
+            </li>
+            <li>
+                <a href="#page24" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                    <h2>조**</h2>
+                    <p>
+                        <strong>신발사이즈 답변 드려요</strong>
+                    </p>
+                    <p>네</p>
+                    <p class="ui-li-aside">
+                        <strong>↳답변</strong>
+                    </p>
+                </a>
+            </li>
+            <li>
+                <a href="#page24" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                    <h2>조**</h2>
+                    <p>
+                        <strong>신발사이즈 답변 드려요</strong>
+                    </p>
+                    <p>네</p>
+                    <p class="ui-li-aside">
+                        <strong>↳답변</strong>
+                    </p>
+                </a>
+            </li>
+
+            <li data-role="list-divider" role="heading" class="ui-li-divider ui-bar-inherit ui-li-has-count">2022-12-28
+                <span class="ui-li-count ui-body-inherit">0</span>
+            </li>
+            <li>
+                <a href="#page23" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                    <h2>안**</h2>
+                    <p>
+                        <strong>신발 사이즈 질문드려요</strong>
+                    </p>
+                    <p>XX신발 구매하려 하는데 평소270이면 270으로 구매하면 좋을까요?</p>
+                    <p class="ui-li-aside">
+                        <strong>질문</strong>
+                    </p>
+                </a>
+            </li>
+        </ul>
+        </div>
+        <!-- TODO page22 footer -->
+        <footer data-role="footer" class="ui-footer" data-theme="b" data-position="fixed">
+            <div class="content has-text-centered">
+                <p class="ft">
+                    <a href="">
+                        <i class="fab fa-facebook-square fa-2x"></i>
+                    </a>
+                    <a href="">
+                        <i class="fab fa-twitter-square fa-2x"></i>
+                    </a>
+                    <a href="">
+                        <i class="fab fa-instagram fa-2x"></i>
+                    </a>
+                    <a href="">
+                        <i class="fab fa-snapchat fa-2x"></i>
+                    </a>
+                </p>
+                <p class="ft">
+                    <a href="#page0">
+                        <img src="assets/icon/icon.png" alt="Made with Bulma" width="25" height="25">
+                    </a>
+                </p>
+            </div>
+        </footer>
+    </div>
+    <!-- TODO page23 -->
+    <div id="page23" data-role="page" class="ui-page ui-page-theme-a ">
+        <!-- TODO page23 header -->
+        <header data-role="header" class="ui-header" data-theme="b">
+            <a data-iconpos="notext" data-role="button" data-icon="custom" class="custom" title="shoes" href="#page0">Shoes</a>
+            <h1>대준신발</h1>
+            <a data-iconpos="notext" href="#pane23" data-role="button" data-icon="bars"></a>
+        </header>
+        <div data-role="panel" id="pane23" data-position="right" data-theme="a" data-display="push">
+            <div data-role="container">
+                <div data-role="container">
+                    <div data-role="button-groups">
+                        <a href="#page1" class="ui-btn" data-rel="dialog" data-transition="pop">
+                            로그인
+                        </a>
+                        <a href="#page2" class="ui-btn" data-rel="dialog" data-transition="pop">
+                            회원가입
+                        </a>
+                    </div>
+                </div>
+                <div data-role="collapsible" data-mini="true">
+                    <h4>신발</h4>
+                    <ul data-role="listview">
+                        <li><a href="#page4">Men</a></li>
+                        <li><a href="#page6">WOMEN</a></li>
+                        <li><a href="#page8">KID</a></li>
+                    </ul>
+                </div>
+                <div data-role="collapsible" data-mini="true">
+                    <h4>할인</h4>
+                    <ul data-role="listview">
+                        <li><a href="#page10">Men</a></li>
+                        <li><a href="#page12">WOMEN</a></li>
+                        <li><a href="#page13">KID</a></li>
+                    </ul>
+                </div>
+                <div data-role="collapsible" data-mini="true">
+                    <h4>홍보영상</h4>
+                    <ul data-role="listview">
+                        <li><a href="#page16">영상</a></li>
+                    </ul>
+                </div>
+                <div data-role="collapsible" data-mini="true">
+                    <h4>고객센터</h4>
+                    <ul data-role="listview">
+                        <li><a href="#page19">자주 묻는 질문</a></li>
+                        <li><a href="#page20">공지사항</a></li>
+                        <li><a href="#page22">질문 및 답변</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-role="content" class="ui-content">
+            <h2 class="title">질문 상세보기</h2>
+            <table class="table is-striped">
+                <tbody>
+                    <tr>
+                        <th>제목</th>
+                        <td>신발사이즈 질문 드려요</td>
+                    </tr>
+                    <tr>
+                        <th>내용</th>
+                        <td>XX신발 구매하려 하는데 평소270이면 270으로 구매하면 좋을까요?</td>
+                    </tr>
+                    <tr>
+                        <th>작성자</th>
+                        <td>안**</td>
+                    </tr>
+                    <tr>
+                        <th>읽은 횟수</th>
+                        <td>15</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="buttons">
+                <a href="#page22" class="button is-success">목록</a>
+            </div>
+        </div>
+        <!-- TODO page23 footer -->
+        <footer data-role="footer" class="ui-footer" data-theme="b" data-position="fixed">
+            <div class="content has-text-centered">
+                <p class="ft">
+                    <a href="">
+                        <i class="fab fa-facebook-square fa-2x"></i>
+                    </a>
+                    <a href="">
+                        <i class="fab fa-twitter-square fa-2x"></i>
+                    </a>
+                    <a href="">
+                        <i class="fab fa-instagram fa-2x"></i>
+                    </a>
+                    <a href="">
+                        <i class="fab fa-snapchat fa-2x"></i>
+                    </a>
+                </p>
+                <p class="ft">
+                    <a href="#page0">
+                        <img src="assets/icon/icon.png" alt="Made with Bulma" width="25" height="25">
+                    </a>
+                </p>
+            </div>
+        </footer>
+    </div>
+    <!-- TODO page24 -->
+    <div id="page24" data-role="page" class="ui-page ui-page-theme-a ">
+        <!-- TODO page24 header -->
+        <header data-role="header" class="ui-header" data-theme="b">
+            <a data-iconpos="notext" data-role="button" data-icon="custom" class="custom" title="shoes" href="#page0">Shoes</a>
+            <h1>대준신발</h1>
+            <a data-iconpos="notext" href="#pane24" data-role="button" data-icon="bars"></a>
+        </header>
+        <div data-role="panel" id="pane24" data-position="right" data-theme="a" data-display="push">
+            <div data-role="container">
+                <div data-role="container">
+                    <div data-role="button-groups">
+                        <a href="#page1" class="ui-btn" data-rel="dialog" data-transition="pop">
+                            로그인
+                        </a>
+                        <a href="#page2" class="ui-btn" data-rel="dialog" data-transition="pop">
+                            회원가입
+                        </a>
+                    </div>
+                </div>
+                <div data-role="collapsible" data-mini="true">
+                    <h4>신발</h4>
+                    <ul data-role="listview">
+                        <li><a href="#page4">Men</a></li>
+                        <li><a href="#page6">WOMEN</a></li>
+                        <li><a href="#page8">KID</a></li>
+                    </ul>
+                </div>
+                <div data-role="collapsible" data-mini="true">
+                    <h4>할인</h4>
+                    <ul data-role="listview">
+                        <li><a href="#page10">Men</a></li>
+                        <li><a href="#page12">WOMEN</a></li>
+                        <li><a href="#page13">KID</a></li>
+                    </ul>
+                </div>
+                <div data-role="collapsible" data-mini="true">
+                    <h4>홍보영상</h4>
+                    <ul data-role="listview">
+                        <li><a href="#page16">영상</a></li>
+                    </ul>
+                </div>
+                <div data-role="collapsible" data-mini="true">
+                    <h4>고객센터</h4>
+                    <ul data-role="listview">
+                        <li><a href="#page19">자주 묻는 질문</a></li>
+                        <li><a href="#page20">공지사항</a></li>
+                        <li><a href="#page22">질문 및 답변</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-role="content" class="ui-content">
+            <h2 class="title">답변 상세보기</h2>
+            <table class="table is-striped">
+                <tbody>
+                    <tr>
+                        <th>제목</th>
+                        <td>신발사이즈 답변 드려요</td>
+                    </tr>
+                    <tr>
+                        <th>내용</th>
+                        <td>네</td>
+                    </tr>
+                    <tr>
+                        <th>작성자</th>
+                        <td>조**</td>
+                    </tr>
+                    <tr>
+                        <th>읽은 횟수</th>
+                        <td>10</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="buttons">
+                <a href="#page22" class="button is-success">목록</a>
+            </div>
+        </div>
+        <!-- TODO page24 footer -->
         <footer data-role="footer" class="ui-footer" data-theme="b" data-position="fixed">
             <div class="content has-text-centered">
                 <p class="ft">
