@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
+    <!-- 뷰 포트 및 콘텐츠 타입 -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
@@ -12,6 +13,7 @@
 
     <link rel="manifest" href="manifest.json" />
 
+    <!-- 문서 정보 : 메타포(metaphor) -->
     <meta name="application-name" content="대준신발">
     <meta name="subject" content="대준신발">
     <meta name="keywords" content="신발 할인 판매">
@@ -35,6 +37,7 @@
     <meta name="twitter:description" content="대준 신발은 다양한 브랜드의 신발을 판매합니다.">
     <meta name="twitter:image" content="assets/images/site.png">
 
+    <!-- 기기의 지원 해상도별 아이콘 설정 -->
     <link rel="icon" href="assets/icon/icond.png">
     <link rel="icon" href="assets/icon/icond-16.ico" sizes="16x16">
     <link rel="icon" href="assets/icon/icond-32.ico" sizes="32x32">
@@ -42,8 +45,16 @@
     <link rel="icon" href="assets/icon/icond-64.ico" sizes="64x64">
     <link rel="icon" href="assets/icon/icond-128.ico" sizes="128x128">
 
-    
+    <!-- 해상도 및 브라우저와 기기별 앱 아이콘 및 바로가기 아이콘 설정 -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- 애플사의 기기 아이콘 설정 -->
+    <meta name="apple-mobile-web-app-title" content="대준신발">
+    <link rel="apple-touch-icon-precomposed" href="assets/icon/icond.png">
+    <!-- 애플사 기기의 URL바나 UI바 보이게 -->
     <meta name="apple-mobile-web-app-capable" href="yes">
+    <!-- 상태바의 색상 설정 -->
+    <meta name="apple-mobile-web-app-status-bar-style" href="black-translucent">
+    <!-- MS 사의 기기에 대한 아이콘 설정-->
     <meta name="msapplication-TileColor" content="#FFFFFF">
     <meta name="msapplication-TileImage" content="assets/icon/icond.png">
 
@@ -2927,7 +2938,7 @@
             </div>
         </div>
         <div data-role="content" class="ui-content">
-            <h2 class="st">신발목록</h2>
+            <h2 class="st">할인목록</h2>
             <ul class="ui-listview ui-listview-inset ui-corner-all ui-shadow" data-inset="true" data-role="listview" data-filter="true" data-filter-placeholder="Search Station...">
                 <li class="ui-li-has-thumb ui-first-child">
                     <a href="#page9" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
