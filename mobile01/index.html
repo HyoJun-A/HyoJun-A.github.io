@@ -1912,7 +1912,9 @@
         </div>
         <div data-role="content" class="ui-content">
             <h2 class="st">구매</h2>
-           <img src="assets/images/i1.jpg" alt="">
+           <img srcset="assets/images/i1_320.jpg 320w, assets/images/i1_640.jpg 640w, assets/images/i1_1280.jpg 1281w" 
+                    sizes="(max-width:320px) 280px, (max-width:640px) 600px, (max-width:1280px) 1140px"
+                    src="assets/images/i1.jpg" alt="신발 이미지">
            <ul class="ui-listview ui-listview-inset ui-corner-all ui-shadow" data-inset="true" data-role="listview">
             <li class="ui-li-static ui-body-inherit ui-first-child">
                 <p class="button">조던</p>
@@ -3240,9 +3242,23 @@
                    <video id="vdo1" class="video-js" controls preload="auto" data-setup="{}" autoplay>
                        <source src="assets/video/v1.mp4" type="video/mp4" />
                    </video>
+                   <div class="btn_lst" id="btn_lst">
+                    <ul>
+                        <li><span data-val="assets/video/v1.mp4">비디오1</span></li>
+                        <li><span data-val="assets/video/v2.mp4">비디오2</span></li>
+                        <a href="#page16" class="button is-fullwidth">뒤로 가기</a>
+                    </ul>
+                </div>
+                <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
+                <script>
+                $(document).ready(function(){
+                    $("#btn_lst li span").click(function(){
+                        $("#vdo1_html5_api").attr("src", $(this).attr("data-val"));
+                    });
+                });  
+                </script>
                 </div>
               </div>
-            <a href="#page16" class="button is-fullwidth">뒤로 가기</a>
         </div>
     </div>
 
