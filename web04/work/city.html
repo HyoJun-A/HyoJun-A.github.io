@@ -1,3 +1,9 @@
+
+
+
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,256 +11,279 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>도시</title>
-	<script src="https://code.jquery.com/jquery-latest.js"></script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.css">
-	<link rel="stylesheet"
-		href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation-prototype.min.css">
-	<link href='https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css' rel='stylesheet'
-		type='text/css'>
-	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.js"></script>
-	<script type="text/javascript" src="../ckeditor/ckeditor.js"></script>
-	<style>
-		.title-bar-left img {
-			height: 40px;
-		}
+	
 
-		.off-canvas-absolute {
-			background-color: #0a0a0a;
-		}
 
-		.acolor {
-			color: #FEFEFE;
-			text-decoration: none
-		}
 
-		#acolor {
-			color: #FEFEFE;
-		}
+<!-- 문서 정보 : 메타포(metaphor) -->
+    <meta name="application-name" content="HJpoto">
+    <meta name="subject" content="HJpoto">
+    <meta name="keywords" content="다양한 사진 감상 및 구매">
+    <meta name="description" content="HJpoto는 다양한 사진을 감상할 수 있으며, 구매할 수 있습니다.">
+    <meta name="url" content="https://hyojun-a.github.io/web04">
+    <meta name="author" content="ahn hyo jun">
+    <meta name="email" content="wnsgy79@gmail.com">
+    <meta name="robots" content="index, flow">
 
-		#ft {
-			background-color: #0a0a0a;
-		}
+    <!-- 오픈 그래프 -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hyojun-a.github.io/web04">
+    <meta property="og:title" content="HJpoto">
+    <meta property="og:site_name" content="HJpoto">
+    <meta property="og:image" content="../resources/img/logo.png">
+    <meta property="og:image:width" content="1000">
+    <meta property="og:image:height" content="400">
+    <meta property="og:locale" content="ko_KR">
+    <meta name="twitter:card" content="video">
+    <meta name="twitter:title" content="HJpoto">
+    <meta name="twitter:description" content="HJpoto는 다양한 사진을 감상할 수 있으며, 구매할 수 있습니다.">
+    <meta name="twitter:image" content="../resources/img/logo.png">
 
-		.content {
-			width: 1330px;
-			margin-top: 50px;
-			background-color: #FEFEFE;
-		}
+    <!-- 기기의 지원 해상도별 아이콘 설정 -->
+    <link rel="icon" href="../resources/img/logo.png">
 
-		.content1 {
-			width: 1330px;
-			margin-top: 50px;
-			background-color: #FEFEFE;
-		}
 
-		#smenu {
-			width: 100%;
-		}
+    <!-- 해상도 및 브라우저와 기기별 앱 아이콘 및 바로가기 아이콘 설정 -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- 애플사의 기기 아이콘 설정 -->
+    <meta name="apple-mobile-web-app-title" content="HJpoto">
+    <link rel="apple-touch-icon-precomposed" href="../resources/img/logo.png">
+    <!-- 애플사 기기의 URL바나 UI바 보이게 -->
+    <meta name="apple-mobile-web-app-capable" href="yes">
+    <!-- 상태바의 색상 설정 -->
+    <meta name="apple-mobile-web-app-status-bar-style" href="black-translucent">
+    <!-- MS 사의 기기에 대한 아이콘 설정-->
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="../resources/img/logo.png"><!-- 문서 정보 : 메타포(metaphor) -->
+    <meta name="application-name" content="HJpoto">
+    <meta name="subject" content="HJpoto">
+    <meta name="keywords" content="사진, 전시관">
+    <meta name="description" content="HJpoto는 다양한 사진을 감상 및 구매 하실수 있습니다.">
+    <meta name="url" content="https://hyojun-a.github.io/web04">
+    <meta name="author" content="ahn hyo jun">
+    <meta name="email" content="wnsgy79@gmail.com">
+    <meta name="robots" content="index, flow">
+    
+    <link rel="icon" href="../resources/img/logo.png">
 
-		#footer {
-			position: absolute;
-			bottom: 0;
-			width: 100%;
-			height: 53px;
-		}
+    <!-- 오픈 그래프 -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hyojun-a.github.io/web04">
+    <meta property="og:title" content="HJpoto">
+    <meta property="og:site_name" content="HJpoto">
+    <meta property="og:image" content="../resources/img/logo.png">
+    <meta property="og:image:width" content="1000">
+    <meta property="og:image:height" content="400">
+    <meta property="og:locale" content="ko_KR">
+    <meta name="twitter:card" content="video">
+    <meta name="twitter:title" content="HJpoto">
+    <meta name="twitter:description" content="HJpoto는 다양한 사진을 감상 및 구매 하실수 있습니다.">
 
-		#smenu {
-			width: 100%;
-			height: 100%;
-			background-color: #0a0a0a;
-		}
 
-		html,
-		body {
-			width: 100%;
-			height: 95%;
-		}
+    <!-- 해상도 및 브라우저와 기기별 앱 아이콘 및 바로가기 아이콘 설정 -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- 애플사의 기기 아이콘 설정 -->
+    <meta name="apple-mobile-web-app-title" content="대준신발">
+    <link rel="apple-touch-icon-precomposed" href="../resources/img/logo.png">
+    <!-- 애플사 기기의 URL바나 UI바 보이게 -->
+    <meta name="apple-mobile-web-app-capable" href="yes">
+    <!-- 상태바의 색상 설정 -->
+    <meta name="apple-mobile-web-app-status-bar-style" href="black-translucent">
+    <!-- MS 사의 기기에 대한 아이콘 설정-->
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="../resources/img/logo.png">
 
-		.mung {
-			color: #FEFEFE;
-			text-align: center;
-			font-family: fantasy;
-			font-weight: 200;
-		}
 
-		.login-center {
-			height: 40px;
-			width: 1000px;
-			display: block;
-			float: left;
-		}
-
-		.login-center:after {
-			content="";
-			display: block;
-			clear: both;
-		}
-
-		.login input {
-			width: 200px;
-			height: 25px;
-			float: left;
-			margin-right: 20px;
-			margin-top: 8px;
-		}
-	</style>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation-prototype.min.css">
+<link href='https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css' rel='stylesheet' type='text/css'>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.js"></script>
+<script type="text/javascript" src="../resources/ckeditor/ckeditor.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css">
+<style>
+.title-bar-left img{ height: 40px;}
+.off-canvas-absolute { background-color: #0a0a0a;}
+.acolor {color:#FEFEFE; text-decoration:none}
+#acolor {color:#FEFEFE;}
+#ft { background-color: #0a0a0a;}
+.content { width: 1330px; margin-top: 50px; background-color: #FEFEFE;}
+.content1 { width: 1330px; margin-top: 50px; background-color: #FEFEFE;}
+#smenu { width: 100%;}
+#footer { position:fixed; bottom:0; z-index:100000; width: 100%;}
+#smenu { width: 100%;  height: 100%;  background-color: #0a0a0a;}
+	html,body {
+        width: 100%;
+        height: 95%;
+      }
+    .mung { color:#FEFEFE; text-align: center; font-family: fantasy; font-weight: 200;} 
+.login-center {
+	height: 40px;
+	width: 1000px;
+	display: block;
+	float: left;
+}
+.login-center:after { content=""; display: block; clear: both;}
+.login input{
+	width: 200px;
+	height: 25px;
+	float: left;
+	margin-right: 20px;
+	margin-top: 8px;
+}
+.wrap {width: 90%; margin: 0 auto;} 
+.table1 { width: 100%; height: auto; border: 1px solid skyblue;  padding: 30px; text-align: left;}
+.q_title { font-size: 22px; color: #111; font-weight: 500; margin-bottom: 20px; line-height: 24px; display: block;}
+.q_content { line-height: 24px;}
+.q_date { display: block; margin-top: 20px;}
+</style>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 	<style type="text/css">
 		.content {
 			background-color: #808080;
 		}
-
 		#simg {
 			margin: 0 auto;
 			width: 700px;
 			height: 700px;
 			margin-top: 50px;
 		}
-
 		#ssimg img {
 			width: 700px;
 			height: 700px;
 			overflow: hidden;
 		}
-
-		em {
-			padding-left: 20px;
-		}
+		em { padding-left: 20px;}
 	</style>
-	<!-- Hotjar Tracking Code for https://HyoJun-A.github.io/web04 -->
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:3286255,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
 </head>
 <body>
 	<header id="header">
 		<div class="title-bar">
-			<div class="title-bar-left">
-				<button class="menu-icon" type="button" data-open="offCanvasLeftSplit1" data-close></button>
-				<a href="../index.html"><img alt="logo" src="../img/rlogo.png"></a>
-				<span class="title-bar-title">
-					HJpoto
-				</span>
-			</div>
-			<div class="top-bar-right">
-				<ul class="menu">
-					<li><a href="../member/login.html" class="clear button success" id="acolor">Login</a></li>&nbsp;
-					<li><a href="../member/agree.html" class="clear button alert" id="acolor">signup</a></li>
-				</ul>
-			</div>
+		  <div class="title-bar-left">
+			<button class="menu-icon" type="button" data-open="offCanvasLeftSplit1" data-close></button>
+			<a href="../index.html" style="color: white;"><img alt="logo" src="../resources/img/rlogo.png">
+			  <span class="title-bar-title">
+				HJpoto
+			  </span>
+			</a>
+		  </div>
+		  <div class="top-bar-right">
+			<ul class="menu">
+			  <li><a href="../member/login.html" class="clear button success" id="acolor">Login</a></li>&nbsp;
+			  <li><a href="../member/agree.html" class="clear button alert" id="acolor">signup</a></li>
+			</ul>
+		  </div>
 		</div>
-	</header>
-	<div class="grid-x" style="list-style-type: none;" id="smenu">
+	  </header>
+	  <div class="grid-x" style="list-style-type: none;" id="smenu">
 		<div class="cell small-2">
-			<div class="off-canvas-wrapper">
-				<div class="off-canvas-absolute position-left" id="offCanvasLeftSplit1" data-off-canvas>
-					<button class="close-button" aria-label="Close menu" type="button" data-close>
-						<span aria-hidden="true">
-						</span>
-					</button>
-					<ul class="vertical menu accordion-menu" data-accordion-menu>
-						<li>
-							<a class="acolor" href="#">기업소개</a>
-							<ul class="menu vertical nested">
-								<li><a class="acolor" href="../company/hj.html">경영진</a></li>
-								<li><a class="acolor" href="../company/man.html">회사</a></li>
-							</ul>
-						</li>
-						<li>
-							<a class="acolor href=" #">작품</a>
-							<ul class="menu vertical nested">
-								<li><a class="acolor" href="../work/natural.html">자연</a></li>
-								<li><a class="acolor" href="../work/city.html">도시</a></li>
-							</ul>
-						</li>
-						<li>
-							<a class="acolor href=" #">갤러리</a>
-							<ul class="menu vertical nested">
-								<li><a class="acolor" href="../gallery/gallery.html">HJ갤러리</a></li>
-							</ul>
-						</li>
-						<li>
-							<a class="acolor href=" #">고객서비스</a>
-							<ul class="menu vertical nested">
-								<li><a class="acolor" href="../board/boardList.html">공지사항</a></li>
-								<li><a class="acolor" href="../free/freeList.html">자유게시판</a></li>
-								<li><a class="acolor" href="../qna/qnaList.html">Q & A</a></li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-				<div class="off-canvas-content" style="min-height: 300px;" data-off-canvas-content>
-				</div>
+		  <div class="off-canvas-wrapper">
+			<div class="off-canvas-absolute position-left" id="offCanvasLeftSplit1" data-off-canvas>
+			  <button class="close-button" aria-label="Close menu" type="button" data-close>
+				<span aria-hidden="true">
+				</span>
+			  </button>
+			  <ul class="vertical menu accordion-menu" data-accordion-menu>
+				<li>
+				  <a class="acolor" href="#">기업소개</a>
+				  <ul class="menu vertical nested">
+					<li><a class="acolor" href="../company/man.html">경영진</a></li>
+					<li><a class="acolor" href="../company/hj.html">회사</a></li>
+				  </ul>
+				</li>
+				<li>
+				  <a class="acolor href=" #">Best사진</a>
+				  <ul class="menu vertical nested">
+					<li><a class="acolor" href="../work/natural.html">자연</a></li>
+					<li><a class="acolor" href="../work/city.html">도시</a></li>
+				  </ul>
+				</li>
+				<li>
+				  <a class="acolor href=" #">갤러리</a>
+				  <ul class="menu vertical nested">
+					<li><a class="acolor" href="../gallery/gallery.html">HJ갤러리</a></li>
+				  </ul>
+				</li>
+				<li>
+				  <a class="acolor href=" #">고객서비스</a>
+				  <ul class="menu vertical nested">
+					<li><a class="acolor" href="../board/boardList.html">공지사항</a></li>
+					<li><a class="acolor" href="../free/freeList.html">자유게시판</a></li>
+					<li><a class="acolor" href="../qna/qnaList.html">Q & A</a></li>
+				  </ul>
+				</li>
+			  </ul>
 			</div>
+			<div class="off-canvas-content" style="min-height: 300px;" data-off-canvas-content>
+			</div>
+		  </div>
 		</div>
-		<div class="content">
-			<em>City Poto Best4</em>
-			<!-- Swiper -->
-			<div class="swiper mySwiper" id="simg">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide" id="ssimg">
-						<img src="../img/work/c1.jpg" />
-					</div>
-					<div class="swiper-slide" id="ssimg">
-						<img src="../img/work/c2.jpg" />
-					</div>
-					<div class="swiper-slide" id="ssimg">
-						<img src="../img/work/c3.jpg" />
-					</div>
-					<div class="swiper-slide" id="ssimg">
-						<img src="../img/work/c4.jpg" />
-					</div>
-				</div>
-				<div class="swiper-pagination"></div>
-			</div>
-			<!-- Swiper JS -->
-			<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-			<!-- Initialize Swiper -->
-			<script>
-				var swiper = new Swiper(".mySwiper", {
-					effect: "cube",
-					grabCursor: true,
-					autoplay: true,
-					loop: true,
-					pagination: {
-						el: ".swiper-pagination",
-					},
-				});
-			</script>
-		</div>
-	</div>
-	<script>
-		$(document).foundation();
-	</script>
-	<footer id="footer">
-		<div class="grid-x grid-margin-y expanded" id="ft">
-			<div class="medium-6 cell">
-				<ul class="menu">
-					<li><a class="acolor" href="#">기업소개 </a></li>
-					<li><a class="acolor" href="#">이용약관</a></li>
-					<li><a class="acolor" href="#">개인정보처리방침</a></li>
-				</ul>
-			</div>
-			<div class="medium-6 cell">
-				<ul class="menu align-right">
-					<li class="acolor">Copyright © 2022 HJpoto &nbsp; &nbsp;</li>
-				</ul>
-			</div>
-		</div>
-	</footer>
-	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-	<script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
-</body>
+<div class="content">
+	 <em>City Poto Best4</em>
+	<!-- Swiper -->
+    <div class="swiper mySwiper" id="simg">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" id="ssimg">
+          <img src="../resources/img/work/c1.jpg" />
+        </div>
+        <div class="swiper-slide" id="ssimg">
+          <img src="../resources/img/work/c2.jpg" />
+        </div>
+        <div class="swiper-slide" id="ssimg">
+          <img src="../resources/img/work/c3.jpg" />
+        </div>
+        <div class="swiper-slide" id="ssimg">
+          <img src="../resources/img/work/c4.jpg" />
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
 
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "cube",
+        grabCursor: true,
+        autoplay : true,
+        loop:true,
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+</div>
+
+
+
+
+</div>
+    <script>
+        $(document).foundation();
+    </script>
+
+<footer id="footer">
+    	<div class="grid-x grid-margin-y expanded" id="ft">
+	        <div class="medium-6 cell">
+	          <ul class="menu">
+	            <li><a class="acolor" href="#">기업소개 </a></li>
+	            <li><a class="acolor" href="#">이용약관</a></li>
+	            <li><a class="acolor" href="#">개인정보처리방침</a></li>
+	          </ul>
+	        </div>
+	        <div class="medium-6 cell">
+	          <ul class="menu align-right">
+	            <li class="acolor">Copyright © 2022 HJpoto &nbsp; &nbsp;</li>
+	          </ul>
+	        </div>
+      </div>
+    </footer>
+ <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+</body>
 </html>

@@ -1,0 +1,61 @@
+	<header id="header">
+		<div class="title-bar">
+		  <div class="title-bar-left">
+			<button class="menu-icon" type="button" data-open="offCanvasLeftSplit1" data-close></button>
+			<a href="../index.html" style="color: white;"><img alt="logo" src="../resources/img/rlogo.png">
+			  <span class="title-bar-title">
+				HJpoto
+			  </span>
+			</a>
+		  </div>
+		  <div class="top-bar-right">
+			<ul class="menu">
+			  <li><a href="../member/login.html" class="clear button success" id="acolor">Login</a></li>&nbsp;
+			  <li><a href="../member/agree.html" class="clear button alert" id="acolor">signup</a></li>
+			</ul>
+		  </div>
+		</div>
+	  </header>
+	  <div class="grid-x" style="list-style-type: none;" id="smenu">
+		<div class="cell small-2">
+		  <div class="off-canvas-wrapper">
+			<div class="off-canvas-absolute position-left" id="offCanvasLeftSplit1" data-off-canvas>
+			  <button class="close-button" aria-label="Close menu" type="button" data-close>
+				<span aria-hidden="true">
+				</span>
+			  </button>
+			  <ul class="vertical menu accordion-menu" data-accordion-menu>
+				<li>
+				  <a class="acolor" href="#">기업소개</a>
+				  <ul class="menu vertical nested">
+					<li><a class="acolor" href="../company/man.html">경영진</a></li>
+					<li><a class="acolor" href="../company/hj.html">회사</a></li>
+				  </ul>
+				</li>
+				<li>
+				  <a class="acolor href=" #">Best사진</a>
+				  <ul class="menu vertical nested">
+					<li><a class="acolor" href="../work/natural.html">자연</a></li>
+					<li><a class="acolor" href="../work/city.html">도시</a></li>
+				  </ul>
+				</li>
+				<li>
+				  <a class="acolor href=" #">갤러리</a>
+				  <ul class="menu vertical nested">
+					<li><a class="acolor" href="../gallery/gallery.html">HJ갤러리</a></li>
+				  </ul>
+				</li>
+				<li>
+				  <a class="acolor href=" #">고객서비스</a>
+				  <ul class="menu vertical nested">
+					<li><a class="acolor" href="../board/boardList.html">공지사항</a></li>
+					<li><a class="acolor" href="../free/freeList.html">자유게시판</a></li>
+					<li><a class="acolor" href="../qna/qnaList.html">Q & A</a></li>
+				  </ul>
+				</li>
+			  </ul>
+			</div>
+			<div class="off-canvas-content" style="min-height: 300px;" data-off-canvas-content>
+			</div>
+		  </div>
+		</div>

@@ -1,26 +1,119 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>기업소개</title>
+	<title>경영진</title>
+
+
+
+
+	<!-- 문서 정보 : 메타포(metaphor) -->
+	<meta name="application-name" content="HJpoto">
+	<meta name="subject" content="HJpoto">
+	<meta name="keywords" content="다양한 사진 감상 및 구매">
+	<meta name="description" content="HJpoto는 다양한 사진을 감상할 수 있으며, 구매할 수 있습니다.">
+	<meta name="url" content="https://hyojun-a.github.io/web04">
+	<meta name="author" content="ahn hyo jun">
+	<meta name="email" content="wnsgy79@gmail.com">
+	<meta name="robots" content="index, flow">
+
+	<!-- 오픈 그래프 -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://hyojun-a.github.io/web04">
+	<meta property="og:title" content="HJpoto">
+	<meta property="og:site_name" content="HJpoto">
+	<meta property="og:image" content="../resources/img/logo.png">
+	<meta property="og:image:width" content="1000">
+	<meta property="og:image:height" content="400">
+	<meta property="og:locale" content="ko_KR">
+	<meta name="twitter:card" content="video">
+	<meta name="twitter:title" content="HJpoto">
+	<meta name="twitter:description" content="HJpoto는 다양한 사진을 감상할 수 있으며, 구매할 수 있습니다.">
+	<meta name="twitter:image" content="../resources/img/logo.png">
+
+	<!-- 기기의 지원 해상도별 아이콘 설정 -->
+	<link rel="icon" href="../resources/img/logo.png">
+
+
+	<!-- 해상도 및 브라우저와 기기별 앱 아이콘 및 바로가기 아이콘 설정 -->
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- 애플사의 기기 아이콘 설정 -->
+	<meta name="apple-mobile-web-app-title" content="HJpoto">
+	<link rel="apple-touch-icon-precomposed" href="../resources/img/logo.png">
+	<!-- 애플사 기기의 URL바나 UI바 보이게 -->
+	<meta name="apple-mobile-web-app-capable" href="yes">
+	<!-- 상태바의 색상 설정 -->
+	<meta name="apple-mobile-web-app-status-bar-style" href="black-translucent">
+	<!-- MS 사의 기기에 대한 아이콘 설정-->
+	<meta name="msapplication-TileColor" content="#FFFFFF">
+	<meta name="msapplication-TileImage" content="../resources/img/logo.png"><!-- 문서 정보 : 메타포(metaphor) -->
+	<meta name="application-name" content="HJpoto">
+	<meta name="subject" content="HJpoto">
+	<meta name="keywords" content="사진, 전시관">
+	<meta name="description" content="HJpoto는 다양한 사진을 감상 및 구매 하실수 있습니다.">
+	<meta name="url" content="https://hyojun-a.github.io/web04">
+	<meta name="author" content="ahn hyo jun">
+	<meta name="email" content="wnsgy79@gmail.com">
+	<meta name="robots" content="index, flow">
+
+	<link rel="icon" href="../resources/img/logo.png">
+
+	<!-- 오픈 그래프 -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://hyojun-a.github.io/web04">
+	<meta property="og:title" content="HJpoto">
+	<meta property="og:site_name" content="HJpoto">
+	<meta property="og:image" content="../resources/img/logo.png">
+	<meta property="og:image:width" content="1000">
+	<meta property="og:image:height" content="400">
+	<meta property="og:locale" content="ko_KR">
+	<meta name="twitter:card" content="video">
+	<meta name="twitter:title" content="HJpoto">
+	<meta name="twitter:description" content="HJpoto는 다양한 사진을 감상 및 구매 하실수 있습니다.">
+
+
+	<!-- 해상도 및 브라우저와 기기별 앱 아이콘 및 바로가기 아이콘 설정 -->
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- 애플사의 기기 아이콘 설정 -->
+	<meta name="apple-mobile-web-app-title" content="대준신발">
+	<link rel="apple-touch-icon-precomposed" href="../resources/img/logo.png">
+	<!-- 애플사 기기의 URL바나 UI바 보이게 -->
+	<meta name="apple-mobile-web-app-capable" href="yes">
+	<!-- 상태바의 색상 설정 -->
+	<meta name="apple-mobile-web-app-status-bar-style" href="black-translucent">
+	<!-- MS 사의 기기에 대한 아이콘 설정-->
+	<meta name="msapplication-TileColor" content="#FFFFFF">
+	<meta name="msapplication-TileImage" content="../resources/img/logo.png">
+
+
 	<script src="https://code.jquery.com/jquery-latest.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation-prototype.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.css">
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation-prototype.min.css">
+	<link href='https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css' rel='stylesheet'
+		type='text/css'>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
-	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.js"></script>
+	<script type="text/javascript" src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css">
 	<style>
 		.title-bar-left img {
 			height: 40px;
 		}
+
 		.off-canvas-absolute {
 			background-color: #0a0a0a;
 		}
+
 		.acolor {
 			color: #FEFEFE;
 			text-decoration: none
 		}
+
 		#acolor {
 			color: #FEFEFE;
 		}
@@ -48,8 +141,8 @@
 		#footer {
 			position: fixed;
 			bottom: 0;
+			z-index: 100000;
 			width: 100%;
-			height: 53px;
 		}
 
 		#smenu {
@@ -79,7 +172,7 @@
 		}
 
 		.login-center:after {
-			content:"";
+			content="";
 			display: block;
 			clear: both;
 		}
@@ -91,110 +184,149 @@
 			margin-right: 20px;
 			margin-top: 8px;
 		}
+
+		.wrap {
+			width: 90%;
+			margin: 0 auto;
+		}
+
+		.table1 {
+			width: 100%;
+			height: auto;
+			border: 1px solid skyblue;
+			padding: 30px;
+			text-align: left;
+		}
+
+		.q_title {
+			font-size: 22px;
+			color: #111;
+			font-weight: 500;
+			margin-bottom: 20px;
+			line-height: 24px;
+			display: block;
+		}
+
+		.q_content {
+			line-height: 24px;
+		}
+
+		.q_date {
+			display: block;
+			margin-top: 20px;
+		}
+	</style>
+	<style type="text/css">
 		#b_wrap {
 			margin-top: 50px;
 			height: 400px;
 			margin: o auto;
-			padding-left: 30px;
+			padding-left: 100px;
 		}
 
 		#title {
 			padding-top: 200px;
 		}
-
-		.himg {
-			margin-top: 100px;
-			margin-right: 30px;
-		}
 	</style>
 </head>
+
 <body>
 	<header id="header">
 		<div class="title-bar">
-			<div class="title-bar-left">
-				<button class="menu-icon" type="button" data-open="offCanvasLeftSplit1" data-close></button>
-				<a href="../index.html"><img alt="logo" src="../img/rlogo.png"></a>
-				<span class="title-bar-title">
-					HJpoto
-				</span>
-			</div>
-			<div class="top-bar-right">
-				<ul class="menu">
-					<li><a href="../member/login.html" class="clear button success" id="acolor">Login</a></li>&nbsp;
-					<li><a href="../member/agree.html" class="clear button alert" id="acolor">signup</a></li>
-				</ul>
-			</div>
+		  <div class="title-bar-left">
+			<button class="menu-icon" type="button" data-open="offCanvasLeftSplit1" data-close></button>
+			<a href="../index.html" style="color: white;"><img alt="logo" src="../resources/img/rlogo.png">
+			  <span class="title-bar-title">
+				HJpoto
+			  </span>
+			</a>
+		  </div>
+		  <div class="top-bar-right">
+			<ul class="menu">
+			  <li><a href="../member/login.html" class="clear button success" id="acolor">Login</a></li>&nbsp;
+			  <li><a href="../member/agree.html" class="clear button alert" id="acolor">signup</a></li>
+			</ul>
+		  </div>
 		</div>
-	</header>
-	<div class="grid-x" style="list-style-type: none;" id="smenu">
+	  </header>
+	  <div class="grid-x" style="list-style-type: none;" id="smenu">
 		<div class="cell small-2">
-			<div class="off-canvas-wrapper">
-				<div class="off-canvas-absolute position-left" id="offCanvasLeftSplit1" data-off-canvas>
-					<button class="close-button" aria-label="Close menu" type="button" data-close>
-						<span aria-hidden="true">
-						</span>
-					</button>
-					<ul class="vertical menu accordion-menu" data-accordion-menu>
-						<li>
-							<a class="acolor" href="#">기업소개</a>
-							<ul class="menu vertical nested">
-								<li><a class="acolor" href="../company/hj.html">경영진</a></li>
-								<li><a class="acolor" href="../company/man.html">회사</a></li>
-							</ul>
-						</li>
-						<li>
-							<a class="acolor href=" #">작품</a>
-							<ul class="menu vertical nested">
-								<li><a class="acolor" href="../work/natural.html">자연</a></li>
-								<li><a class="acolor" href="../work/city.html">도시</a></li>
-							</ul>
-						</li>
-						<li>
-							<a class="acolor href=" #">갤러리</a>
-							<ul class="menu vertical nested">
-								<li><a class="acolor" href="../gallery/gallery.html">HJ갤러리</a></li>
-							</ul>
-						</li>
-						<li>
-							<a class="acolor href=" #">고객서비스</a>
-							<ul class="menu vertical nested">
-								<li><a class="acolor" href="../board/boardList.html">공지사항</a></li>
-								<li><a class="acolor" href="../free/freeList.html">자유게시판</a></li>
-								<li><a class="acolor" href="../qna/qnaList.html">Q & A</a></li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-				<div class="off-canvas-content" style="min-height: 300px;" data-off-canvas-content>
-				</div>
+		  <div class="off-canvas-wrapper">
+			<div class="off-canvas-absolute position-left" id="offCanvasLeftSplit1" data-off-canvas>
+			  <button class="close-button" aria-label="Close menu" type="button" data-close>
+				<span aria-hidden="true">
+				</span>
+			  </button>
+			  <ul class="vertical menu accordion-menu" data-accordion-menu>
+				<li>
+				  <a class="acolor" href="#">기업소개</a>
+				  <ul class="menu vertical nested">
+					<li><a class="acolor" href="../company/man.html">경영진</a></li>
+					<li><a class="acolor" href="../company/hj.html">회사</a></li>
+				  </ul>
+				</li>
+				<li>
+				  <a class="acolor href=" #">Best사진</a>
+				  <ul class="menu vertical nested">
+					<li><a class="acolor" href="../work/natural.html">자연</a></li>
+					<li><a class="acolor" href="../work/city.html">도시</a></li>
+				  </ul>
+				</li>
+				<li>
+				  <a class="acolor href=" #">갤러리</a>
+				  <ul class="menu vertical nested">
+					<li><a class="acolor" href="../gallery/gallery.html">HJ갤러리</a></li>
+				  </ul>
+				</li>
+				<li>
+				  <a class="acolor href=" #">고객서비스</a>
+				  <ul class="menu vertical nested">
+					<li><a class="acolor" href="../board/boardList.html">공지사항</a></li>
+					<li><a class="acolor" href="../free/freeList.html">자유게시판</a></li>
+					<li><a class="acolor" href="../qna/qnaList.html">Q & A</a></li>
+				  </ul>
+				</li>
+			  </ul>
 			</div>
+			<div class="off-canvas-content" style="min-height: 300px;" data-off-canvas-content>
+			</div>
+		  </div>
 		</div>
 		<div class="content">
 			<div class="grid-x grid-margin-x" id="b_wrap">
 				<div class="medium-6 cell small-order-2 medium-order-1" id="title">
-					<h2>CEO's GREETING</h2>
-					<p>"사진"을 향한 도전과 혁신,<br>HJpoto는 한단계 도약합니다.</p>
-					<hr>
-					<p><strong>HJpoto</strong>홈페이지를 방문해주신 여러분, 반갑습니다.<br>HJpoto는 <strong>2022.11.01</strong> 창사 아래 수차례 내우외환의 파고 속에서도 <br> 창조적이고 새로운 사진을 위한 노력을
-						아끼지 않았습니다.<br>다른 사진들과 차별화된 사진으로 만족 시켜드리겠습니다.<br><br>- CEO AHJ</p>
-
+					<h2>CEO 안효준</h2>
+					<hr><br>
+					<strong>주요경력</strong>
+					<br>
+					<strong>2020.09.01 ~ 2021.10.01 HJshop 팀장</strong>
+					<br>
+					<strong>2021.10.01 ~ 2022.11.01 HJpo 임원</strong>
+					<br>
+					<strong>2022.11.01 ~ HJpoto CEO</strong>
+					<br>
 				</div>
 				<div class="medium-6 cell small-order-1 medium-order-2">
-					<img class="himg" src="../img/hj.jpg">
+					<img class="" src="../resources/img/poto.png">
 				</div>
 			</div>
 		</div>
+
+
+
+
 	</div>
 	<script>
 		$(document).foundation();
 	</script>
+
 	<footer id="footer">
 		<div class="grid-x grid-margin-y expanded" id="ft">
 			<div class="medium-6 cell">
 				<ul class="menu">
-					<li><a class="acolor" href="/">기업소개 </a></li>
-					<li><a class="acolor" href="/">이용약관</a></li>
-					<li><a class="acolor" href="/">개인정보처리방침</a></li>
+					<li><a class="acolor" href="#">기업소개 </a></li>
+					<li><a class="acolor" href="#">이용약관</a></li>
+					<li><a class="acolor" href="#">개인정보처리방침</a></li>
 				</ul>
 			</div>
 			<div class="medium-6 cell">
@@ -204,6 +336,7 @@
 			</div>
 		</div>
 	</footer>
+	<script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
 </body>
 
 </html>
